@@ -8,3 +8,5 @@ __pycache__/
 # Local screenshots
 *.png
 !assets/illustrations/*.png
+.chrome-temp/
+.chrome-user-dir/

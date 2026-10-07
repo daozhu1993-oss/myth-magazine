@@ -249,6 +249,50 @@
   color: #fff;
 }
 
+/* 封面直通阅读按钮 */
+.cover-read-cta-wrap {
+  margin-top: 28px;
+}
+.cover-read-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+.cover-read-cta-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+.cover-read-cta-btn .cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--zhu);
+  color: #fff;
+  font-size: 12px;
+  transition: transform 0.2s var(--ease);
+}
+.cover-read-cta-btn:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
 /* --------------------------------------------------------------------------
    PAGE 2: FULL-BLEED INSCRIPTION (原典题记页)
    -------------------------------------------------------------------------- */
@@ -337,6 +381,60 @@
   font-size: 15px;
   color: var(--quiet-strong);
   line-height: 1.8;
+}
+
+/* 作者阐述 / 创作者手记卡片 */
+.inscription-manifesto-box {
+  margin: 28px auto 0;
+  max-width: 680px;
+  padding: 20px 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink-secondary);
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+.inscription-manifesto-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--zhu);
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.1em;
+}
+
+/* 题记页直通正文按钮 */
+.inscription-start-btn {
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 32px;
+  border-radius: 26px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.inscription-start-btn:hover {
+  transform: translateY(-2px);
+  background: var(--zhu);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(188, 59, 44, 0.35);
+}
+[data-aifa-night="on"] .inscription-start-btn {
+  background: var(--gold-night);
+  color: #121110;
 }
 
 /* --------------------------------------------------------------------------
@@ -462,39 +560,108 @@
   margin: 0;
 }
 
-/* 正文字体排版 */
-.editorial-text-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 40px;
+/* --------------------------------------------------------------------------
+   CHINESE LITERARY EDITORIAL TYPOGRAPHY (典范中文文学正文排版)
+   严格顶格自上而下顺序流 · 绝无跨列跳读 · 两字规范缩进 · 黄金阅读字宽
+   -------------------------------------------------------------------------- */
+.editorial-inner-wrap {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width: 1100px) {
-  .editorial-text-columns {
-    column-gap: 56px;
-  }
+
+.editorial-reading-flow {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.editorial-body-prose {
+  display: block;
+  width: 100%;
 }
 
 .editorial-para {
   font-family: var(--serif);
-  font-size: var(--reader-font-size, 18px);
-  line-height: 1.9;
+  font-size: var(--reader-font-size, 19px);
+  line-height: 1.98;
   color: var(--ink);
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   text-align: justify;
-  letter-spacing: 0.02em;
+  text-justify: inter-ideograph;
+  word-break: break-all;
+  text-indent: 2em;
+  letter-spacing: 0.025em;
 }
 
-/* 首字下沉 Drop Cap */
-.drop-cap-lead::first-letter {
-  float: left;
+.editorial-para.chapter-lead-para {
+  font-size: calc(var(--reader-font-size, 19px) * 1.05);
+  line-height: 2.02;
+  color: var(--ink);
+}
+
+/* 章节末尾翻幕导航导引卡 */
+.chapter-nav-guide {
+  margin: 48px 0 28px;
+  padding: 22px 28px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--zhu);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.25s var(--ease);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+.chapter-nav-guide:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  border-left-color: var(--zhu);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: var(--paper);
+}
+[data-aifa-night="on"] .chapter-nav-guide:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.nav-guide-sub {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--quiet-strong);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.nav-guide-title {
   font-family: var(--serif);
-  font-size: 3.5em;
-  line-height: 0.85;
-  padding-top: 4px;
-  padding-right: 12px;
-  padding-bottom: 2px;
-  color: var(--zhu);
+  font-size: 18px;
   font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-guide-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 14px;
+  transition: transform 0.2s var(--ease);
+}
+.chapter-nav-guide:hover .nav-guide-arrow {
+  transform: translateX(4px);
+  background: var(--zhu);
+  color: #fff;
 }
 
 .editorial-footer-bar {
@@ -502,7 +669,7 @@
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--line);
-  padding-top: 14px;
+  padding-top: 16px;
   margin-top: 40px;
   font-family: var(--mono);
   font-size: 12px;
@@ -759,17 +926,72 @@
 }
 
 /* --------------------------------------------------------------------------
-   RESPONSIVE (移动端小屏)
+   EDGE NAVIGATION CHEVRONS (左右边缘翻页悬浮感应区)
+   -------------------------------------------------------------------------- */
+.reader-edge-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 515;
+  width: 44px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--reader-glass-fill);
+  border: 1px solid var(--reader-glass-edge);
+  box-shadow: var(--reader-glass-shadow);
+  border-radius: 8px;
+  color: var(--ink);
+  cursor: pointer;
+  opacity: 0.35;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.25s var(--ease);
+  user-select: none;
+  border: 1px solid rgba(120, 120, 120, 0.2);
+}
+.reader-edge-nav:hover {
+  opacity: 0.95;
+  background: var(--reader-glass-fill-hover);
+  color: var(--gold-ink);
+  transform: translateY(-50%) scale(1.06);
+}
+[data-aifa-night="on"] .reader-edge-nav:hover {
+  color: var(--gold-night);
+}
+.reader-edge-nav.prev {
+  left: 18px;
+}
+.reader-edge-nav.next {
+  right: 18px;
+}
+.reader-edge-nav:disabled {
+  opacity: 0.08 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE (移动端小屏自适应)
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .magazine-full-cover {
     padding: 24px 20px 84px;
   }
   .magazine-editorial-page {
-    padding: 24px 18px 84px;
+    padding: 28px 18px 96px;
   }
-  .editorial-text-columns {
-    grid-template-columns: 1fr;
+  .editorial-reading-flow {
+    max-width: 100%;
+  }
+  .editorial-para {
+    font-size: 17px;
+    line-height: 1.92;
+    margin-bottom: 20px;
+  }
+  .reader-edge-nav {
+    display: none;
   }
   .reader-floating-bar {
     bottom: 12px;

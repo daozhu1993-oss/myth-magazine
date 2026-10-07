@@ -67,6 +67,8 @@
     readerProgressBar: document.getElementById('reader-progress-bar'),
     readerCloseBtn: document.getElementById('reader-close-btn'),
     readerPageSlide: document.getElementById('reader-page-slide'),
+    readerEdgePrev: document.getElementById('reader-edge-prev'),
+    readerEdgeNext: document.getElementById('reader-edge-next'),
     
     // Floating Pills Controls
     btnFontDec: document.getElementById('btn-font-dec'),
@@ -432,18 +434,22 @@
   }
 
   // --- FULL-BLEED MAGAZINE READER ENGINE ---
-  function openReader(articleId, pageIdx = 0) {
+  function openReader(articleId, pageIdx = null) {
     const article = state.articles.find(a => a.id === articleId);
     if (!article) return;
 
     state.currentArticle = article;
     state.readerActive = true;
     
-    // Check saved progress if pageIdx not provided
-    if (pageIdx === 0 && state.readProgress[articleId]) {
-      state.currentPageIdx = state.readProgress[articleId].pageIdx || 0;
+    // Resume progress only if pageIdx was not explicitly requested
+    if (pageIdx === null || pageIdx === undefined) {
+      if (state.readProgress[articleId]) {
+        state.currentPageIdx = state.readProgress[articleId].pageIdx || 0;
+      } else {
+        state.currentPageIdx = 0;
+      }
     } else {
-      state.currentPageIdx = pageIdx;
+      state.currentPageIdx = Math.max(0, Math.min(article.totalPages - 1, pageIdx));
     }
 
     applyFontSize();
@@ -483,6 +489,8 @@
     DOM.btnSpreadInfo.textContent = `${pageIdx + 1} / ${article.totalPages}`;
     DOM.btnPagePrev.disabled = (pageIdx === 0);
     DOM.btnPageNext.disabled = (pageIdx === article.totalPages - 1);
+    if (DOM.readerEdgePrev) DOM.readerEdgePrev.disabled = (pageIdx === 0);
+    if (DOM.readerEdgeNext) DOM.readerEdgeNext.disabled = (pageIdx === article.totalPages - 1);
 
     let html = '';
 
@@ -511,11 +519,28 @@
               <span>原典考据：${page.originalMyth}</span>
               <span>${page.readMinutes} 分钟 · ${page.wordCount.toLocaleString()} 字</span>
             </div>
+
+            <div class="cover-read-cta-wrap">
+              <button class="cover-read-cta-btn" onclick="window.MythApp.turnPage(1)">
+                <span>翻开期刊 · 阅览原典与题记</span>
+                <span class="cta-arrow">→</span>
+              </button>
+            </div>
           </div>
         </div>
       `;
     } else if (page.type === 'inscription') {
       DOM.readerContainer.setAttribute('data-theme-page', 'light');
+      let authorNoteHTML = '';
+      if (page.authorNote) {
+        authorNoteHTML = `
+          <div class="inscription-manifesto-box">
+            <div class="inscription-manifesto-title">【作者手记 · 创作阐述】</div>
+            ${page.authorNote.split('\n\n').map(p => `<p style="margin-bottom: 8px;">${p}</p>`).join('')}
+          </div>
+        `;
+      }
+
       html = `
         <div class="magazine-inscription-page">
           <div class="inscription-card-inner">
@@ -526,6 +551,13 @@
             </div>
             <div class="inscription-colophon-note">
               —— 中华神话重构系列 ·《${page.title}》题记
+            </div>
+            ${authorNoteHTML}
+            <div style="margin-top: 32px;">
+              <button class="inscription-start-btn" onclick="window.MythApp.turnPage(1)">
+                <span>翻入正文 · 开始阅读第一幕</span>
+                <span>→</span>
+              </button>
             </div>
           </div>
         </div>
@@ -563,9 +595,32 @@
       }
 
       const parasHTML = page.paragraphs.map((p, idx) => {
-        const isDrop = (idx === 0 && !page.inlineImg);
-        return `<p class="editorial-para ${isDrop ? 'drop-cap-lead' : ''}">${p}</p>`;
+        const isLead = (idx === 0 && !page.inlineImg && !p.startsWith('“') && !p.startsWith('"'));
+        return `<p class="editorial-para ${isLead ? 'chapter-lead-para' : ''}">${p}</p>`;
       }).join('');
+
+      let navGuideHTML = '';
+      if (page.nextChapterTitle) {
+        navGuideHTML = `
+          <div class="chapter-nav-guide" onclick="window.MythApp.turnPage(1)" title="点击翻阅下一幕">
+            <div>
+              <div class="nav-guide-sub">本幕读毕 · 继续阅读</div>
+              <div class="nav-guide-title">${page.nextChapterTitle}</div>
+            </div>
+            <div class="nav-guide-arrow">→</div>
+          </div>
+        `;
+      } else {
+        navGuideHTML = `
+          <div class="chapter-nav-guide" onclick="window.MythApp.turnPage(1)" title="点击查看卷终刊记">
+            <div>
+              <div class="nav-guide-sub">全卷正文读毕</div>
+              <div class="nav-guide-title">翻至卷终 · 刊记与下期预告</div>
+            </div>
+            <div class="nav-guide-arrow">→</div>
+          </div>
+        `;
+      }
 
       html = `
         <div class="magazine-editorial-page">
@@ -576,12 +631,16 @@
               <span>${page.issueNumber}</span>
             </div>
 
-            ${chapterBadgeHTML}
-            ${artBannerHTML}
-            ${pullQuoteHTML}
+            <div class="editorial-reading-flow">
+              ${chapterBadgeHTML}
+              ${artBannerHTML}
+              ${pullQuoteHTML}
 
-            <div class="editorial-text-columns">
-              ${parasHTML}
+              <div class="editorial-body-prose">
+                ${parasHTML}
+              </div>
+
+              ${navGuideHTML}
             </div>
           </div>
 
@@ -773,14 +832,20 @@
       });
     }
 
-    // Click on page sides to turn (点击屏幕左侧20%翻上一页，右侧20%翻下一页)
+    // Click on empty margin gutters to turn page (点击左右外侧空白留白区翻页)
     DOM.readerPageSlide.addEventListener('click', (e) => {
-      if (e.target.closest('button') || e.target.closest('a') || e.target.closest('.reader-floating-bar')) return;
+      if (e.target.closest('button') || e.target.closest('a') || e.target.closest('.reader-floating-bar') ||
+          e.target.closest('.chapter-nav-guide') || e.target.closest('.editorial-inner-wrap') ||
+          e.target.closest('.inscription-card-inner') || e.target.closest('.colophon-card') ||
+          e.target.closest('.cover-hero-stack')) {
+        return;
+      }
+      if (window.getSelection() && window.getSelection().toString().length > 0) return;
       const x = e.clientX;
       const w = window.innerWidth;
-      if (x > w * 0.8) {
+      if (x > w * 0.85) {
         turnPage(1);
-      } else if (x < w * 0.2) {
+      } else if (x < w * 0.15) {
         turnPage(-1);
       }
     });
@@ -803,6 +868,8 @@
     DOM.readerCloseBtn.onclick = closeReader;
     DOM.btnPagePrev.onclick = () => turnPage(-1);
     DOM.btnPageNext.onclick = () => turnPage(1);
+    if (DOM.readerEdgePrev) DOM.readerEdgePrev.onclick = () => turnPage(-1);
+    if (DOM.readerEdgeNext) DOM.readerEdgeNext.onclick = () => turnPage(1);
     DOM.btnFontDec.onclick = () => adjustFontSize(-1);
     DOM.btnFontInc.onclick = () => adjustFontSize(1);
     DOM.btnTocToggle.onclick = toggleToc;
@@ -855,6 +922,11 @@
     if (issueId) {
       const page = parseInt(pageStr || '1', 10) - 1;
       openReader(issueId, Math.max(0, page));
+      if (hash.includes('scroll=bottom') || urlParams.get('scroll') === 'bottom') {
+        setTimeout(() => {
+          if (DOM.readerPageSlide) DOM.readerPageSlide.scrollTop = DOM.readerPageSlide.scrollHeight;
+        }, 150);
+      }
     } else if (hash === '#bookshelf' || urlParams.get('view') === 'bookshelf') {
       openBookshelf();
     } else {

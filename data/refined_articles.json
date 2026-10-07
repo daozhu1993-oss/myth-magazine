@@ -9,11 +9,12 @@
     "classicQuote": "天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 8792,
+    "wordCount": 8764,
     "readMinutes": 25,
     "coverImg": "assets/illustrations/illust_01.png",
     "inlineImg": "assets/illustrations/illust_02.png",
     "imgCaption": "共工撞向不周山，山崩石裂，天倾西北",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -25,7 +26,7 @@
         "originalMyth": "《山海经·大荒西经》·《淮南子·天文训》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 8792,
+        "wordCount": 8764,
         "readMinutes": 25,
         "coverImg": "assets/illustrations/illust_01.png"
       },
@@ -44,6 +45,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -63,7 +65,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_02.png",
         "imgCaption": "共工撞向不周山，山崩石裂，天倾西北",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -71,6 +75,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -90,7 +95,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "架构调整的通知下来的那天，天庭的OA系统崩了十分钟。"
+        "pullQuote": "架构调整的通知下来的那天，天庭的OA系统崩了十分钟。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -98,6 +105,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -126,7 +134,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "第一轮：述职答辩。地点在南天门大会议厅，全公司全员旁听。"
+        "pullQuote": "第一轮：述职答辩。地点在南天门大会议厅，全公司全员旁听。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -134,6 +144,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -158,7 +169,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "共工坐在工位上，把那份文件看了很久。看完了，继续改他的水文符。"
+        "pullQuote": "共工坐在工位上，把那份文件看了很久。看完了，继续改他的水文符。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -166,6 +179,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -187,7 +201,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "一共九千多块贝壳。堆了半面墙高。"
+        "pullQuote": "一共九千多块贝壳。堆了半面墙高。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -195,6 +211,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -210,7 +227,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "HR回了九十九个字，核心意思：\"周报格式不规范，建议补充本周重点工作、下周计划、需协调事项。"
+        "pullQuote": "HR回了九十九个字，核心意思：\"周报格式不规范，建议补充本周重点工作、下周计划、需协调事项。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -218,6 +237,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -247,7 +267,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "事故通报挂了三天。北冥那边的网不太稳定，共工第四天才看到。"
+        "pullQuote": "事故通报挂了三天。北冥那边的网不太稳定，共工第四天才看到。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -255,6 +277,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -266,7 +289,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他靠在椅背上。窗外，南天门的台阶空空荡荡。"
+        "pullQuote": "他靠在椅背上。窗外，南天门的台阶空空荡荡。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -274,6 +299,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -302,7 +328,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "祝融主动去了北冥。名头是\"北冥极寒大区业务赋能暨员工慰问\"，随行助理、摄影师、天庭通讯社记者，五个人。"
+        "pullQuote": "祝融主动去了北冥。名头是\"北冥极寒大区业务赋能暨员工慰问\"，随行助理、摄影师、天庭通讯社记者，五个人。",
+        "nextChapterTitle": "第 十 幕",
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "chapter",
@@ -310,6 +338,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 十 幕",
         "chapterIndex": 10,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -335,7 +364,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "共工站在山脚下。抬头看。山真高。天柱不是形容——是真的往上延伸，一直伸到云雾里看不见顶。"
+        "pullQuote": "共工站在山脚下。抬头看。山真高。天柱不是形容——是真的往上延伸，一直伸到云雾里看不见顶。",
+        "nextChapterTitle": "第 十一 幕",
+        "prevChapterTitle": "第 九 幕"
       },
       {
         "type": "chapter",
@@ -343,6 +374,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 十一 幕",
         "chapterIndex": 11,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -396,7 +428,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他往外冲的时候被秘书拦住了。"
+        "pullQuote": "他往外冲的时候被秘书拦住了。",
+        "nextChapterTitle": "第 十二 幕",
+        "prevChapterTitle": "第 十 幕"
       },
       {
         "type": "chapter",
@@ -404,6 +438,7 @@
         "title": "共工怒触不周山",
         "chapterTitle": "第 十二 幕",
         "chapterIndex": 12,
+        "totalChapters": 12,
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -434,7 +469,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "你那块石头，\"祝融突然说，\"我收到了。"
+        "pullQuote": "你那块石头，\"祝融突然说，\"我收到了。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 十一 幕"
       },
       {
         "type": "colophon",
@@ -442,7 +479,7 @@
         "title": "共工怒触不周山",
         "issueNumber": "No. 001",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 8792,
+        "wordCount": 8764,
         "nextIssueNumber": "No. 002",
         "author": "GX"
       }
@@ -450,60 +487,55 @@
     "totalPages": 15,
     "chapters": [
       {
-        "title": "开篇",
-        "count": 1
-      },
-      {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 13
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 22
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 18
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 15
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 9
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 23
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 5
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 22
       },
       {
-        "title": "十、",
+        "title": "第 十 幕",
         "count": 19
       },
       {
-        "title": "十一、",
+        "title": "第 十一 幕",
         "count": 47
       },
       {
-        "title": "十二、",
+        "title": "第 十二 幕",
         "count": 24
       }
     ],
     "fullParagraphs": [
-      "不周",
       "天庭内部论坛上出现了一则匿名帖：《水部和火部要合并了，最新消息速进》。发帖十分钟，回复炸了。",
       "\"真的假的？这俩业务线完全不搭啊？\" \"听说是CEO那边的意思，降本增效，精简管理层级。\" \"前排出售瓜子饮料辟火符。\"",
       "共工从不刷论坛。他是水部的技术负责人，管着天下所有江河湖海的调度系统。平时除了写代码——那时候不叫代码，叫水文符——就是泡在机房调参。黄河拐弯的角度、长江汛期的峰值、洞庭湖的蓄水量，全在他脑子里。跟火部的祝融，是同一个楼里待了三千年的隔壁工位。",
@@ -746,11 +778,12 @@
     "classicQuote": "炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 8307,
+    "wordCount": 8278,
     "readMinutes": 24,
     "coverImg": "assets/illustrations/illust_05.png",
     "inlineImg": "assets/illustrations/illust_03.png",
     "imgCaption": "白鸟衔石投海，飞掠沧海浊浪",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -762,7 +795,7 @@
         "originalMyth": "《山海经·北山经》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 8307,
+        "wordCount": 8278,
         "readMinutes": 24,
         "coverImg": "assets/illustrations/illust_05.png"
       },
@@ -781,6 +814,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -814,7 +848,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_03.png",
         "imgCaption": "白鸟衔石投海，飞掠沧海浊浪",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -822,6 +858,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -840,7 +877,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_04.png",
         "imgCaption": "龙宫海底专班案前，水族计簿算盘核算",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -848,6 +887,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -869,7 +909,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "龙王从被窝里坐起来：\"退了三尺？"
+        "pullQuote": "龙王从被窝里坐起来：\"退了三尺？",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -877,6 +919,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -901,7 +944,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "一个月后，精卫问题应对专班第一次全体大会在龙宫议事厅召开。"
+        "pullQuote": "一个月后，精卫问题应对专班第一次全体大会在龙宫议事厅召开。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -909,6 +954,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -937,7 +983,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "爹，\"女娃说，\"你为什么天天尝草。"
+        "pullQuote": "爹，\"女娃说，\"你为什么天天尝草。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -945,6 +993,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -966,7 +1015,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "专班成立的第一百年，龙王召开工作汇报会。"
+        "pullQuote": "专班成立的第一百年，龙王召开工作汇报会。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -974,6 +1025,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -997,7 +1049,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "五百年后的一天，精卫衔着一块石头飞过海面。她老了。羽毛灰了一半，右爪瘸了，飞的时候往左边歪。但她还在飞。"
+        "pullQuote": "五百年后的一天，精卫衔着一块石头飞过海面。她老了。羽毛灰了一半，右爪瘸了，飞的时候往左边歪。但她还在飞。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -1005,6 +1059,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -1028,7 +1083,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他看到\"持续观察\"四个字的时候，终于端不住了。他把龟丞相叫过来。"
+        "pullQuote": "他看到\"持续观察\"四个字的时候，终于端不住了。他把龟丞相叫过来。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -1036,6 +1093,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -1060,7 +1118,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "龟丞相得了绝症。不是什么大病，就是龟也很老了。老到龟壳都长了青苔。"
+        "pullQuote": "龟丞相得了绝症。不是什么大病，就是龟也很老了。老到龟壳都长了青苔。",
+        "nextChapterTitle": "第 十 幕",
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "chapter",
@@ -1068,6 +1128,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 十 幕",
         "chapterIndex": 10,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -1090,7 +1151,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她还是每天飞。西山、石头、东海、扑通。西山、石头、东海、扑通。"
+        "pullQuote": "她还是每天飞。西山、石头、东海、扑通。西山、石头、东海、扑通。",
+        "nextChapterTitle": "第 十一 幕",
+        "prevChapterTitle": "第 九 幕"
       },
       {
         "type": "chapter",
@@ -1098,6 +1161,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 十一 幕",
         "chapterIndex": 11,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -1127,7 +1191,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "在她的飞—衔—飞—扔五千年的时候，有一天她突然发现自己飞错了方向。她本来是往西山飞的，醒来的时候却飞向了东海的另一边。"
+        "pullQuote": "在她的飞—衔—飞—扔五千年的时候，有一天她突然发现自己飞错了方向。她本来是往西山飞的，醒来的时候却飞向了东海的另一边。",
+        "nextChapterTitle": "第 十二 幕",
+        "prevChapterTitle": "第 十 幕"
       },
       {
         "type": "chapter",
@@ -1135,6 +1201,7 @@
         "title": "精卫填海",
         "chapterTitle": "第 十二 幕",
         "chapterIndex": 12,
+        "totalChapters": 13,
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -1147,8 +1214,24 @@
           "她坐在礁石上，闭上眼。风从东海的尽头刮过来，把她的羽毛一片一片吹散了。她没有躲。她已经不冷了。",
           "海水涨上来了。漫过爪子，漫过翅膀，漫过脖子，漫住嘴巴。",
           "最后一片羽毛沉下去的时候，海面上有一道小小的涟漪。像是谁在上面扔了一颗石子。",
-          "扑通。",
-          "十三、",
+          "扑通。"
+        ],
+        "inlineImg": null,
+        "imgCaption": null,
+        "pullQuote": "这个声音很轻。不像以前那样干脆。",
+        "nextChapterTitle": "第 十三 幕",
+        "prevChapterTitle": "第 十一 幕"
+      },
+      {
+        "type": "chapter",
+        "pageNumber": 15,
+        "title": "精卫填海",
+        "chapterTitle": "第 十三 幕",
+        "chapterIndex": 13,
+        "totalChapters": 13,
+        "issueNumber": "No. 002",
+        "category": "卷二 · 反叛与神罚",
+        "paragraphs": [
           "天庭档案室里。一个值班的小文书在整理海界事务档案。归档，打扫，顺便偷懒看看有没有过期可以当草纸的。翻到一堆发黄的贝壳——尺寸对不上现有的格式，应该是秦朝以前的档案了。",
           "小文书打开展开扫了一眼。第一行：\"精卫填海问题专项应对工作方案（第一版）——拟制人：东海龙宫精卫问题应对专班。\"",
           "背面有签名。",
@@ -1168,68 +1251,74 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "这个声音很轻。不像以前那样干脆。"
+        "pullQuote": "小文书打开展开扫了一眼。第一行：\"精卫填海问题专项应对工作方案（第一版）——拟制人：东海龙宫精卫问题应对专班。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 十二 幕"
       },
       {
         "type": "colophon",
-        "pageNumber": 15,
+        "pageNumber": 16,
         "title": "精卫填海",
         "issueNumber": "No. 002",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 8307,
+        "wordCount": 8278,
         "nextIssueNumber": "No. 003",
         "author": "GX"
       }
     ],
-    "totalPages": 15,
+    "totalPages": 16,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 27
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 12
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 15
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 18
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 22
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 15
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 17
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 17
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 18
       },
       {
-        "title": "十、",
+        "title": "第 十 幕",
         "count": 16
       },
       {
-        "title": "十一、",
+        "title": "第 十一 幕",
         "count": 23
       },
       {
-        "title": "十二、",
-        "count": 27
+        "title": "第 十二 幕",
+        "count": 10
+      },
+      {
+        "title": "第 十三 幕",
+        "count": 16
       }
     ],
     "fullParagraphs": [
@@ -1443,7 +1532,6 @@
       "海水涨上来了。漫过爪子，漫过翅膀，漫过脖子，漫住嘴巴。",
       "最后一片羽毛沉下去的时候，海面上有一道小小的涟漪。像是谁在上面扔了一颗石子。",
       "扑通。",
-      "十三、",
       "天庭档案室里。一个值班的小文书在整理海界事务档案。归档，打扫，顺便偷懒看看有没有过期可以当草纸的。翻到一堆发黄的贝壳——尺寸对不上现有的格式，应该是秦朝以前的档案了。",
       "小文书打开展开扫了一眼。第一行：\"精卫填海问题专项应对工作方案（第一版）——拟制人：东海龙宫精卫问题应对专班。\"",
       "背面有签名。",
@@ -1472,11 +1560,12 @@
     "classicQuote": "颉首四目，通于神明，仰观奎星圜曲之势，俯察龟文鸟迹之象，博采众美，合而为字。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5184,
+    "wordCount": 5158,
     "readMinutes": 15,
     "coverImg": "assets/illustrations/illust_09.png",
     "inlineImg": "assets/illustrations/illust_10.png",
     "imgCaption": "仓颉仰观奎星鸟迹，刻符于石板",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -1488,7 +1577,7 @@
         "originalMyth": "《淮南子·本经训》·《说文解字序》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5184,
+        "wordCount": 5158,
         "readMinutes": 15,
         "coverImg": "assets/illustrations/illust_09.png"
       },
@@ -1507,6 +1596,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1519,7 +1609,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_10.png",
         "imgCaption": "仓颉仰观奎星鸟迹，刻符于石板",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -1527,6 +1619,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1537,7 +1630,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他说：这是你。我说：我不长这样。他说：你现在长这样了。"
+        "pullQuote": "他说：这是你。我说：我不长这样。他说：你现在长这样了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -1545,6 +1640,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1557,7 +1653,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_24.png",
         "imgCaption": "兽骨甲片微芒初现，青光灼灼如神迹",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -1565,6 +1663,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1578,7 +1677,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "有一天我发现他在摸我。不是真摸——他的手悬空在我脸前面，隔着半寸，从额头摸到下巴。他说：你胖了。"
+        "pullQuote": "有一天我发现他在摸我。不是真摸——他的手悬空在我脸前面，隔着半寸，从额头摸到下巴。他说：你胖了。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -1586,6 +1687,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1600,7 +1702,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_26.png",
         "imgCaption": "灵鸟啄石为印，神迹留爪为书",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -1608,6 +1712,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1619,7 +1724,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "师傅死后，我把石室打扫了一遍。"
+        "pullQuote": "师傅死后，我把石室打扫了一遍。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -1627,6 +1734,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1637,7 +1745,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "眼窝一烫，像有人拿了一截刚灭火的木柴塞进了我的眼眶，不是火，是热——热气从眼球后面往前面推"
+        "pullQuote": "眼窝一烫，像有人拿了一截刚灭火的木柴塞进了我的眼眶，不是火，是热——热气从眼球后面往前面推",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -1645,6 +1755,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1657,7 +1768,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "三块骨头叠在一起，是很多年以后我才发现的。"
+        "pullQuote": "三块骨头叠在一起，是很多年以后我才发现的。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -1665,6 +1778,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1673,7 +1787,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "在天快亮的时候，我在一块榻了的墙根底下摸到一片碎骨"
+        "pullQuote": "在天快亮的时候，我在一块榻了的墙根底下摸到一片碎骨",
+        "nextChapterTitle": "第 十 幕",
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "chapter",
@@ -1681,6 +1797,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 十 幕",
         "chapterIndex": 10,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1692,7 +1809,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "刻到最后一个字，我的手已经抖得像握了一把活物。我喘了半柱香才把铁凿按下去。最后一道笔画落下，石板满了。"
+        "pullQuote": "刻到最后一个字，我的手已经抖得像握了一把活物。我喘了半柱香才把铁凿按下去。最后一道笔画落下，石板满了。",
+        "nextChapterTitle": "第 十一 幕",
+        "prevChapterTitle": "第 九 幕"
       },
       {
         "type": "chapter",
@@ -1700,6 +1819,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 十一 幕",
         "chapterIndex": 11,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1710,7 +1830,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "石板背面有字。不是我的。是师傅的。"
+        "pullQuote": "石板背面有字。不是我的。是师傅的。",
+        "nextChapterTitle": "第 十二 幕",
+        "prevChapterTitle": "第 十 幕"
       },
       {
         "type": "chapter",
@@ -1718,6 +1840,7 @@
         "title": "仓颉造字",
         "chapterTitle": "第 十二 幕",
         "chapterIndex": 12,
+        "totalChapters": 12,
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -1733,7 +1856,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我在石板背面那行字旁边，刻了我自己的名字。"
+        "pullQuote": "我在石板背面那行字旁边，刻了我自己的名字。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 十一 幕"
       },
       {
         "type": "colophon",
@@ -1741,7 +1866,7 @@
         "title": "仓颉造字",
         "issueNumber": "No. 003",
         "category": "卷一 · 创世与洪荒",
-        "wordCount": 5184,
+        "wordCount": 5158,
         "nextIssueNumber": "No. 004",
         "author": "GX"
       }
@@ -1749,51 +1874,51 @@
     "totalPages": 15,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 6
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 4
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 6
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 7
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 8
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 5
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 4
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 6
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 2
       },
       {
-        "title": "十、",
+        "title": "第 十 幕",
         "count": 5
       },
       {
-        "title": "十一、",
+        "title": "第 十一 幕",
         "count": 4
       },
       {
-        "title": "十二、",
+        "title": "第 十二 幕",
         "count": 9
       }
     ],
@@ -1876,11 +2001,12 @@
     "classicQuote": "伯牙善鼓琴，钟子期善听。伯牙鼓琴，志在高山，钟子期曰：“善哉，峨峨兮若泰山！”",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 6108,
+    "wordCount": 6096,
     "readMinutes": 17,
     "coverImg": "assets/illustrations/illust_07.png",
     "inlineImg": "assets/illustrations/illust_38.png",
     "imgCaption": "汉阳江口抚琴相携，高山流水遇知音",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -1892,7 +2018,7 @@
         "originalMyth": "《列子·汤问》·《吕氏春秋·本味》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 6108,
+        "wordCount": 6096,
         "readMinutes": 17,
         "coverImg": "assets/illustrations/illust_07.png"
       },
@@ -1911,6 +2037,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -1935,7 +2062,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_38.png",
         "imgCaption": "汉阳江口抚琴相携，高山流水遇知音",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -1943,6 +2072,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -1966,7 +2096,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我儿子这副耳朵，是打小就邪性。"
+        "pullQuote": "我儿子这副耳朵，是打小就邪性。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -1974,6 +2106,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -2003,7 +2136,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他天黑才回来。进门的时候，整个人是发光的。"
+        "pullQuote": "他天黑才回来。进门的时候，整个人是发光的。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -2011,6 +2146,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -2043,7 +2179,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他自己心里清楚。有一天夜里,他把我叫到床前。"
+        "pullQuote": "他自己心里清楚。有一天夜里,他把我叫到床前。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -2051,6 +2189,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -2087,7 +2226,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我跪在地上,把这些,一句一句,告诉了那位俞大人。"
+        "pullQuote": "我跪在地上,把这些,一句一句,告诉了那位俞大人。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -2095,6 +2236,7 @@
         "title": "伯牙子期",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -2125,7 +2267,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我蹲下去。那些碎块,乌沉沉的,断口处的玉,白生生的,在暮色里泛光。我一块一块,把它们捡起来。"
+        "pullQuote": "我蹲下去。那些碎块,乌沉沉的,断口处的玉,白生生的,在暮色里泛光。我一块一块,把它们捡起来。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -2133,7 +2277,7 @@
         "title": "伯牙子期",
         "issueNumber": "No. 004",
         "category": "卷三 · 人间与执念",
-        "wordCount": 6108,
+        "wordCount": 6096,
         "nextIssueNumber": "No. 005",
         "author": "GX"
       }
@@ -2141,27 +2285,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 18
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 17
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 23
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 26
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 30
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 24
       }
     ],
@@ -2316,11 +2460,12 @@
     "classicQuote": "八仙过海，各显神通。沧海横流，不借天风，但凭手中一物，踏破万顷狂澜。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 6171,
+    "wordCount": 6159,
     "readMinutes": 18,
     "coverImg": "assets/illustrations/illust_35.png",
     "inlineImg": "assets/illustrations/illust_28.png",
     "imgCaption": "海滨客肆道友会聚，煮茶论道意在东海",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -2332,7 +2477,7 @@
         "originalMyth": "《东游记》· 民间八仙传说",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 6171,
+        "wordCount": 6159,
         "readMinutes": 18,
         "coverImg": "assets/illustrations/illust_35.png"
       },
@@ -2351,6 +2496,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2371,7 +2517,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_28.png",
         "imgCaption": "海滨客肆道友会聚，煮茶论道意在东海",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -2379,6 +2527,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2413,7 +2562,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "蓝采和还嫌不够。他撑着花篮凑到云底下，仰着脸，一迭声地劝："
+        "pullQuote": "蓝采和还嫌不够。他撑着花篮凑到云底下，仰着脸，一迭声地劝：",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -2421,6 +2572,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2462,7 +2614,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_37.png",
         "imgCaption": "白衣仙者席地而坐，汉钟离点悟凡世",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -2470,6 +2624,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2497,7 +2652,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_36.png",
         "imgCaption": "铁拐李执杖云端，俯视下界沧海桑田",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -2505,6 +2662,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2534,7 +2692,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "铁拐李没有坐云下来，也没让谁驮。他就那么从云头上跨下来，落向那片海——一个离了拐就站不直的人，直直地往水面上落。"
+        "pullQuote": "铁拐李没有坐云下来，也没让谁驮。他就那么从云头上跨下来，落向那片海——一个离了拐就站不直的人，直直地往水面上落。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -2542,6 +2702,7 @@
         "title": "八仙过海",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -2566,7 +2727,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他撑着花篮，慢慢挨到铁拐李身边。"
+        "pullQuote": "他撑着花篮，慢慢挨到铁拐李身边。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -2574,7 +2737,7 @@
         "title": "八仙过海",
         "issueNumber": "No. 005",
         "category": "卷四 · 志怪与幽冥",
-        "wordCount": 6171,
+        "wordCount": 6159,
         "nextIssueNumber": "No. 006",
         "author": "GX"
       }
@@ -2582,27 +2745,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 14
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 28
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 35
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 21
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 23
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 18
       }
     ],
@@ -2758,11 +2921,12 @@
     "classicQuote": "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5820,
+    "wordCount": 5806,
     "readMinutes": 17,
     "coverImg": "assets/illustrations/illust_12.png",
     "inlineImg": "assets/illustrations/illust_12.png",
     "imgCaption": "断首战神以乳为目，操干戚而舞不休",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -2774,7 +2938,7 @@
         "originalMyth": "《山海经·海外西经》· 陶渊明《读山海经》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5820,
+        "wordCount": 5806,
         "readMinutes": 17,
         "coverImg": "assets/illustrations/illust_12.png"
       },
@@ -2793,6 +2957,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2809,7 +2974,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_12.png",
         "imgCaption": "断首战神以乳为目，操干戚而舞不休",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -2817,6 +2984,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2836,7 +3004,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "刑安六岁那年生日，刑天回来了。"
+        "pullQuote": "刑安六岁那年生日，刑天回来了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -2844,6 +3014,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2864,7 +3035,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他十二岁那年夏天，有人敲门。"
+        "pullQuote": "他十二岁那年夏天，有人敲门。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -2872,6 +3045,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2893,7 +3067,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "刑安没有走过去。他站在一棵枯死的槐树后面。"
+        "pullQuote": "刑安没有走过去。他站在一棵枯死的槐树后面。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -2901,6 +3077,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2923,7 +3100,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "后来山下只剩两个人。一个在跳舞。一个在看他跳舞。"
+        "pullQuote": "后来山下只剩两个人。一个在跳舞。一个在看他跳舞。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -2931,6 +3110,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2957,7 +3137,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "刑安三十七岁那年，他父亲还在跳。"
+        "pullQuote": "刑安三十七岁那年，他父亲还在跳。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -2965,6 +3147,7 @@
         "title": "刑天舞干戚",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -2997,7 +3180,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那天夜里月亮白得晃眼。跟他六岁那晚一模一样。"
+        "pullQuote": "那天夜里月亮白得晃眼。跟他六岁那晚一模一样。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -3005,7 +3190,7 @@
         "title": "刑天舞干戚",
         "issueNumber": "No. 006",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 5820,
+        "wordCount": 5806,
         "nextIssueNumber": "No. 007",
         "author": "GX"
       }
@@ -3013,31 +3198,31 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 10
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 14
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 15
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 16
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 20
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 26
       }
     ],
@@ -3168,11 +3353,12 @@
     "classicQuote": "生不能同衾，死当同穴。冢忽自开，祝跃入其中，合之，化为双蝶，翩翩而舞。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 1405,
+    "wordCount": 1396,
     "readMinutes": 4,
     "coverImg": "assets/illustrations/illust_08.png",
     "inlineImg": "assets/illustrations/illust_11.png",
     "imgCaption": "宫墙暮色冷蝶双飞，宿命执念终化彩翼",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -3184,7 +3370,7 @@
         "originalMyth": "民间四大传说 · 梁山伯与祝英台",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 1405,
+        "wordCount": 1396,
         "readMinutes": 4,
         "coverImg": "assets/illustrations/illust_08.png"
       },
@@ -3201,8 +3387,9 @@
         "type": "chapter",
         "pageNumber": 3,
         "title": "梁祝·化蝶",
-        "chapterTitle": "序 幕",
+        "chapterTitle": "第一幕 · 青绸车",
         "chapterIndex": 1,
+        "totalChapters": 3,
         "issueNumber": "No. 007",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -3217,7 +3404,24 @@
           "天说黑就黑。雨点砸下来，先是几点，随后连成一片。土路一淋就烂，牛蹄陷进去，拔出来带一坨泥，甩得车辕上、人腿上都是。从人骂这鬼天。赶车的不吭声，把缰往手上又缠了一圈。",
           "车里，笃、笃。",
           "叩车壁，一般是要水，要下来松泛松泛。停车。一个送嫁的妇人凑到帷子边，压着嗓子问了一句什么。",
-          "然后那妇人的脸就白了。",
+          "然后那妇人的脸就白了。"
+        ],
+        "inlineImg": "assets/illustrations/illust_11.png",
+        "imgCaption": "宫墙暮色冷蝶双飞，宿命执念终化彩翼",
+        "pullQuote": null,
+        "nextChapterTitle": "第二幕 · 黄土坟",
+        "prevChapterTitle": null
+      },
+      {
+        "type": "chapter",
+        "pageNumber": 4,
+        "title": "梁祝·化蝶",
+        "chapterTitle": "第二幕 · 黄土坟",
+        "chapterIndex": 2,
+        "totalChapters": 3,
+        "issueNumber": "No. 007",
+        "category": "卷三 · 人间与执念",
+        "paragraphs": [
           "新妇下了车。一身青衣，手里一柄团扇本是遮脸的，这会儿垂在身侧，不遮了。她一脚踩进泥里，鞋没入半寸。她没管。她往路旁走，那儿有座新坟，土还是黄的，草没长齐。马家的从人去拦，那妇人去拉。她胳膊底下像塞了铁。",
           "赶车的坐在车上，没动。这不是他的事。他是御车的，把人从这头送到那头。谁家新妇半道要去看一座坟，那是马家的事，是回头得跟两边尊长开口的人的事。",
           "跟他不相干。",
@@ -3227,7 +3431,24 @@
           "等雨脚一收，天透出点光，那青影已经趴在坟土上，半个人陷在烂泥里，一动不动。",
           "拉。拉不动。翻过来一看，一脸的泥。眼是睁着的。",
           "赶车的这才从车上下来。他在这条路上走了半辈子，见过太多不该看的。他蹲下去，伸手想替她把眼合上——手到半道，又收回来了。",
-          "不干他的事。",
+          "不干他的事。"
+        ],
+        "inlineImg": null,
+        "imgCaption": null,
+        "pullQuote": "等雨脚一收，天透出点光，那青影已经趴在坟土上，半个人陷在烂泥里，一动不动。",
+        "nextChapterTitle": "第三幕 · 彩蝶说",
+        "prevChapterTitle": "第一幕 · 青绸车"
+      },
+      {
+        "type": "chapter",
+        "pageNumber": 5,
+        "title": "梁祝·化蝶",
+        "chapterTitle": "第三幕 · 彩蝶说",
+        "chapterIndex": 3,
+        "totalChapters": 3,
+        "issueNumber": "No. 007",
+        "category": "卷三 · 人间与执念",
+        "paragraphs": [
           "天黑前，得有人回马家去回话。得有人往上虞送信。这话怎么开口，是件难事。",
           "“新妇没了”——这话太秃，压不住场面，两家尊长的脸往哪儿搁。",
           "“路上遇了大雨，坟塌，人陷进去了”——这话像是马家办事不周，像是把人往死路上送。",
@@ -3240,30 +3461,36 @@
           "那双眼，到底没人替她合上。",
           "蝴蝶好看。谁都愿意信。"
         ],
-        "inlineImg": "assets/illustrations/illust_11.png",
-        "imgCaption": "宫墙暮色冷蝶双飞，宿命执念终化彩翼",
-        "pullQuote": null
+        "inlineImg": null,
+        "imgCaption": null,
+        "pullQuote": "天黑前，得有人回马家去回话。得有人往上虞送信。这话怎么开口，是件难事。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第二幕 · 黄土坟"
       },
       {
         "type": "colophon",
-        "pageNumber": 4,
+        "pageNumber": 6,
         "title": "梁祝·化蝶",
         "issueNumber": "No. 007",
         "category": "卷三 · 人间与执念",
-        "wordCount": 1405,
+        "wordCount": 1396,
         "nextIssueNumber": "No. 008",
         "author": "GX"
       }
     ],
-    "totalPages": 4,
+    "totalPages": 6,
     "chapters": [
       {
-        "title": "开篇",
-        "count": 33
+        "title": "第一幕 · 青绸车",
+        "count": 12
       },
       {
-        "title": "2026.9.25",
-        "count": 0
+        "title": "第二幕 · 黄土坟",
+        "count": 10
+      },
+      {
+        "title": "第三幕 · 彩蝶说",
+        "count": 11
       }
     ],
     "fullParagraphs": [
@@ -3312,11 +3539,12 @@
     "classicQuote": "逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食。尧乃使羿上射十日，中其九日。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 6738,
+    "wordCount": 6720,
     "readMinutes": 19,
     "coverImg": "assets/illustrations/illust_13.png",
     "inlineImg": "assets/illustrations/illust_14.png",
     "imgCaption": "彤弓如满月，金乌尽坠落",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -3328,7 +3556,7 @@
         "originalMyth": "《淮南子·本经训》·《楚辞·天问》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 6738,
+        "wordCount": 6720,
         "readMinutes": 19,
         "coverImg": "assets/illustrations/illust_13.png"
       },
@@ -3347,6 +3575,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3364,7 +3593,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_14.png",
         "imgCaption": "彤弓如满月，金乌尽坠落",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -3372,6 +3603,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3396,7 +3628,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "你快叫他们下来。\"羲和说。她已经看见底下了——河在冒烟，林子在着火，\"再晒下去，要出人命了。"
+        "pullQuote": "你快叫他们下来。\"羲和说。她已经看见底下了——河在冒烟，林子在着火，\"再晒下去，要出人命了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -3404,6 +3638,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3424,7 +3659,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_15.png",
         "imgCaption": "残阳暮色庭院孤立，射日英雄余生寂寞",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -3432,6 +3669,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3464,7 +3702,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "羿上了东山之巅，离天最近的地方。"
+        "pullQuote": "羿上了东山之巅，离天最近的地方。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -3472,6 +3712,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3492,7 +3733,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她最终也没替羿说一个字。儿子的尸首就在脚边。有些话，做娘的说不出口。"
+        "pullQuote": "她最终也没替羿说一个字。儿子的尸首就在脚边。有些话，做娘的说不出口。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -3500,6 +3743,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3518,7 +3762,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "底下的人起先是拜他的。射日的英雄，活菩萨，立生祠，供长生牌。可没过多久，那股热乎劲就凉了，凉得比天暗下来还快。"
+        "pullQuote": "底下的人起先是拜他的。射日的英雄，活菩萨，立生祠，供长生牌。可没过多久，那股热乎劲就凉了，凉得比天暗下来还快。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -3526,6 +3772,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3549,7 +3796,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "嫦娥是跟着羿一起被贬下来的。"
+        "pullQuote": "嫦娥是跟着羿一起被贬下来的。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -3557,6 +3806,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3582,7 +3832,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "快赶上。逢蒙不要\"快赶上\"。他要\"第一\"。"
+        "pullQuote": "快赶上。逢蒙不要\"快赶上\"。他要\"第一\"。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -3590,6 +3842,7 @@
         "title": "后羿射日",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 9,
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -3610,7 +3863,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "后羿死后，天底下太平了很多年。"
+        "pullQuote": "后羿死后，天底下太平了很多年。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "colophon",
@@ -3618,7 +3873,7 @@
         "title": "后羿射日",
         "issueNumber": "No. 008",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 6738,
+        "wordCount": 6720,
         "nextIssueNumber": "No. 009",
         "author": "GX"
       }
@@ -3626,43 +3881,39 @@
     "totalPages": 12,
     "chapters": [
       {
-        "title": "开篇",
-        "count": 1
+        "title": "第 一 幕",
+        "count": 11
       },
       {
-        "title": "一、",
-        "count": 10
-      },
-      {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 18
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 14
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 26
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 14
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 12
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 17
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 19
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 14
       }
     ],
@@ -3824,11 +4075,12 @@
     "classicQuote": "禹会诸侯于涂山，执玉帛者万国。防风氏后至，禹杀而戮之。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3940,
+    "wordCount": 3932,
     "readMinutes": 11,
     "coverImg": "assets/illustrations/illust_16.png",
     "inlineImg": "assets/illustrations/illust_16.png",
     "imgCaption": "涂山之会三丈高坛，黑鸦群聚诸侯执玉帛",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -3840,7 +4092,7 @@
         "originalMyth": "《史记·夏本纪》·《左传》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3940,
+        "wordCount": 3932,
         "readMinutes": 11,
         "coverImg": "assets/illustrations/illust_16.png"
       },
@@ -3859,6 +4111,7 @@
         "title": "大禹涂山",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 4,
         "issueNumber": "No. 009",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -3900,7 +4153,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_16.png",
         "imgCaption": "涂山之会三丈高坛，黑鸦群聚诸侯执玉帛",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -3908,6 +4163,7 @@
         "title": "大禹涂山",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 4,
         "issueNumber": "No. 009",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -3930,7 +4186,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "到了。”禹说，“坛上诸侯，天不亮就位。你，日中才到。"
+        "pullQuote": "到了。”禹说，“坛上诸侯，天不亮就位。你，日中才到。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -3938,6 +4196,7 @@
         "title": "大禹涂山",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 4,
         "issueNumber": "No. 009",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -3971,7 +4230,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "变得很轻。轻到台下没几个人看出来。"
+        "pullQuote": "变得很轻。轻到台下没几个人看出来。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -3979,6 +4240,7 @@
         "title": "大禹涂山",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 4,
         "issueNumber": "No. 009",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4001,7 +4263,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "驯服水的那个人，做了天下的王。"
+        "pullQuote": "驯服水的那个人，做了天下的王。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "colophon",
@@ -4009,7 +4273,7 @@
         "title": "大禹涂山",
         "issueNumber": "No. 009",
         "category": "卷一 · 创世与洪荒",
-        "wordCount": 3940,
+        "wordCount": 3932,
         "nextIssueNumber": "No. 010",
         "author": "GX"
       }
@@ -4017,19 +4281,19 @@
     "totalPages": 7,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 35
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 16
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 27
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 16
       }
     ],
@@ -4140,11 +4404,12 @@
     "classicQuote": "夸父与日逐走，入日；渴，欲得饮，饮于河、渭；未至，道渴而死。弃其杖，化为邓林。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5123,
-    "readMinutes": 15,
+    "wordCount": 4850,
+    "readMinutes": 14,
     "coverImg": "assets/illustrations/illust_31.png",
     "inlineImg": "assets/illustrations/illust_32.png",
     "imgCaption": "黄土大道车辙深印，逐日狂奔向无尽金阳",
+    "authorNote": "夸父的故事，我们从小听到的都是前半段——追日、渴死、手杖化为桃林。没人问过：他死之后呢？那根手杖发芽的时候，他本人还在不在旁边看着？\n\n这篇小说想写的，是一个死去的夸父走回村子的路。他看见了自己喝干的渭河、摔碎膝盖的山口、跑了八年的平原，也看见了第五十九个年轻人跪在同一个地方，说“愿意”。他想拦住他，但死人拦不住活人。桃花开在他的骨头上，很美，但那不是补偿。\n\n神话从来不是关于神的。是关于一代一代把命铺进沙子里的人。他们有没有名字？他们有没有后悔？他们出发的那个清晨，孩子还在睡——这件事，史书不记，桃花知道。",
     "pages": [
       {
         "type": "cover",
@@ -4156,8 +4421,8 @@
         "originalMyth": "《山海经·海外北经》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5123,
-        "readMinutes": 15,
+        "wordCount": 4850,
+        "readMinutes": 14,
         "coverImg": "assets/illustrations/illust_31.png"
       },
       {
@@ -4167,31 +4432,16 @@
         "quote": "夸父与日逐走，入日；渴，欲得饮，饮于河、渭；未至，道渴而死。弃其杖，化为邓林。",
         "originalMyth": "《山海经·海外北经》",
         "issueNumber": "No. 010",
-        "coverImg": "assets/illustrations/illust_31.png"
+        "coverImg": "assets/illustrations/illust_31.png",
+        "authorNote": "夸父的故事，我们从小听到的都是前半段——追日、渴死、手杖化为桃林。没人问过：他死之后呢？那根手杖发芽的时候，他本人还在不在旁边看着？\n\n这篇小说想写的，是一个死去的夸父走回村子的路。他看见了自己喝干的渭河、摔碎膝盖的山口、跑了八年的平原，也看见了第五十九个年轻人跪在同一个地方，说“愿意”。他想拦住他，但死人拦不住活人。桃花开在他的骨头上，很美，但那不是补偿。\n\n神话从来不是关于神的。是关于一代一代把命铺进沙子里的人。他们有没有名字？他们有没有后悔？他们出发的那个清晨，孩子还在睡——这件事，史书不记，桃花知道。"
       },
       {
         "type": "chapter",
         "pageNumber": 3,
         "title": "夸父逐日",
-        "chapterTitle": "序 幕",
-        "chapterIndex": 1,
-        "issueNumber": "No. 010",
-        "category": "卷二 · 反叛与神罚",
-        "paragraphs": [
-          "夸父的故事，我们从小听到的都是前半段——追日、渴死、手杖化为桃林。没人问过：他死之后呢？那根手杖发芽的时候，他本人还在不在旁边看着？",
-          "这篇小说想写的，是一个死去的夸父走回村子的路。他看见了自己喝干的渭河、摔碎膝盖的山口、跑了八年的平原，也看见了第五十九个年轻人跪在同一个地方，说“愿意”。他想拦住他，但死人拦不住活人。桃花开在他的骨头上，很美，但那不是补偿。",
-          "神话从来不是关于神的。是关于一代一代把命铺进沙子里的人。他们有没有名字？他们有没有后悔？他们出发的那个清晨，孩子还在睡——这件事，史书不记，桃花知道。"
-        ],
-        "inlineImg": "assets/illustrations/illust_32.png",
-        "imgCaption": "黄土大道车辙深印，逐日狂奔向无尽金阳",
-        "pullQuote": null
-      },
-      {
-        "type": "chapter",
-        "pageNumber": 4,
-        "title": "夸父逐日",
         "chapterTitle": "第 一 幕",
-        "chapterIndex": 2,
+        "chapterIndex": 1,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4202,16 +4452,19 @@
           "我站起来。死人怎么站起来——我不知道。我只是想站起来，就站起来了。身体还在沙子里埋着，像一件脱下来的旧衣服。我看了看它。它是一个跑了二十年的巨人的身体。脚底板磨穿了又长、长好了又磨穿，脚后跟那块茧有手指厚。腿上的肌肉早就跑没了，剩两根长骨。肋骨从皮下顶出来。胸口那个位置凹下去了——心跑干了。我看了它一会儿。它不认识我。我也不太认识它。它只是一具尸体，在沙漠上躺成一个\"大\"字。手杖在它右手边。桃花在它上面开着。太阳照着它。它不知道我在看它。它要是知道，大概会笑。夸父活着的时候不笑。死了以后，不知道。",
           "我转身往东走。不是跑——死人跑不动。是走。走得很慢。沙子不响了。脚印留在身后，但没有重量。死人没有重量。这是我这辈子第一次不觉得重。活着的时候每一步都像在拖一座山。现在我轻得像一阵风——不是吹过，是被沙漠忘掉的那种轻。"
         ],
-        "inlineImg": null,
-        "imgCaption": null,
-        "pullQuote": "从杖头从我的指缝间穿出来，抖开两片叶子"
+        "inlineImg": "assets/illustrations/illust_32.png",
+        "imgCaption": "黄土大道车辙深印，逐日狂奔向无尽金阳",
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
-        "pageNumber": 5,
+        "pageNumber": 4,
         "title": "夸父逐日",
         "chapterTitle": "第 二 幕",
-        "chapterIndex": 3,
+        "chapterIndex": 2,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4223,14 +4476,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "现在我知道了。渭河没回来。女人大概换了条河洗衣服。鱼死在这里，变成了一个问号。问号在问谁——不是我。死人不用答。"
+        "pullQuote": "现在我知道了。渭河没回来。女人大概换了条河洗衣服。鱼死在这里，变成了一个问号。问号在问谁——不是我。死人不用答。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 6,
+        "pageNumber": 5,
         "title": "夸父逐日",
         "chapterTitle": "第 三 幕",
-        "chapterIndex": 4,
+        "chapterIndex": 3,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4242,14 +4498,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我想不起来了。那个人是谁，我也想不起来了。"
+        "pullQuote": "我想不起来了。那个人是谁，我也想不起来了。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 7,
+        "pageNumber": 6,
         "title": "夸父逐日",
         "chapterTitle": "第 四 幕",
-        "chapterIndex": 5,
+        "chapterIndex": 4,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4261,14 +4520,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "这片平原是我第一次觉得太阳近了的地方"
+        "pullQuote": "这片平原是我第一次觉得太阳近了的地方",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 8,
+        "pageNumber": 7,
         "title": "夸父逐日",
         "chapterTitle": "第 五 幕",
-        "chapterIndex": 6,
+        "chapterIndex": 5,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4281,14 +4543,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "现在那块石头上站着另一个长老"
+        "pullQuote": "现在那块石头上站着另一个长老",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 9,
+        "pageNumber": 8,
         "title": "夸父逐日",
         "chapterTitle": "第 六 幕",
-        "chapterIndex": 7,
+        "chapterIndex": 6,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4308,14 +4573,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "年轻人没抬头。他的手指停了一下。抠出来的土从指缝里漏下去。然后他说：\"愿意。\"声音很闷，像是从胸腔下面挤上来的。"
+        "pullQuote": "年轻人没抬头。他的手指停了一下。抠出来的土从指缝里漏下去。然后他说：\"愿意。\"声音很闷，像是从胸腔下面挤上来的。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 10,
+        "pageNumber": 9,
         "title": "夸父逐日",
         "chapterTitle": "第 七 幕",
-        "chapterIndex": 8,
+        "chapterIndex": 7,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4329,14 +4597,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他转过头。往西跑。速度比我快——比我出发那一年快。他的腿更长，背更直。"
+        "pullQuote": "他转过头。往西跑。速度比我快——比我出发那一年快。他的腿更长，背更直。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 11,
+        "pageNumber": 10,
         "title": "夸父逐日",
         "chapterTitle": "第 八 幕",
-        "chapterIndex": 9,
+        "chapterIndex": 8,
+        "totalChapters": 8,
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -4352,63 +4623,57 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "从村子到沙漠的路，我走了很久。"
+        "pullQuote": "从村子到沙漠的路，我走了很久。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "colophon",
-        "pageNumber": 12,
+        "pageNumber": 11,
         "title": "夸父逐日",
         "issueNumber": "No. 010",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 5123,
+        "wordCount": 4850,
         "nextIssueNumber": "No. 011",
         "author": "GX"
       }
     ],
-    "totalPages": 12,
+    "totalPages": 11,
     "chapters": [
       {
-        "title": "开篇",
-        "count": 4
-      },
-      {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 6
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 5
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 5
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 5
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 6
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 13
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 7
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 9
       }
     ],
     "fullParagraphs": [
-      "写作阐述",
-      "夸父的故事，我们从小听到的都是前半段——追日、渴死、手杖化为桃林。没人问过：他死之后呢？那根手杖发芽的时候，他本人还在不在旁边看着？",
-      "这篇小说想写的，是一个死去的夸父走回村子的路。他看见了自己喝干的渭河、摔碎膝盖的山口、跑了八年的平原，也看见了第五十九个年轻人跪在同一个地方，说“愿意”。他想拦住他，但死人拦不住活人。桃花开在他的骨头上，很美，但那不是补偿。",
-      "神话从来不是关于神的。是关于一代一代把命铺进沙子里的人。他们有没有名字？他们有没有后悔？他们出发的那个清晨，孩子还在睡——这件事，史书不记，桃花知道。",
       "我先感觉到的是手杖。",
       "不是握——我已经没有手了。是手杖在动。它插在沙子里，我的手指骨还搭在上面，风一吹，手骨在杖身上刮出咯吱咯吱的细响。像有人在磨一把没有刃的刀。我想挪开那几根指骨。我没法挪。死人的意志搬不动死人的骨头。我只好等风停。风停了很久。沙漠上没有风的时候什么都听不见。太阳还在天上。它还在我前面。我追了它一辈子，到死它也没回头看我一眼。现在它落在西边，不走了。大概是觉得反正我已经死了，不用再假装有终点。",
       "手杖下面有什么东西在顶。从沙子里往上顶。很慢，但是没停过。我低头看——我没有头可以低，我只是把注意力往下挪了一点。是根。手杖发芽了。从杖尾裂开的那道缝里钻出来一截白嫩的根须，比我的手指骨还白，正一寸一寸往沙子里钻。我死了以后，这根手杖终于找到了水。它喝的是我。我不知道我身体里还有水。我以为黄河和渭河已经把我榨干了。",
@@ -4477,11 +4742,12 @@
     "classicQuote": "女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3862,
+    "wordCount": 3850,
     "readMinutes": 11,
     "coverImg": "assets/illustrations/illust_17.png",
     "inlineImg": "assets/illustrations/illust_18.png",
     "imgCaption": "苍茫荒野甩绳成泥，母神初造世间凡躯",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -4493,7 +4759,7 @@
         "originalMyth": "《风俗通义》·《淮南子·览冥训》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3862,
+        "wordCount": 3850,
         "readMinutes": 11,
         "coverImg": "assets/illustrations/illust_17.png"
       },
@@ -4512,6 +4778,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4529,7 +4796,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_18.png",
         "imgCaption": "苍茫荒野甩绳成泥，母神初造世间凡躯",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -4537,6 +4806,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4556,7 +4826,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那是天还囫囵着、地还新鲜着的时候。她一个人，很闲。"
+        "pullQuote": "那是天还囫囵着、地还新鲜着的时候。她一个人，很闲。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -4564,6 +4836,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4594,7 +4867,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_19.png",
         "imgCaption": "熔岩天火苍生浩劫，神手俯伸救赎众生",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -4602,6 +4877,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4625,7 +4901,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_20.png",
         "imgCaption": "神庙香火供奉母神，天下万民初学叩拜",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -4633,6 +4911,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4654,7 +4933,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "神不死。这是她头一回觉出，不死是件多熬人的事。"
+        "pullQuote": "神不死。这是她头一回觉出，不死是件多熬人的事。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -4662,6 +4943,7 @@
         "title": "女娲造人与补天",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -4685,7 +4967,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "天底下身板歪、眉眼糊的泥点子，太多了。"
+        "pullQuote": "天底下身板歪、眉眼糊的泥点子，太多了。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -4693,7 +4977,7 @@
         "title": "女娲造人与补天",
         "issueNumber": "No. 011",
         "category": "卷一 · 创世与洪荒",
-        "wordCount": 3862,
+        "wordCount": 3850,
         "nextIssueNumber": "No. 012",
         "author": "GX"
       }
@@ -4701,27 +4985,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 11
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 24
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 17
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 15
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 17
       }
     ],
@@ -4835,11 +5119,12 @@
     "classicQuote": "纣得妲己，爱幸百计，妲己之言听计从。天下谓之倾国，而史家独归罪于红颜。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 4396,
+    "wordCount": 4378,
     "readMinutes": 13,
     "coverImg": "assets/illustrations/art_daji.jpg",
     "inlineImg": "assets/illustrations/art_daji.jpg",
     "imgCaption": "商宫青铜鼎前九尾暗影，深宫冷月锁尽千秋悲凉",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -4851,7 +5136,7 @@
         "originalMyth": "《史记·殷本纪》·《列女传》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 4396,
+        "wordCount": 4378,
         "readMinutes": 13,
         "coverImg": "assets/illustrations/art_daji.jpg"
       },
@@ -4870,6 +5155,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -4886,7 +5172,9 @@
         ],
         "inlineImg": "assets/illustrations/art_daji.jpg",
         "imgCaption": "商宫青铜鼎前九尾暗影，深宫冷月锁尽千秋悲凉",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -4894,6 +5182,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -4921,7 +5210,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "火灭了，周人进了城。修宗庙，定礼乐，封诸侯。还有一件，外人不留意：他们要修史。"
+        "pullQuote": "火灭了，周人进了城。修宗庙，定礼乐，封诸侯。还有一件，外人不留意：他们要修史。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -4929,6 +5220,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -4946,7 +5238,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我说这些，不是要说她可怜、说她是好人。"
+        "pullQuote": "我说这些，不是要说她可怜、说她是好人。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -4954,6 +5248,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -4971,7 +5266,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "蛇太冷，蟒太蠢。我选了狐。狐媚，会化人形，专勾男人的魂——再合适没有。"
+        "pullQuote": "蛇太冷，蟒太蠢。我选了狐。狐媚，会化人形，专勾男人的魂——再合适没有。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -4979,6 +5276,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -4998,7 +5296,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "夜里，我点起灯——我也开始怕黑了——刻另一卷。"
+        "pullQuote": "夜里，我点起灯——我也开始怕黑了——刻另一卷。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -5006,6 +5306,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5025,7 +5326,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "可\"说不全\"，写不进史。史，要一个清清楚楚、记得住的死法。"
+        "pullQuote": "可\"说不全\"，写不进史。史，要一个清清楚楚、记得住的死法。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -5033,6 +5336,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5048,7 +5352,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我本可以把脖子伸出去，说一个\"不\"。周公会杀我。然后呢？"
+        "pullQuote": "我本可以把脖子伸出去，说一个\"不\"。周公会杀我。然后呢？",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -5056,6 +5362,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5075,7 +5382,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我看着那些字，一个一个，铸进铜里。"
+        "pullQuote": "我看着那些字，一个一个，铸进铜里。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -5083,6 +5392,7 @@
         "title": "苏妲己",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 9,
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5103,7 +5413,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "后来的事，我看不到了。但我猜得到。"
+        "pullQuote": "后来的事，我看不到了。但我猜得到。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "colophon",
@@ -5111,7 +5423,7 @@
         "title": "苏妲己",
         "issueNumber": "No. 012",
         "category": "卷三 · 人间与执念",
-        "wordCount": 4396,
+        "wordCount": 4378,
         "nextIssueNumber": "No. 013",
         "author": "GX"
       }
@@ -5119,39 +5431,39 @@
     "totalPages": 12,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 10
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 21
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 11
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 11
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 13
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 13
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 9
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 13
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 14
       }
     ],
@@ -5283,11 +5595,12 @@
     "classicQuote": "杞梁死，其妻迎其柩于路，抚柩而哭，哀声动天，十里长城为之崩塌。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5336,
+    "wordCount": 5316,
     "readMinutes": 15,
     "coverImg": "assets/illustrations/art_mengjiang.jpg",
     "inlineImg": "assets/illustrations/art_mengjiang.jpg",
     "imgCaption": "暴雪肆虐塞北荒脊，素衣孤女哭断坚石长城",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -5299,7 +5612,7 @@
         "originalMyth": "《左传》杞梁妻 · 民间传说",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5336,
+        "wordCount": 5316,
         "readMinutes": 15,
         "coverImg": "assets/illustrations/art_mengjiang.jpg"
       },
@@ -5318,6 +5631,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5338,7 +5652,9 @@
         ],
         "inlineImg": "assets/illustrations/art_mengjiang.jpg",
         "imgCaption": "暴雪肆虐塞北荒脊，素衣孤女哭断坚石长城",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -5346,6 +5662,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5366,7 +5683,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "走到第七日，她在一个镇上歇脚。"
+        "pullQuote": "走到第七日，她在一个镇上歇脚。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -5374,6 +5693,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5403,7 +5723,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "崖底下是海，是真的海。浪头打上来，能溅到她半截裙子。"
+        "pullQuote": "崖底下是海，是真的海。浪头打上来，能溅到她半截裙子。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -5411,6 +5733,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5430,7 +5753,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她推开家里那扇半朽的木门时，婆婆正坐在灶前——那灶半年没生火了，灰冷得像石头。婆婆听见动静，抬头。"
+        "pullQuote": "她推开家里那扇半朽的木门时，婆婆正坐在灶前——那灶半年没生火了，灰冷得像石头。婆婆听见动静，抬头。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -5438,6 +5763,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5453,7 +5779,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她的眼泪在长城底下哭干了，剩下这点，她不肯再给了。"
+        "pullQuote": "她的眼泪在长城底下哭干了，剩下这点，她不肯再给了。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -5461,6 +5789,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5485,7 +5814,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "立碑那一年的秋天，第一个外乡人来了。"
+        "pullQuote": "立碑那一年的秋天，第一个外乡人来了。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -5493,6 +5824,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5510,7 +5842,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "第一个之后，便有了第二个、第三个。"
+        "pullQuote": "第一个之后，便有了第二个、第三个。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -5518,6 +5852,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5534,7 +5869,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "时辰一长，村里人对她就有点不耐烦了。"
+        "pullQuote": "时辰一长，村里人对她就有点不耐烦了。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -5542,6 +5879,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5581,7 +5919,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "第四十一年的春上，又来了一个外乡人。"
+        "pullQuote": "第四十一年的春上，又来了一个外乡人。",
+        "nextChapterTitle": "第 十 幕",
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "chapter",
@@ -5589,6 +5929,7 @@
         "title": "孟姜女哭长城",
         "chapterTitle": "第 十 幕",
         "chapterIndex": 10,
+        "totalChapters": 10,
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -5601,7 +5942,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "入秋的一天，她坐在门槛上晒太阳，晒着晒着，便睡过去了。"
+        "pullQuote": "入秋的一天，她坐在门槛上晒太阳，晒着晒着，便睡过去了。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 九 幕"
       },
       {
         "type": "colophon",
@@ -5609,7 +5952,7 @@
         "title": "孟姜女哭长城",
         "issueNumber": "No. 013",
         "category": "卷三 · 人间与执念",
-        "wordCount": 5336,
+        "wordCount": 5316,
         "nextIssueNumber": "No. 014",
         "author": "GX"
       }
@@ -5617,43 +5960,43 @@
     "totalPages": 13,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 14
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 14
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 23
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 13
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 9
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 18
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 11
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 10
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 33
       },
       {
-        "title": "十、",
+        "title": "第 十 幕",
         "count": 6
       }
     ],
@@ -5821,11 +6164,12 @@
     "classicQuote": "过奈何桥，饮孟婆汤，前世爱恨、冤亲债孽，入腹化水，尽皆忘却，始得轮回报应。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3914,
+    "wordCount": 3904,
     "readMinutes": 11,
     "coverImg": "assets/illustrations/art_mengpo.jpg",
     "inlineImg": "assets/illustrations/art_mengpo.jpg",
     "imgCaption": "忘川河畔孟婆大鼎，金汤入腹前尘俱散",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -5837,7 +6181,7 @@
         "originalMyth": "幽冥神话 · 忘川之畔",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3914,
+        "wordCount": 3904,
         "readMinutes": 11,
         "coverImg": "assets/illustrations/art_mengpo.jpg"
       },
@@ -5856,6 +6200,7 @@
         "title": "孟婆汤",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 5,
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -5899,7 +6244,9 @@
         ],
         "inlineImg": "assets/illustrations/art_mengpo.jpg",
         "imgCaption": "忘川河畔孟婆大鼎，金汤入腹前尘俱散",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -5907,6 +6254,7 @@
         "title": "孟婆汤",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 5,
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -5933,7 +6281,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "胡说。”男人的声音劈了一下，“我上辈子的事，我怎么不记得。"
+        "pullQuote": "胡说。”男人的声音劈了一下，“我上辈子的事，我怎么不记得。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -5941,6 +6291,7 @@
         "title": "孟婆汤",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 5,
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -5971,7 +6322,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "一整条队，黑压压的，从桥头一直排到看不见的远处。魂挨着魂，都低着头，都攥着各自的东西，等着往前挪。"
+        "pullQuote": "一整条队，黑压压的，从桥头一直排到看不见的远处。魂挨着魂，都低着头，都攥着各自的东西，等着往前挪。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -5979,6 +6332,7 @@
         "title": "孟婆汤",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 5,
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -6005,7 +6359,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那灰衣人，一步一步，挪到了桥头，挪到了那口锅前。"
+        "pullQuote": "那灰衣人，一步一步，挪到了桥头，挪到了那口锅前。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -6013,6 +6369,7 @@
         "title": "孟婆汤",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 5,
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -6038,7 +6395,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那只攥了一路、抵着胸口、指节发白的拳。他慢慢地，把它松开。"
+        "pullQuote": "那只攥了一路、抵着胸口、指节发白的拳。他慢慢地，把它松开。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "colophon",
@@ -6046,7 +6405,7 @@
         "title": "孟婆汤",
         "issueNumber": "No. 014",
         "category": "卷四 · 志怪与幽冥",
-        "wordCount": 3914,
+        "wordCount": 3904,
         "nextIssueNumber": "No. 015",
         "author": "GX"
       }
@@ -6054,23 +6413,23 @@
     "totalPages": 8,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 37
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 20
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 24
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 20
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 19
       }
     ],
@@ -6207,11 +6566,12 @@
     "classicQuote": "尾生与女子期于梁下，女子不来，水至不去，抱梁柱而死。信之至也，亦痴之至也。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5016,
+    "wordCount": 5004,
     "readMinutes": 14,
     "coverImg": "assets/illustrations/art_weisheng.jpg",
     "inlineImg": "assets/illustrations/art_weisheng.jpg",
     "imgCaption": "狂潮浊浪漫过桥底，死守死契双臂不松",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -6223,7 +6583,7 @@
         "originalMyth": "《庄子·盗跖》·《战国策·燕策一》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5016,
+        "wordCount": 5004,
         "readMinutes": 14,
         "coverImg": "assets/illustrations/art_weisheng.jpg"
       },
@@ -6242,6 +6602,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6264,7 +6625,9 @@
         ],
         "inlineImg": "assets/illustrations/art_weisheng.jpg",
         "imgCaption": "狂潮浊浪漫过桥底，死守死契双臂不松",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -6272,6 +6635,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6295,7 +6659,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "尾生的心，从半空里，慢慢落回去。他坐下。他想，快了。就快了。"
+        "pullQuote": "尾生的心，从半空里，慢慢落回去。他坐下。他想，快了。就快了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -6303,6 +6669,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6324,7 +6691,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他不再想\"她会不会来\"了。他想的是\"她怎么还没来\"。这两样，差着十万八千里，可他自己，分不出来。"
+        "pullQuote": "他不再想\"她会不会来\"了。他想的是\"她怎么还没来\"。这两样，差着十万八千里，可他自己，分不出来。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -6332,6 +6701,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6359,7 +6729,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "有一个念头，从水底下，跟着潮水，一起顶了上来。"
+        "pullQuote": "有一个念头，从水底下，跟着潮水，一起顶了上来。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -6367,6 +6739,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6392,7 +6765,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "到了这个时候，他编不出理由了。"
+        "pullQuote": "到了这个时候，他编不出理由了。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -6400,6 +6775,7 @@
         "title": "尾生抱柱",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -6422,7 +6798,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "老艄公一早撑船过来。桥下的水，落下去，露出那根立柱。柱子底下，抱着一个人。"
+        "pullQuote": "老艄公一早撑船过来。桥下的水，落下去，露出那根立柱。柱子底下，抱着一个人。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -6430,7 +6808,7 @@
         "title": "尾生抱柱",
         "issueNumber": "No. 015",
         "category": "卷三 · 人间与执念",
-        "wordCount": 5016,
+        "wordCount": 5004,
         "nextIssueNumber": "No. 016",
         "author": "GX"
       }
@@ -6438,27 +6816,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 16
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 17
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 15
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 21
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 19
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 16
       }
     ],
@@ -6579,11 +6957,12 @@
     "classicQuote": "虽我之死，有子存焉；子又生孙，孙又生子；子子孙孙无穷匮也，而山不加增，何苦而不平？",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5172,
+    "wordCount": 5154,
     "readMinutes": 15,
     "coverImg": "assets/illustrations/illust_29.png",
     "inlineImg": "assets/illustrations/illust_30.png",
     "imgCaption": "太行王屋万仞壁立，老朽与儿孙一箕一锄",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -6595,7 +6974,7 @@
         "originalMyth": "《列子·汤问》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5172,
+        "wordCount": 5154,
         "readMinutes": 15,
         "coverImg": "assets/illustrations/illust_29.png"
       },
@@ -6614,6 +6993,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6632,7 +7012,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_30.png",
         "imgCaption": "太行王屋万仞壁立，老朽与儿孙一箕一锄",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -6640,6 +7022,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6669,7 +7052,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "要说愚公为什么要挖山，村里的说法是：嫌绕路。"
+        "pullQuote": "要说愚公为什么要挖山，村里的说法是：嫌绕路。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -6677,6 +7062,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6696,7 +7082,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "这是石生长大以后想起来，最不敢细想的地方。那不是一段苦日子。那是一段暖日子。"
+        "pullQuote": "这是石生长大以后想起来，最不敢细想的地方。那不是一段苦日子。那是一段暖日子。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -6704,6 +7092,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6723,7 +7112,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "石生头一回动摇，是因为河曲的智叟。"
+        "pullQuote": "石生头一回动摇，是因为河曲的智叟。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -6731,6 +7122,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6756,7 +7148,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他没跟愚公家任何人商量。一个清早，背了个小包袱，来山脚下找石生。"
+        "pullQuote": "他没跟愚公家任何人商量。一个清早，背了个小包袱，来山脚下找石生。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -6764,6 +7158,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6785,7 +7180,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "病好了，他做了个决定。他要去找爷爷，把话说开。他要告诉爷爷：他想出去。哪怕绕过去。就一趟，看一眼山外头，他就回来。"
+        "pullQuote": "病好了，他做了个决定。他要去找爷爷，把话说开。他要告诉爷爷：他想出去。哪怕绕过去。就一趟，看一眼山外头，他就回来。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -6793,6 +7190,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6813,7 +7211,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "说完这句，他咽了气。咽气的时候，嘴角是带着点笑的。屋里跪了三代人，没有一个走。一个都没走。"
+        "pullQuote": "说完这句，他咽了气。咽气的时候，嘴角是带着点笑的。屋里跪了三代人，没有一个走。一个都没走。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -6821,6 +7221,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6838,7 +7239,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "表递到天庭信访司，一个值班的小吏看了一眼，归档。又递上来一份——操蛇之神急了，托了熟人直接塞进了天帝的已阅匣。"
+        "pullQuote": "表递到天庭信访司，一个值班的小吏看了一眼，归档。又递上来一份——操蛇之神急了，托了熟人直接塞进了天帝的已阅匣。",
+        "nextChapterTitle": "第 九 幕",
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "chapter",
@@ -6846,6 +7249,7 @@
         "title": "愚公移山",
         "chapterTitle": "第 九 幕",
         "chapterIndex": 9,
+        "totalChapters": 9,
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
         "paragraphs": [
@@ -6879,7 +7283,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他绕到熟悉的地界，却愣住了。"
+        "pullQuote": "他绕到熟悉的地界，却愣住了。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 八 幕"
       },
       {
         "type": "colophon",
@@ -6887,7 +7293,7 @@
         "title": "愚公移山",
         "issueNumber": "No. 016",
         "category": "卷二 · 反叛与神罚",
-        "wordCount": 5172,
+        "wordCount": 5154,
         "nextIssueNumber": "No. 017",
         "author": "GX"
       }
@@ -6895,39 +7301,39 @@
     "totalPages": 12,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 12
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 23
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 13
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 13
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 19
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 15
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 14
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 11
       },
       {
-        "title": "九、",
+        "title": "第 九 幕",
         "count": 27
       }
     ],
@@ -7091,11 +7497,12 @@
     "classicQuote": "昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与！不知周也。俄然觉，则蘧蘧然周也。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5202,
+    "wordCount": 5186,
     "readMinutes": 15,
     "coverImg": "assets/illustrations/illust_06.png",
     "inlineImg": "assets/illustrations/illust_06.png",
     "imgCaption": "宋城荒草丛中高眠，白蝶翩翩落于鼻尖",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -7107,7 +7514,7 @@
         "originalMyth": "《庄子·齐物论》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5202,
+        "wordCount": 5186,
         "readMinutes": 15,
         "coverImg": "assets/illustrations/illust_06.png"
       },
@@ -7126,6 +7533,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7137,7 +7545,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_06.png",
         "imgCaption": "宋城荒草丛中高眠，白蝶翩翩落于鼻尖",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -7145,6 +7555,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7157,7 +7568,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "但那天晚上他没睡着，翻来覆去到半夜，忽然坐起来，点了他那盏油灯，从那堆削剩的竹片里抽了一片，开始写"
+        "pullQuote": "但那天晚上他没睡着，翻来覆去到半夜，忽然坐起来，点了他那盏油灯，从那堆削剩的竹片里抽了一片，开始写",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -7165,6 +7578,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7182,7 +7596,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "你这东西，\"老张说，\"能讲。"
+        "pullQuote": "你这东西，\"老张说，\"能讲。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -7190,6 +7606,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7202,7 +7619,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "这些事情老庄都不知道。他还在宋城东门口写信。三文钱一封。"
+        "pullQuote": "这些事情老庄都不知道。他还在宋城东门口写信。三文钱一封。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -7210,6 +7629,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7221,7 +7641,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "老庄知道的时候，蝶衣已经不是他的蝴蝶了。"
+        "pullQuote": "老庄知道的时候，蝶衣已经不是他的蝴蝶了。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -7229,6 +7651,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7240,7 +7663,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "有一版说蝶衣是楚国公主，在梦里和庄周定了终身"
+        "pullQuote": "有一版说蝶衣是楚国公主，在梦里和庄周定了终身",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -7248,6 +7673,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7258,7 +7684,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那年冬天老庄把代写信摊收了。"
+        "pullQuote": "那年冬天老庄把代写信摊收了。",
+        "nextChapterTitle": "第 八 幕",
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "chapter",
@@ -7266,6 +7694,7 @@
         "title": "庄周梦蝶",
         "chapterTitle": "第 八 幕",
         "chapterIndex": 8,
+        "totalChapters": 8,
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7287,7 +7716,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "旁边一个半大孩子说了一句。声音不大。但刚好全安静了——\"你不是庄周。庄周是个穿长衫的。"
+        "pullQuote": "旁边一个半大孩子说了一句。声音不大。但刚好全安静了——\"你不是庄周。庄周是个穿长衫的。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 七 幕"
       },
       {
         "type": "colophon",
@@ -7295,7 +7726,7 @@
         "title": "庄周梦蝶",
         "issueNumber": "No. 017",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 5202,
+        "wordCount": 5186,
         "nextIssueNumber": "No. 018",
         "author": "GX"
       }
@@ -7303,35 +7734,35 @@
     "totalPages": 11,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 5
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 6
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 11
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 6
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 5
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 5
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 4
       },
       {
-        "title": "八、",
+        "title": "第 八 幕",
         "count": 15
       }
     ],
@@ -7405,11 +7836,12 @@
     "classicQuote": "南海之帝为儵，北海之帝为忽，中央之帝为浑沌。日凿一窍，七日而浑沌死。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 2765,
+    "wordCount": 2751,
     "readMinutes": 8,
     "coverImg": "assets/illustrations/art_hundun.jpg",
     "inlineImg": "assets/illustrations/art_hundun.jpg",
     "imgCaption": "混沦元初七窍开凿，金色神光破开虚无",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -7421,7 +7853,7 @@
         "originalMyth": "《庄子·应帝王》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 2765,
+        "wordCount": 2751,
         "readMinutes": 8,
         "coverImg": "assets/illustrations/art_hundun.jpg"
       },
@@ -7440,6 +7872,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7462,7 +7895,9 @@
         ],
         "inlineImg": "assets/illustrations/art_hundun.jpg",
         "imgCaption": "混沦元初七窍开凿，金色神光破开虚无",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -7470,6 +7905,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7484,7 +7920,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "又是那个点。这一回，在头一只眼旁边。又一阵疼，又割开一道口子。"
+        "pullQuote": "又是那个点。这一回，在头一只眼旁边。又一阵疼，又割开一道口子。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -7492,6 +7930,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7505,7 +7944,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "可最要命的，不是声音。是声音**会停**。"
+        "pullQuote": "可最要命的，不是声音。是声音**会停**。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -7513,6 +7954,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7527,7 +7969,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "它们一边拿那尖东西凿我，一边，欢喜。"
+        "pullQuote": "它们一边拿那尖东西凿我，一边，欢喜。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -7535,6 +7979,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7549,7 +7994,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我头一回，有了一样\"离了它我就完\"的东西。"
+        "pullQuote": "我头一回，有了一样\"离了它我就完\"的东西。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -7557,6 +8004,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7572,7 +8020,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "第二个鼻孔通了。到这天，我全懂了。"
+        "pullQuote": "第二个鼻孔通了。到这天，我全懂了。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -7580,6 +8030,7 @@
         "title": "混沌之死",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -7606,7 +8057,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那尖东西，最后一次，顶上来。"
+        "pullQuote": "那尖东西，最后一次，顶上来。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -7614,7 +8067,7 @@
         "title": "混沌之死",
         "issueNumber": "No. 018",
         "category": "卷一 · 创世与洪荒",
-        "wordCount": 2765,
+        "wordCount": 2751,
         "nextIssueNumber": "No. 019",
         "author": "GX"
       }
@@ -7622,31 +8075,31 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 16
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 8
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 7
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 8
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 8
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 9
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 20
       }
     ],
@@ -7739,11 +8192,12 @@
     "classicQuote": "张僧繇于金陵安乐寺画四白龙，不点眼睛。点其一，雷电破壁，一龙乘云上天。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3303,
+    "wordCount": 3291,
     "readMinutes": 9,
     "coverImg": "assets/illustrations/art_dianjing.jpg",
     "inlineImg": "assets/illustrations/art_dianjing.jpg",
     "imgCaption": "神僧落笔点亮龙睛，白龙破壁乘雷腾天",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -7755,7 +8209,7 @@
         "originalMyth": "《历代名画记》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3303,
+        "wordCount": 3291,
         "readMinutes": 9,
         "coverImg": "assets/illustrations/art_dianjing.jpg"
       },
@@ -7774,6 +8228,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7792,7 +8247,9 @@
         ],
         "inlineImg": "assets/illustrations/art_dianjing.jpg",
         "imgCaption": "神僧落笔点亮龙睛，白龙破壁乘雷腾天",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -7800,6 +8257,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7821,7 +8279,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "眼眶周围的肌肉抽了一下。它在试图闭眼。"
+        "pullQuote": "眼眶周围的肌肉抽了一下。它在试图闭眼。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -7829,6 +8289,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7856,7 +8317,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "它看得见他。大殿角落的禅房里，一豆灯。方丈坐在榻上，面前摊着功德簿。他不念经。他在算。"
+        "pullQuote": "它看得见他。大殿角落的禅房里，一豆灯。方丈坐在榻上，面前摊着功德簿。他不念经。他在算。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -7864,6 +8327,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7880,7 +8344,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他没看它。他在画第四条龙的眼睛。"
+        "pullQuote": "他没看它。他在画第四条龙的眼睛。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -7888,6 +8354,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7914,7 +8381,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "墙裂开的时候它不知道自己是怎么动的。鳞片离开墙壁那一刻——不是撕开，是松开。像一把握了三千年终于松开的手指。"
+        "pullQuote": "墙裂开的时候它不知道自己是怎么动的。鳞片离开墙壁那一刻——不是撕开，是松开。像一把握了三千年终于松开的手指。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -7922,6 +8391,7 @@
         "title": "画龙点睛",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -7939,7 +8409,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "不是想回——是想知道自己离了多远。"
+        "pullQuote": "不是想回——是想知道自己离了多远。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -7947,7 +8419,7 @@
         "title": "画龙点睛",
         "issueNumber": "No. 019",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 3303,
+        "wordCount": 3291,
         "nextIssueNumber": "No. 020",
         "author": "GX"
       }
@@ -7955,27 +8427,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 12
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 15
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 21
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 10
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 20
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 11
       }
     ],
@@ -8081,11 +8553,12 @@
     "classicQuote": "信安郡石室山，晋时王质伐木至，见童子数人棋而歌，质因听之。童子与一物如枣核，食之不饥。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 2039,
+    "wordCount": 2029,
     "readMinutes": 6,
     "coverImg": "assets/illustrations/art_lanke.jpg",
     "inlineImg": "assets/illustrations/art_lanke.jpg",
     "imgCaption": "石室岩洞仙童落子，木柯已朽尘世百年",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -8097,7 +8570,7 @@
         "originalMyth": "《述异记》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 2039,
+        "wordCount": 2029,
         "readMinutes": 6,
         "coverImg": "assets/illustrations/art_lanke.jpg"
       },
@@ -8116,6 +8589,7 @@
         "title": "烂柯人",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 5,
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8133,7 +8607,9 @@
         ],
         "inlineImg": "assets/illustrations/art_lanke.jpg",
         "imgCaption": "石室岩洞仙童落子，木柯已朽尘世百年",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -8141,6 +8617,7 @@
         "title": "烂柯人",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 5,
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8156,7 +8633,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "可它的味道还在。它没走。它就在三五步外，好好的，活着，热着。"
+        "pullQuote": "可它的味道还在。它没走。它就在三五步外，好好的，活着，热着。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -8164,6 +8643,7 @@
         "title": "烂柯人",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 5,
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8179,7 +8659,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我记不清凉暖交替了多少回。很多回。"
+        "pullQuote": "我记不清凉暖交替了多少回。很多回。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -8187,6 +8669,7 @@
         "title": "烂柯人",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 5,
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8203,7 +8686,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我不再等了。不是我不肯等。是那个会\"等\"的我，跟着那些啵、啵断掉的丝，一根一根，也散没了。"
+        "pullQuote": "我不再等了。不是我不肯等。是那个会\"等\"的我，跟着那些啵、啵断掉的丝，一根一根，也散没了。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -8211,6 +8696,7 @@
         "title": "烂柯人",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 5,
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8233,7 +8719,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "隔了这么久。久到我忘了它。它伸过来，要握我。"
+        "pullQuote": "隔了这么久。久到我忘了它。它伸过来，要握我。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "colophon",
@@ -8241,7 +8729,7 @@
         "title": "烂柯人",
         "issueNumber": "No. 020",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 2039,
+        "wordCount": 2029,
         "nextIssueNumber": "No. 021",
         "author": "GX"
       }
@@ -8249,23 +8737,23 @@
     "totalPages": 8,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 11
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 9
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 9
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 10
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 16
       }
     ],
@@ -8337,11 +8825,12 @@
     "classicQuote": "世人愚惑，明是妖魔，而以为美。迷而不悟，乃至碎裂胸膛，何其哀哉！",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3653,
+    "wordCount": 3639,
     "readMinutes": 10,
     "coverImg": "assets/illustrations/art_huapi.jpg",
     "inlineImg": "assets/illustrations/art_huapi.jpg",
     "imgCaption": "书斋残烛青面恶鬼，素手微执巧描人皮",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -8353,7 +8842,7 @@
         "originalMyth": "《聊斋志异·画皮》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3653,
+        "wordCount": 3639,
         "readMinutes": 10,
         "coverImg": "assets/illustrations/art_huapi.jpg"
       },
@@ -8372,6 +8861,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8388,7 +8878,9 @@
         ],
         "inlineImg": "assets/illustrations/art_huapi.jpg",
         "imgCaption": "书斋残烛青面恶鬼，素手微执巧描人皮",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -8396,6 +8888,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8415,7 +8908,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那个镇子，叫太原。天刚亮，道上没什么人。我走得慢——赶了一夜路，这张皮底下的身子，累。"
+        "pullQuote": "那个镇子，叫太原。天刚亮，道上没什么人。我走得慢——赶了一夜路，这张皮底下的身子，累。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -8423,6 +8918,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8444,7 +8940,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "书斋的日子，是我这辈子最像“活着”的一段。"
+        "pullQuote": "书斋的日子，是我这辈子最像“活着”的一段。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -8452,6 +8950,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8474,7 +8973,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那天夜里，他说他有个文会，要晚归，叫我不必等。"
+        "pullQuote": "那天夜里，他说他有个文会，要晚归，叫我不必等。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -8482,6 +8983,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8501,7 +9003,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "后来的事，说书人讲得比我清楚。他们说，那妖精凶相毕露，扑上去，剖开王生的胸膛，掬出他的心，去了。"
+        "pullQuote": "后来的事，说书人讲得比我清楚。他们说，那妖精凶相毕露，扑上去，剖开王生的胸膛，掬出他的心，去了。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -8509,6 +9013,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8521,7 +9026,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那道士，比我快。我逃到城北一户人家，扮作个帮佣的婆子，缩着，想等风头过去。可他寻着那股气，找上门了。"
+        "pullQuote": "那道士，比我快。我逃到城北一户人家，扮作个帮佣的婆子，缩着，想等风头过去。可他寻着那股气，找上门了。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -8529,6 +9036,7 @@
         "title": "聊斋·画皮",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -8548,7 +9056,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "道士用剑尖，挑起我脸上那张裂了的画皮，一揭——"
+        "pullQuote": "道士用剑尖，挑起我脸上那张裂了的画皮，一揭——",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -8556,7 +9066,7 @@
         "title": "聊斋·画皮",
         "issueNumber": "No. 021",
         "category": "卷四 · 志怪与幽冥",
-        "wordCount": 3653,
+        "wordCount": 3639,
         "nextIssueNumber": "No. 022",
         "author": "GX"
       }
@@ -8564,31 +9074,31 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 10
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 15
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 16
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 13
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 6
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 13
       }
     ],
@@ -8691,11 +9201,12 @@
     "classicQuote": "侯官谢端，少孤，无妇。得大螺，养于瓮中。每日归，见有饭饮汤火，乃白水素女所为也。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 4030,
-    "readMinutes": 12,
+    "wordCount": 4018,
+    "readMinutes": 11,
     "coverImg": "assets/illustrations/art_baishui.jpg",
     "inlineImg": "assets/illustrations/art_baishui.jpg",
     "imgCaption": "水瓮素螺微光烁烁，灶台炊烟暖意人间",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -8707,8 +9218,8 @@
         "originalMyth": "《搜神后记》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 4030,
-        "readMinutes": 12,
+        "wordCount": 4018,
+        "readMinutes": 11,
         "coverImg": "assets/illustrations/art_baishui.jpg"
       },
       {
@@ -8726,6 +9237,7 @@
         "title": "白水素女（田螺姑娘）",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8743,7 +9255,9 @@
         ],
         "inlineImg": "assets/illustrations/art_baishui.jpg",
         "imgCaption": "水瓮素螺微光烁烁，灶台炊烟暖意人间",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -8751,6 +9265,7 @@
         "title": "白水素女（田螺姑娘）",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8770,7 +9285,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "天帝是真慈悲。这一点我替他说句公道话。他看着那个穷孩子，是真动了怜。"
+        "pullQuote": "天帝是真慈悲。这一点我替他说句公道话。他看着那个穷孩子，是真动了怜。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -8778,6 +9295,7 @@
         "title": "白水素女（田螺姑娘）",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8795,8 +9313,24 @@
           "我开始用心给他做饭了。不再是当差。我记下他爱吃软些的饭，记下他咳嗽那几日要清淡，记下他园里那畦韭菜该割了。我把这些，一样一样，悄悄做进他的碗里。",
           "他吃着，只当是天恩。他对着空屋子，吃得越发惜了。",
           "他不知道，喂他的不是天。是这屋里，另一个跟他一样、在没人看的地方死守着规矩的——人。",
-          "我那时竟有些舍不得这桩苦役了。",
-          "四",
+          "我那时竟有些舍不得这桩苦役了。"
+        ],
+        "inlineImg": null,
+        "imgCaption": null,
+        "pullQuote": "我就这样，在他屋里住了下来。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
+      },
+      {
+        "type": "chapter",
+        "pageNumber": 6,
+        "title": "白水素女（田螺姑娘）",
+        "chapterTitle": "第 四 幕",
+        "chapterIndex": 4,
+        "totalChapters": 7,
+        "issueNumber": "No. 022",
+        "category": "卷五 · 幻化与器物",
+        "paragraphs": [
           "坏就坏在，他是个有礼的人。",
           "正因为他守那杆秤，他到底咽不下这口\"白受人恩、却不知恩从何来\"的气。",
           "起先邻里见他孤单，张罗着要替他说门亲。他推了，说居处困匮，何可得尔——我穷成这样，娶什么妻，害人家姑娘跟着受罪。他推得有礼，也推得心酸。",
@@ -8806,8 +9340,24 @@
           "他便装作下田，走到半路又折回来，躲在篱笆后头。",
           "那一日我照旧从瓮里出来，到灶下生火、淘米。我做得入神，没防着。",
           "我没防着——他这样一个守礼的人，竟会躲起来，偷看自己屋里的事。可也正是他这样一个守礼的人，才非看不可：他要把这桩\"不明不白受人恩\"的失礼，弄个明白，弄个有始有终。",
-          "他的礼数，养着我，也,毁了我。",
-          "五",
+          "他的礼数，养着我，也,毁了我。"
+        ],
+        "inlineImg": null,
+        "imgCaption": null,
+        "pullQuote": "正因为他守那杆秤，他到底咽不下这口\"白受人恩、却不知恩从何来\"的气。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
+      },
+      {
+        "type": "chapter",
+        "pageNumber": 7,
+        "title": "白水素女（田螺姑娘）",
+        "chapterTitle": "第 五 幕",
+        "chapterIndex": 5,
+        "totalChapters": 7,
+        "issueNumber": "No. 022",
+        "category": "卷五 · 幻化与器物",
+        "paragraphs": [
           "他从篱笆后头转出来，几步迈进门。",
           "我听见脚步，回过头，他站在门口。",
           "四目相对。",
@@ -8829,14 +9379,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我就这样，在他屋里住了下来。"
+        "pullQuote": "他从篱笆后头转出来，几步迈进门。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 6,
+        "pageNumber": 8,
         "title": "白水素女（田螺姑娘）",
         "chapterTitle": "第 六 幕",
-        "chapterIndex": 4,
+        "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8858,14 +9411,17 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我说：我乃天汉中白水素女也。"
+        "pullQuote": "我说：我乃天汉中白水素女也。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
-        "pageNumber": 7,
+        "pageNumber": 9,
         "title": "白水素女（田螺姑娘）",
         "chapterTitle": "第 七 幕",
-        "chapterIndex": 5,
+        "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -8884,39 +9440,49 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我从他屋里升起来，穿过那漏雨的屋顶，往天上去。"
+        "pullQuote": "我从他屋里升起来，穿过那漏雨的屋顶，往天上去。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
-        "pageNumber": 8,
+        "pageNumber": 10,
         "title": "白水素女（田螺姑娘）",
         "issueNumber": "No. 022",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 4030,
+        "wordCount": 4018,
         "nextIssueNumber": "No. 023",
         "author": "GX"
       }
     ],
-    "totalPages": 8,
+    "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 11
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
-        "count": 45
-      },
-      {
-        "title": "六、",
+        "title": "第 三 幕",
         "count": 15
       },
       {
-        "title": "七、",
+        "title": "第 四 幕",
+        "count": 10
+      },
+      {
+        "title": "第 五 幕",
+        "count": 18
+      },
+      {
+        "title": "第 六 幕",
+        "count": 15
+      },
+      {
+        "title": "第 七 幕",
         "count": 12
       }
     ],
@@ -8960,7 +9526,6 @@
       "他吃着，只当是天恩。他对着空屋子，吃得越发惜了。",
       "他不知道，喂他的不是天。是这屋里，另一个跟他一样、在没人看的地方死守着规矩的——人。",
       "我那时竟有些舍不得这桩苦役了。",
-      "四",
       "坏就坏在，他是个有礼的人。",
       "正因为他守那杆秤，他到底咽不下这口\"白受人恩、却不知恩从何来\"的气。",
       "起先邻里见他孤单，张罗着要替他说门亲。他推了，说居处困匮，何可得尔——我穷成这样，娶什么妻，害人家姑娘跟着受罪。他推得有礼，也推得心酸。",
@@ -8971,7 +9536,6 @@
       "那一日我照旧从瓮里出来，到灶下生火、淘米。我做得入神，没防着。",
       "我没防着——他这样一个守礼的人，竟会躲起来，偷看自己屋里的事。可也正是他这样一个守礼的人，才非看不可：他要把这桩\"不明不白受人恩\"的失礼，弄个明白，弄个有始有终。",
       "他的礼数，养着我，也,毁了我。",
-      "五",
       "他从篱笆后头转出来，几步迈进门。",
       "我听见脚步，回过头，他站在门口。",
       "四目相对。",
@@ -9029,11 +9593,12 @@
     "classicQuote": "神农尝百草之滋味，水泉之甘苦，令民知所避就。当此之时，一日而遇七十毒。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3213,
+    "wordCount": 3203,
     "readMinutes": 9,
     "coverImg": "assets/illustrations/art_shennong.jpg",
     "inlineImg": "assets/illustrations/art_shennong.jpg",
     "imgCaption": "绝壁悬崖细辨毒草，以身试毒为济万民",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -9045,7 +9610,7 @@
         "originalMyth": "《淮南子·修务训》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3213,
+        "wordCount": 3203,
         "readMinutes": 9,
         "coverImg": "assets/illustrations/art_shennong.jpg"
       },
@@ -9064,6 +9629,7 @@
         "title": "神农尝百草",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 5,
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -9094,7 +9660,9 @@
         ],
         "inlineImg": "assets/illustrations/art_shennong.jpg",
         "imgCaption": "绝壁悬崖细辨毒草，以身试毒为济万民",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -9102,6 +9670,7 @@
         "title": "神农尝百草",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 5,
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -9124,7 +9693,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "女娃十三岁那年，不往他跟前送花了。"
+        "pullQuote": "女娃十三岁那年，不往他跟前送花了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -9132,6 +9703,7 @@
         "title": "神农尝百草",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 5,
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -9154,7 +9726,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "海边的孩子跑回来报信时，天快黑了。说女娃下海玩水，让浪卷走了。找了半日，没找着。"
+        "pullQuote": "海边的孩子跑回来报信时，天快黑了。说女娃下海玩水，让浪卷走了。找了半日，没找着。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -9162,6 +9736,7 @@
         "title": "神农尝百草",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 5,
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -9177,7 +9752,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "日子这么过下去。女娃的娘，没熬过那年冬天。院里就剩神农一个，和满山的草。"
+        "pullQuote": "日子这么过下去。女娃的娘，没熬过那年冬天。院里就剩神农一个，和满山的草。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -9185,6 +9762,7 @@
         "title": "神农尝百草",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 5,
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
         "paragraphs": [
@@ -9224,7 +9802,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他看着它在胃里化开。化开的东西，不是青的，不是灰的。是一种他没见过的颜色，暗红，像凝住的血。"
+        "pullQuote": "他看着它在胃里化开。化开的东西，不是青的，不是灰的。是一种他没见过的颜色，暗红，像凝住的血。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "colophon",
@@ -9232,7 +9812,7 @@
         "title": "神农尝百草",
         "issueNumber": "No. 023",
         "category": "卷一 · 创世与洪荒",
-        "wordCount": 3213,
+        "wordCount": 3203,
         "nextIssueNumber": "No. 024",
         "author": "GX"
       }
@@ -9240,23 +9820,23 @@
     "totalPages": 8,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 24
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 16
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 16
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 9
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 33
       }
     ],
@@ -9371,11 +9951,12 @@
     "classicQuote": "迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。盈盈一水间，脉脉不得语。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 4591,
+    "wordCount": 4577,
     "readMinutes": 13,
     "coverImg": "assets/illustrations/illust_39.png",
     "inlineImg": "assets/illustrations/illust_39.png",
     "imgCaption": "芦苇溪水惊回顾盼，羽衣已拾仙凡相隔",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -9387,7 +9968,7 @@
         "originalMyth": "《古诗十九首》· 汉魏乐府",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 4591,
+        "wordCount": 4577,
         "readMinutes": 13,
         "coverImg": "assets/illustrations/illust_39.png"
       },
@@ -9406,6 +9987,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9419,7 +10001,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_39.png",
         "imgCaption": "芦苇溪水惊回顾盼，羽衣已拾仙凡相隔",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -9427,6 +10011,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9439,7 +10024,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "要说清楚，得从我还有翅膀的时候说起。"
+        "pullQuote": "要说清楚，得从我还有翅膀的时候说起。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -9447,6 +10034,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9467,7 +10055,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "等我从水里回头，岸上的石头空了。"
+        "pullQuote": "等我从水里回头，岸上的石头空了。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -9475,6 +10065,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9498,7 +10089,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "跟他过日子，是从那间漏风的草屋开始的。"
+        "pullQuote": "跟他过日子，是从那间漏风的草屋开始的。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -9506,6 +10099,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9533,7 +10127,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "不是为了什么\"仙凡有别、伤风败俗\"——那是说书人替天庭找的体面话。真正的缘故，俗气得很。"
+        "pullQuote": "不是为了什么\"仙凡有别、伤风败俗\"——那是说书人替天庭找的体面话。真正的缘故，俗气得很。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -9541,6 +10137,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9565,7 +10162,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我在云头上回头，看见他挑着我们的两个孩子，在后头追。越追越近。孩子在箩筐里哭，喊娘。"
+        "pullQuote": "我在云头上回头，看见他挑着我们的两个孩子，在后头追。越追越近。孩子在箩筐里哭，喊娘。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -9573,6 +10172,7 @@
         "title": "牛郎织女·七夕",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -9607,7 +10207,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "两千年了。这样的七夕，我走了两千回。"
+        "pullQuote": "两千年了。这样的七夕，我走了两千回。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -9615,7 +10217,7 @@
         "title": "牛郎织女·七夕",
         "issueNumber": "No. 024",
         "category": "卷三 · 人间与执念",
-        "wordCount": 4591,
+        "wordCount": 4577,
         "nextIssueNumber": "No. 025",
         "author": "GX"
       }
@@ -9623,31 +10225,31 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 7
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 6
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 14
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 17
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 21
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 18
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 28
       }
     ],
@@ -9775,11 +10377,12 @@
     "classicQuote": "宁生笑曰：“我生平无妄想，此物非我所有，何敢受之？”小倩叹曰：“君真丈夫也！”",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5836,
+    "wordCount": 5824,
     "readMinutes": 17,
     "coverImg": "assets/illustrations/art_xiaoqian.jpg",
     "inlineImg": "assets/illustrations/art_xiaoqian.jpg",
     "imgCaption": "兰若荒刹古灯幽照，幽魂素影窗外伫立",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -9791,7 +10394,7 @@
         "originalMyth": "《聊斋志异·聂小倩》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5836,
+        "wordCount": 5824,
         "readMinutes": 17,
         "coverImg": "assets/illustrations/art_xiaoqian.jpg"
       },
@@ -9810,6 +10413,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -9830,7 +10434,9 @@
         ],
         "inlineImg": "assets/illustrations/art_xiaoqian.jpg",
         "imgCaption": "兰若荒刹古灯幽照，幽魂素影窗外伫立",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -9838,6 +10444,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -9861,7 +10468,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那老妖，就守着这么个地方，做她的营生。"
+        "pullQuote": "那老妖，就守着这么个地方，做她的营生。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -9869,6 +10478,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -9898,7 +10508,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我使出老一套。我往灯下一站，让他看清我这张脸、这身段。我说些软话。我说夜里冷，说一个人怕。我一步一步往他跟前挪。"
+        "pullQuote": "我使出老一套。我往灯下一站，让他看清我这张脸、这身段。我说些软话。我说夜里冷，说一个人怕。我一步一步往他跟前挪。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -9906,6 +10518,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -9934,7 +10547,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我这些，都是躲在墙缝里瞧见的。我一个鬼，白日里见不得光，只能缩在阴处，看他们两个大活人，商量着怎么处置我们这一窝\"妖\"。"
+        "pullQuote": "我这些，都是躲在墙缝里瞧见的。我一个鬼，白日里见不得光，只能缩在阴处，看他们两个大活人，商量着怎么处置我们这一窝\"妖\"。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -9942,6 +10557,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -9970,7 +10586,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她这话，句句在理。我一个害过十七条命的鬼，凭什么要她信我。"
+        "pullQuote": "她这话，句句在理。我一个害过十七条命的鬼，凭什么要她信我。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -9978,6 +10596,7 @@
         "title": "倩女幽魂（聂小倩）",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 6,
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10007,7 +10626,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "我也听过。我坐在自家院里，听墙外说书的，讲我的事。讲得真好。我听着，也跟着感叹。"
+        "pullQuote": "我也听过。我坐在自家院里，听墙外说书的，讲我的事。讲得真好。我听着，也跟着感叹。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "colophon",
@@ -10015,7 +10636,7 @@
         "title": "倩女幽魂（聂小倩）",
         "issueNumber": "No. 025",
         "category": "卷四 · 志怪与幽冥",
-        "wordCount": 5836,
+        "wordCount": 5824,
         "nextIssueNumber": "No. 026",
         "author": "GX"
       }
@@ -10023,27 +10644,27 @@
     "totalPages": 9,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 14
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 17
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 23
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 22
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 22
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 23
       }
     ],
@@ -10181,11 +10802,12 @@
     "classicQuote": "干将作剑，采五山之铁精，六合之金英。候天伺地，金铁不销，铁汁不下。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 2485,
+    "wordCount": 2477,
     "readMinutes": 7,
     "coverImg": "assets/illustrations/art_ganjiang.jpg",
     "inlineImg": "assets/illustrations/art_ganjiang.jpg",
     "imgCaption": "炉膛烈焰金铁不销，青丝入火神剑铸成",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -10197,7 +10819,7 @@
         "originalMyth": "《吴越春秋》·《搜神记》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 2485,
+        "wordCount": 2477,
         "readMinutes": 7,
         "coverImg": "assets/illustrations/art_ganjiang.jpg"
       },
@@ -10216,6 +10838,7 @@
         "title": "干将莫邪（上篇·熔金）",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 4,
         "issueNumber": "No. 026",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10246,7 +10869,9 @@
         ],
         "inlineImg": "assets/illustrations/art_ganjiang.jpg",
         "imgCaption": "炉膛烈焰金铁不销，青丝入火神剑铸成",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -10254,6 +10879,7 @@
         "title": "干将莫邪（上篇·熔金）",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 4,
         "issueNumber": "No. 026",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10273,7 +10899,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "该出炉的时候，干将起身，做了他这辈子做过千百遍、这一回手却抖得握不住钳子的事：他开始打剑。"
+        "pullQuote": "该出炉的时候，干将起身，做了他这辈子做过千百遍、这一回手却抖得握不住钳子的事：他开始打剑。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -10281,6 +10909,7 @@
         "title": "干将莫邪（上篇·熔金）",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 4,
         "issueNumber": "No. 026",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10300,7 +10929,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "交剑的期到了。楚王要的是一把绝世的剑，天底下最好的剑。干将带着剑，进了宫。"
+        "pullQuote": "交剑的期到了。楚王要的是一把绝世的剑，天底下最好的剑。干将带着剑，进了宫。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -10308,6 +10939,7 @@
         "title": "干将莫邪（上篇·熔金）",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 4,
         "issueNumber": "No. 026",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10331,7 +10963,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "楚王赏了干将。金，帛，还有一句\"天下第一铸剑师\"的名头。"
+        "pullQuote": "楚王赏了干将。金，帛，还有一句\"天下第一铸剑师\"的名头。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "colophon",
@@ -10339,7 +10973,7 @@
         "title": "干将莫邪（上篇·熔金）",
         "issueNumber": "No. 026",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 2485,
+        "wordCount": 2477,
         "nextIssueNumber": "No. 027",
         "author": "GX"
       }
@@ -10347,19 +10981,19 @@
     "totalPages": 7,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 24
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 13
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 13
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 17
       }
     ],
@@ -10443,11 +11077,12 @@
     "classicQuote": "客持头往见楚王，王大喜。客曰：“此勇士头也，当于汤镬煮之。”王从之，煮三日三夜不烂。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 2127,
+    "wordCount": 2119,
     "readMinutes": 6,
     "coverImg": "assets/illustrations/art_ganjiang.jpg",
     "inlineImg": "assets/illustrations/illust_25.png",
     "imgCaption": "三王之墓沸汤白刃，孤客仗义雪恨仇深",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -10459,7 +11094,7 @@
         "originalMyth": "《搜神记·三王墓》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 2127,
+        "wordCount": 2119,
         "readMinutes": 6,
         "coverImg": "assets/illustrations/art_ganjiang.jpg"
       },
@@ -10478,6 +11113,7 @@
         "title": "干将莫邪（下篇·复仇）",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 4,
         "issueNumber": "No. 027",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10501,7 +11137,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_25.png",
         "imgCaption": "三王之墓沸汤白刃，孤客仗义雪恨仇深",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -10509,6 +11147,7 @@
         "title": "干将莫邪（下篇·复仇）",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 4,
         "issueNumber": "No. 027",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10523,7 +11162,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "铁化开那阵，作坊里的人都听见了。"
+        "pullQuote": "铁化开那阵，作坊里的人都听见了。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -10531,6 +11172,7 @@
         "title": "干将莫邪（下篇·复仇）",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 4,
         "issueNumber": "No. 027",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10544,7 +11186,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "铁水该出炉的时候，干将起身，做他这辈子做过千百遍、这回手却抖得握不住钳子的事：打剑。"
+        "pullQuote": "铁水该出炉的时候，干将起身，做他这辈子做过千百遍、这回手却抖得握不住钳子的事：打剑。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -10552,6 +11196,7 @@
         "title": "干将莫邪（下篇·复仇）",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 4,
         "issueNumber": "No. 027",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -10572,7 +11217,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "楚王接过去，抽剑出鞘。剑身一晃，晃了众人的眼。楚王来回看了两遍，点头：\"好剑。"
+        "pullQuote": "楚王接过去，抽剑出鞘。剑身一晃，晃了众人的眼。楚王来回看了两遍，点头：\"好剑。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "colophon",
@@ -10580,7 +11227,7 @@
         "title": "干将莫邪（下篇·复仇）",
         "issueNumber": "No. 027",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 2127,
+        "wordCount": 2119,
         "nextIssueNumber": "No. 028",
         "author": "GX"
       }
@@ -10588,19 +11235,19 @@
     "totalPages": 7,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 17
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 8
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 7
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 14
       }
     ],
@@ -10663,11 +11310,12 @@
     "classicQuote": "终南钟馗，虽为鬼王，心怀赤诚。挑灯夜引，百鬼肃穆，嫁妹于杜生，骨肉至情。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5503,
+    "wordCount": 5489,
     "readMinutes": 16,
     "coverImg": "assets/illustrations/illust_22.png",
     "inlineImg": "assets/illustrations/illust_23.png",
     "imgCaption": "漫天风雪夜送红妆，朱判执灯情深骨肉",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -10679,7 +11327,7 @@
         "originalMyth": "民间钟馗信仰 ·《唐逸史》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5503,
+        "wordCount": 5489,
         "readMinutes": 16,
         "coverImg": "assets/illustrations/illust_22.png"
       },
@@ -10698,6 +11346,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10734,7 +11383,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_23.png",
         "imgCaption": "漫天风雪夜送红妆，朱判执灯情深骨肉",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -10742,6 +11393,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10769,7 +11421,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_21.png",
         "imgCaption": "重门森严青面门神，阴阳两界规矩森然",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -10777,6 +11431,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10802,7 +11457,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "杜家的院子，到底还是摆起了喜宴。"
+        "pullQuote": "杜家的院子，到底还是摆起了喜宴。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -10810,6 +11467,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10830,7 +11488,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "照办。”钟馗背对着院门，对院里说，“喜宴照办，一样不许停。锣照敲，鼓照打，酒照斟。谁也不许出这个院子。"
+        "pullQuote": "照办。”钟馗背对着院门，对院里说，“喜宴照办，一样不许停。锣照敲，鼓照打，酒照斟。谁也不许出这个院子。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -10838,6 +11498,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10862,7 +11523,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "响得有点乱——敲锣的小鬼手在抖。可它没停。钟馗说了不许停，它就没停。"
+        "pullQuote": "响得有点乱——敲锣的小鬼手在抖。可它没停。钟馗说了不许停，它就没停。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -10870,6 +11533,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10898,7 +11562,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "雪地上，一片狼藉，黑一块，黑一块。院门上，抓痕深深浅浅，柴木都翻起了毛刺。"
+        "pullQuote": "雪地上，一片狼藉，黑一块，黑一块。院门上，抓痕深深浅浅，柴木都翻起了毛刺。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -10906,6 +11572,7 @@
         "title": "钟馗嫁妹",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
         "paragraphs": [
@@ -10923,7 +11590,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "那年上元节，杜家村的人，陆陆续续来看杜家的门。"
+        "pullQuote": "那年上元节，杜家村的人，陆陆续续来看杜家的门。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -10931,7 +11600,7 @@
         "title": "钟馗嫁妹",
         "issueNumber": "No. 028",
         "category": "卷四 · 志怪与幽冥",
-        "wordCount": 5503,
+        "wordCount": 5489,
         "nextIssueNumber": "No. 029",
         "author": "GX"
       }
@@ -10939,31 +11608,31 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 30
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 21
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 19
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 14
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 18
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 22
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 11
       }
     ],
@@ -11115,11 +11784,12 @@
     "classicQuote": "西湖水干，江潮不起，雷峰塔倒，白蛇出世。情之所钟，生死不悔。",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 5040,
+    "wordCount": 5019,
     "readMinutes": 14,
     "coverImg": "assets/illustrations/art_baishe.jpg",
     "inlineImg": "assets/illustrations/art_baishe.jpg",
     "imgCaption": "西湖烟雨雷峰古塔，素贞执伞巨蟒盘霄",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -11131,7 +11801,7 @@
         "originalMyth": "《白娘子永镇雷峰塔》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 5040,
+        "wordCount": 5019,
         "readMinutes": 14,
         "coverImg": "assets/illustrations/art_baishe.jpg"
       },
@@ -11150,6 +11820,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11168,7 +11839,9 @@
         ],
         "inlineImg": "assets/illustrations/art_baishe.jpg",
         "imgCaption": "西湖烟雨雷峰古塔，素贞执伞巨蟒盘霄",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -11176,6 +11849,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11198,7 +11872,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他把伞给了她，自己淋着，送她们上了船。临别她说，公子贵姓，这伞改日好还。他说了。她又说，那便改日登门，亲自来还。"
+        "pullQuote": "他把伞给了她，自己淋着，送她们上了船。临别她说，公子贵姓，这伞改日好还。他说了。她又说，那便改日登门，亲自来还。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -11206,6 +11882,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11223,7 +11900,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "镇上人都说，许仙好福气，娶了这么个又贤惠又能干的娘子。"
+        "pullQuote": "镇上人都说，许仙好福气，娶了这么个又贤惠又能干的娘子。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -11231,6 +11910,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11256,7 +11936,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "端午要喝雄黄酒。这是镇上的规矩，家家如此，说是辟邪。"
+        "pullQuote": "端午要喝雄黄酒。这是镇上的规矩，家家如此，说是辟邪。",
+        "nextChapterTitle": "第 五 幕",
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "chapter",
@@ -11264,6 +11946,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 五 幕",
         "chapterIndex": 5,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11291,7 +11974,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "许仙悠悠转醒的时候，看见的，是素贞。"
+        "pullQuote": "许仙悠悠转醒的时候，看见的，是素贞。",
+        "nextChapterTitle": "第 六 幕",
+        "prevChapterTitle": "第 四 幕"
       },
       {
         "type": "chapter",
@@ -11299,6 +11984,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 六 幕",
         "chapterIndex": 6,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11322,7 +12008,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他不肯，一半是还念着夫妻情分，一半——他自己不愿承认的那一半——是怕。素贞那样的法力，他若当真翻脸，他算什么。"
+        "pullQuote": "他不肯，一半是还念着夫妻情分，一半——他自己不愿承认的那一半——是怕。素贞那样的法力，他若当真翻脸，他算什么。",
+        "nextChapterTitle": "第 七 幕",
+        "prevChapterTitle": "第 五 幕"
       },
       {
         "type": "chapter",
@@ -11330,6 +12018,7 @@
         "title": "白蛇·雷峰塔",
         "chapterTitle": "第 七 幕",
         "chapterIndex": 7,
+        "totalChapters": 7,
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
         "paragraphs": [
@@ -11365,7 +12054,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "她来到金山寺前，求法海放许仙回去。法海不放。她便动了真气——她水漫金山。"
+        "pullQuote": "她来到金山寺前，求法海放许仙回去。法海不放。她便动了真气——她水漫金山。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 六 幕"
       },
       {
         "type": "colophon",
@@ -11373,7 +12064,7 @@
         "title": "白蛇·雷峰塔",
         "issueNumber": "No. 029",
         "category": "卷三 · 人间与执念",
-        "wordCount": 5040,
+        "wordCount": 5019,
         "nextIssueNumber": "No. 030",
         "author": "GX"
       }
@@ -11381,40 +12072,35 @@
     "totalPages": 10,
     "chapters": [
       {
-        "title": "开篇",
-        "count": 1
-      },
-      {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 12
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 16
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 11
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 19
       },
       {
-        "title": "五、",
+        "title": "第 五 幕",
         "count": 21
       },
       {
-        "title": "六、",
+        "title": "第 六 幕",
         "count": 17
       },
       {
-        "title": "七、",
+        "title": "第 七 幕",
         "count": 29
       }
     ],
     "fullParagraphs": [
-      "白蛇 · 新编",
       "雷峰塔合上的那天，下雨。",
       "许仙没有伞。",
       "他从塔底下往家走，雨不大，是江南三月那种绵的、丝一样的雨，落在身上不疼，只是凉，一层一层把人浸透。他走得很慢。按理他该哭——他的娘子，他的素贞，方才在他眼前，被一道金光裹住，压进了那座砖塔里。塔身一寸一寸合拢的时候，她隔着光看他，没喊冤，没骂他，就那么看着，像是早知道会这样。",
@@ -11552,11 +12238,12 @@
     "classicQuote": "卢生欠伸而寤，见方卧于邸中，吕翁坐其旁，主人蒸黍尚未熟。生抚案惊曰：“岂其梦寐耶？”",
     "author": "GX",
     "authorTitle": "神话重构作家 · 独立小说家",
-    "wordCount": 3114,
+    "wordCount": 3106,
     "readMinutes": 9,
     "coverImg": "assets/illustrations/illust_33.png",
     "inlineImg": "assets/illustrations/illust_27.png",
     "imgCaption": "邯郸客馆灯火微明，一枕梦回五十年欢悲",
+    "authorNote": null,
     "pages": [
       {
         "type": "cover",
@@ -11568,7 +12255,7 @@
         "originalMyth": "《枕中记》",
         "author": "GX",
         "authorTitle": "神话重构作家 · 独立小说家",
-        "wordCount": 3114,
+        "wordCount": 3106,
         "readMinutes": 9,
         "coverImg": "assets/illustrations/illust_33.png"
       },
@@ -11587,6 +12274,7 @@
         "title": "黄粱一梦",
         "chapterTitle": "第 一 幕",
         "chapterIndex": 1,
+        "totalChapters": 4,
         "issueNumber": "No. 030",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -11617,7 +12305,9 @@
         ],
         "inlineImg": "assets/illustrations/illust_27.png",
         "imgCaption": "邯郸客馆灯火微明，一枕梦回五十年欢悲",
-        "pullQuote": null
+        "pullQuote": null,
+        "nextChapterTitle": "第 二 幕",
+        "prevChapterTitle": null
       },
       {
         "type": "chapter",
@@ -11625,6 +12315,7 @@
         "title": "黄粱一梦",
         "chapterTitle": "第 二 幕",
         "chapterIndex": 2,
+        "totalChapters": 4,
         "issueNumber": "No. 030",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -11646,7 +12337,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "他低下头，看着自己那只年轻的、空的手。他把手指一根一根慢慢攥起来，想把掌心里那点温再攥住一会儿。"
+        "pullQuote": "他低下头，看着自己那只年轻的、空的手。他把手指一根一根慢慢攥起来，想把掌心里那点温再攥住一会儿。",
+        "nextChapterTitle": "第 三 幕",
+        "prevChapterTitle": "第 一 幕"
       },
       {
         "type": "chapter",
@@ -11654,6 +12347,7 @@
         "title": "黄粱一梦",
         "chapterTitle": "第 三 幕",
         "chapterIndex": 3,
+        "totalChapters": 4,
         "issueNumber": "No. 030",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -11677,7 +12371,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "黄粱的香气一阵一阵，飘满了这间小屋。"
+        "pullQuote": "黄粱的香气一阵一阵，飘满了这间小屋。",
+        "nextChapterTitle": "第 四 幕",
+        "prevChapterTitle": "第 二 幕"
       },
       {
         "type": "chapter",
@@ -11685,6 +12381,7 @@
         "title": "黄粱一梦",
         "chapterTitle": "第 四 幕",
         "chapterIndex": 4,
+        "totalChapters": 4,
         "issueNumber": "No. 030",
         "category": "卷五 · 幻化与器物",
         "paragraphs": [
@@ -11713,7 +12410,9 @@
         ],
         "inlineImg": null,
         "imgCaption": null,
-        "pullQuote": "吕翁的笑，头一回，淡了一点。"
+        "pullQuote": "吕翁的笑，头一回，淡了一点。",
+        "nextChapterTitle": null,
+        "prevChapterTitle": "第 三 幕"
       },
       {
         "type": "colophon",
@@ -11721,7 +12420,7 @@
         "title": "黄粱一梦",
         "issueNumber": "No. 030",
         "category": "卷五 · 幻化与器物",
-        "wordCount": 3114,
+        "wordCount": 3106,
         "nextIssueNumber": "No. 001",
         "author": "GX"
       }
@@ -11729,19 +12428,19 @@
     "totalPages": 7,
     "chapters": [
       {
-        "title": "一、",
+        "title": "第 一 幕",
         "count": 24
       },
       {
-        "title": "二、",
+        "title": "第 二 幕",
         "count": 15
       },
       {
-        "title": "三、",
+        "title": "第 三 幕",
         "count": 17
       },
       {
-        "title": "四、",
+        "title": "第 四 幕",
         "count": 22
       }
     ],
