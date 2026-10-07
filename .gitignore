@@ -1,0 +1,10 @@
+# System & Temp
+.DS_Store
+*.log
+inspection/
+__pycache__/
+*.pyc
+
+# Local screenshots
+*.png
+!assets/illustrations/*.png

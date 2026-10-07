@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>《神话》· 中华神话重构系列文学杂志</title>
+  <meta name="description" content="中华神话重构系列：大白话打底，短句断得狠；叙述者冷、克制、却有体温、敢下判断。30期深度文学电子杂志全集。" />
+
+  <!-- Fonts & Core Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/aifa-core.css" />
+  <link rel="stylesheet" href="css/magazine.css" />
+  <link rel="stylesheet" href="css/reader.css" />
+</head>
+<body>
+
+  <!-- Xuan Paper Grain Texture Overlay (全站宣纸肌理) -->
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <!-- Magnetic Custom Cursor (Awwwards 专属磁性光标) -->
+  <div id="cursor-dot" class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring">
+    <span id="cursor-text" class="cursor-text"></span>
+  </div>
+
+  <!-- ======================================================================
+       MASTHEAD (报头)
+       ====================================================================== -->
+  <header class="masthead">
+    <div class="wordmark-wrap">
+      <a href="#" class="wordmark" onclick="location.hash=''; return false;">
+        <span class="wordmark-seal">神</span>
+        <span>神话 · MYTHOS</span>
+      </a>
+      <span class="wordmark-sub">中华神话重构系列 · 每日一期，署名负责</span>
+    </div>
+
+    <div class="masthead-actions">
+      <!-- Theme Switcher -->
+      <button id="masthead-theme-btn" class="theme-toggle-btn" type="button" title="切换夜间/日间模式" aria-label="切换夜间/日间模式">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.3">
+          <circle cx="8" cy="8" r="3.1"></circle>
+          <path d="M8 1v1.7M8 13.3V15M1 8h1.7M13.3 8H15M3.05 3.05l1.2 1.2M11.75 11.75l1.2 1.2M3.05 12.95l1.2-1.2M11.75 4.25l1.2-1.2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+
+      <!-- Bookshelf Link -->
+      <button id="masthead-bookshelf-btn" class="masthead-btn" type="button">
+        <span>典藏书架</span>
+        <span id="bookshelf-count-badge" class="bookshelf-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       HERO COVER STAGE (今日主推期刊滑块 · Awwwards 级典藏展台)
+       ====================================================================== -->
+  <section class="hero-stage">
+    <!-- Ambient Backdrop Art with smooth Ken Burns drift -->
+    <div id="hero-bg-art" class="hero-bg-art"></div>
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-stage-inner">
+      <!-- Left Column: Editorial Typography & Actions -->
+      <div class="hero-text-col">
+        <div class="hero-nav-row">
+          <button id="hero-prev-btn" class="hero-nav-btn" type="button" aria-label="上一期">
+            <span>←</span> <span>上期</span>
+          </button>
+          <div class="hero-seal-center">
+            <span>卷</span>
+          </div>
+          <button id="hero-next-btn" class="hero-nav-btn" type="button" aria-label="下一期">
+            <span>下期</span> <span>→</span>
+          </button>
+        </div>
+
+        <div id="hero-issue-badge" class="hero-meta-pill">No. 001 · 卷二 · 反叛与神罚</div>
+        <h1 id="hero-title" class="hero-title">共工怒触不周山</h1>
+        <p id="hero-subtitle" class="hero-subtitle">天柱折，地维绝。那个不肯认输的人，把头撞向了不周山。</p>
+
+        <div class="hero-author-row">
+          <div id="hero-author-name" class="hero-author-name">
+            GX <span class="verified-mark">✓</span>
+          </div>
+          <div id="hero-origin-tag" class="hero-author-desc">
+            《山海经·大荒西经》·《淮南子》
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <button id="hero-read-btn" class="hero-cta-btn" type="button">
+            <span>翻开本期 · 开始阅读</span>
+            <span>→</span>
+          </button>
+          <div class="hero-stats-row">
+            <span id="hero-read-time">25 分钟读完</span>
+            <span>·</span>
+            <span id="hero-word-count">8,792 字</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Tactile Magazine Cover Showcase -->
+      <div class="hero-visual-col">
+        <div id="hero-cover-card" class="hero-cover-card" title="点击直接翻阅本期杂志">
+          <div class="hero-cover-card-inner">
+            <img id="hero-cover-img" class="hero-cover-img" src="assets/illustrations/illust_01.png" alt="本期封面" />
+            <div class="hero-cover-ribbon">
+              <span class="ribbon-seal">神</span>
+              <span id="hero-cover-caption">中华神话重构系列 · 特刊</span>
+            </div>
+            <div class="hero-cover-overlay">
+              <span class="hero-cover-hover-prompt">翻开阅读 <span>↗</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTIONS BAR & LIVE SEARCH (卷册筛选与实时检索)
+       ====================================================================== -->
+  <section class="section-bar">
+    <div id="category-tabs" class="category-tabs">
+      <button class="tab-btn active" data-category="all">全部卷册 (30期)</button>
+      <button class="tab-btn" data-category="卷一 · 创世与洪荒">卷一 · 创世与洪荒</button>
+      <button class="tab-btn" data-category="卷二 · 反叛与神罚">卷二 · 反叛与神罚</button>
+      <button class="tab-btn" data-category="卷三 · 人间与执念">卷三 · 人间与执念</button>
+      <button class="tab-btn" data-category="卷四 · 志怪与幽冥">卷四 · 志怪与幽冥</button>
+      <button class="tab-btn" data-category="卷五 · 幻化与器物">卷五 · 幻化与器物</button>
+    </div>
+
+    <div class="search-box">
+      <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="9" r="6"></circle>
+        <path d="M13.5 13.5l4 4"></path>
+      </svg>
+      <input id="search-input" type="search" placeholder="检索神话人物、篇名或金句..." aria-label="检索神话小说" />
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       ISSUE ARCHIVE GRID (期刊卡片报纸网格)
+       ====================================================================== -->
+  <main class="archive-container">
+    <div id="issues-grid" class="issues-grid">
+      <!-- Injected by JavaScript -->
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       MAGAZINE FOOTER (尾注与版权)
+       ====================================================================== -->
+  <footer class="magazine-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">《神话》· MYTHOS RETOLD</div>
+      <p class="footer-desc">
+        中华神话改编系列 · 30 期独立电子文学杂志。<br>
+        “大白话打底，短句断得狠；叙述者冷、克制、却有体温、敢下判断；情绪全化进身体和器物，绝不抒情空转。”
+      </p>
+      <div class="footer-credits">
+        全书总字数：14.3 万字 · 原典考据涵盖《山海经》《庄子》《楚辞》《聊斋志异》《淮南子》
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       BOOKSHELF MODAL (藏书阁/书架)
+       ====================================================================== -->
+  <div id="bookshelf-modal" class="bookshelf-modal">
+    <div class="bookshelf-header">
+      <div class="bookshelf-title-wrap">
+        <h2>藏书阁 · 我的书架</h2>
+        <p>把值得反复重读的篇章，长久留在这里。自动记录阅读进度。</p>
+      </div>
+      <button id="bookshelf-close-btn" class="bookshelf-close-btn" type="button" aria-label="关闭书架">
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 5l10 10M15 5L5 15"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div style="max-width: var(--content-max); margin: 0 auto;">
+      <!-- Recent Reading Progress -->
+      <h3 class="bookshelf-section-title">
+        <span>最近阅读足迹</span>
+      </h3>
+      <div id="bookshelf-recent-grid" class="issues-grid" style="margin-bottom: 48px;">
+        <!-- Injected by JavaScript -->
+      </div>
+
+      <!-- Bookmarked Issues -->
+      <h3 class="bookshelf-section-title">
+        <span>典藏篇目</span>
+      </h3>
+      <div id="bookshelf-bookmarks-grid" class="issues-grid">
+        <!-- Injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       AUTHENTIC FULL-BLEED IMMERSIVE MAGAZINE READER
+       画面排满 · 全画幅沉浸视界
+       ====================================================================== -->
+  <div id="reader-container" class="reader-container">
+    <!-- Top Reading Progress Indicator -->
+    <div id="reader-progress-bar" class="reader-progress-bar"></div>
+
+    <!-- Top-left Corner Close Button -->
+    <button id="reader-close-btn" class="reader-top-close-btn" type="button" title="退出杂志阅读 (Esc)" aria-label="关闭">
+      <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 5l10 10M15 5L5 15"></path>
+      </svg>
+    </button>
+
+    <!-- Full-Bleed Reader Stage -->
+    <div class="reader-stage-wrap">
+      <div id="reader-page-slide" class="reader-page-slide">
+        <!-- Dynamically Injected Full-Bleed Page -->
+      </div>
+    </div>
+
+    <!-- Bottom Floating Double-Pill Glass Controls -->
+    <div class="reader-floating-bar">
+      <!-- Left Pill: Font Zoom, Night Mode, TOC, Prev/Next -->
+      <div class="glass-pill">
+        <button id="btn-font-dec" class="pill-btn" type="button" title="缩小字号">A-</button>
+        <button id="btn-font-inc" class="pill-btn" type="button" title="放大字号">A+</button>
+        <button id="btn-reader-theme" class="pill-btn" type="button" title="切换日夜模式 (D)">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M13.5 9.5a5.5 5.5 0 1 1-7-7 6.5 6.5 0 0 0 7 7z"></path>
+          </svg>
+        </button>
+        <button id="btn-toc-toggle" class="pill-btn" type="button" title="展开目录 (T)">
+          <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h12M4 10h12M4 14h12"></path>
+          </svg>
+        </button>
+        <div class="pill-divider"></div>
+        <button id="btn-page-prev" class="pill-btn" type="button" title="上一页 (←)">〈</button>
+        <button id="btn-spread-info" class="pill-btn" type="button" title="当前页码">1 / 12</button>
+        <button id="btn-page-next" class="pill-btn" type="button" title="下一页 (→)">〉</button>
+      </div>
+
+      <!-- Right Pill: Share, Bookmark, Sound, Fullscreen -->
+      <div class="glass-pill">
+        <button id="btn-reader-share" class="pill-btn" type="button" title="分享 / 复制本期链接">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 3v10M6 7l4-4 4 4M4 14v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2"></path>
+          </svg>
+        </button>
+        <button id="btn-reader-bookmark" class="pill-btn" type="button" title="收藏至书架">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+        <button id="btn-sound-toggle" class="pill-btn" type="button" title="真实翻页声音效 (开启/静音)">
+          🔊
+        </button>
+        <button id="btn-fullscreen-toggle" class="pill-btn" type="button" title="全屏沉浸阅读">
+          <svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 7V3h4M17 7V3h-4M3 13v4h4M17 13v4h-4"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- TOC Drawer (目录抽屉) -->
+    <div id="reader-toc-drawer" class="reader-toc-drawer">
+      <div class="toc-header">
+        <h3>全书篇章目录</h3>
+        <button id="toc-close-btn" class="toc-close-btn" type="button" aria-label="关闭目录">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 5l10 10M15 5L5 15"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="toc-items-list" class="toc-list">
+        <!-- Injected by JavaScript -->
+      </ul>
+    </div>
+    <div id="toc-overlay" class="toc-overlay"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
