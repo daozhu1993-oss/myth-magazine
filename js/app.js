@@ -6,6 +6,24 @@
 (function () {
   'use strict';
 
+  /* ------------------------------------------------------------------------
+     配图分档加载（性能优化关键）
+     原图是 2500x1400 的 PNG，单张 3~6MB，共 154MB。首页一次渲染 30 张封面卡
+     会让浏览器去下载 50MB+，结果全部卡在 pending，一张都显示不出来。
+     现改为引用 optimize_images.py 生成的压缩版：
+       th/ 宽 480px  ~30KB   首页网格卡片、书架卡片、hero 背景（本身有 52px 模糊）
+       lg/ 宽 1280px ~170KB  hero 封面卡、阅读器封面/内页插图
+     ------------------------------------------------------------------------ */
+  function mythImg(src, variant) {
+    if (!src || typeof src !== 'string') return src;
+    if (src.indexOf('illustrations/') === -1) return src;
+    return src
+      .replace(/illustrations\/([^/]+)$/, 'illustrations/' + variant + '/$1')
+      .replace(/\.(png|jpe?g|webp)$/i, '.jpg');
+  }
+  // 暴露给 spread-reader.js 复用
+  window.mythImg = mythImg;
+
   // --- STATE DEFINITION ---
   const state = {
     articles: window.MYTH_ARTICLES || [],
@@ -273,11 +291,12 @@
     DOM.heroReadTime.textContent = `${item.readMinutes} 分钟读完`;
 
     if (DOM.heroCoverImg) {
-      DOM.heroCoverImg.src = item.coverImg;
+      DOM.heroCoverImg.src = mythImg(item.coverImg, 'lg');
       DOM.heroCoverImg.alt = item.cleanTitle;
     }
     if (DOM.heroBgArt) {
-      DOM.heroBgArt.style.backgroundImage = `url('${item.coverImg}')`;
+      // 背景有 52px 模糊 + 0.2 透明度，480px 缩略图完全够用
+      DOM.heroBgArt.style.backgroundImage = `url('${mythImg(item.coverImg, 'th')}')`;
     }
     if (DOM.heroCoverCaption) {
       DOM.heroCoverCaption.textContent = `${item.category} · 特刊`;
@@ -321,7 +340,7 @@
       const saved = isBookmarked(item.id);
       return `
         <article class="issue-card" onclick="window.MythApp.openReader('${item.id}')">
-          <img class="issue-card-cover-thumb" src="${item.coverImg}" alt="${item.cleanTitle}" loading="lazy" />
+          <img class="issue-card-cover-thumb" src="${mythImg(item.coverImg, 'th')}" alt="${item.cleanTitle}" loading="lazy" decoding="async" />
           <div class="issue-card-content">
             <div>
               <div class="issue-card-header">
@@ -378,7 +397,7 @@
     } else {
       DOM.bookshelfBookmarksGrid.innerHTML = bookmarkedArticles.map(item => `
         <article class="issue-card" onclick="window.MythApp.openReader('${item.id}')">
-          <img class="issue-card-cover-thumb" src="${item.coverImg}" alt="${item.cleanTitle}" loading="lazy" />
+          <img class="issue-card-cover-thumb" src="${mythImg(item.coverImg, 'th')}" alt="${item.cleanTitle}" loading="lazy" decoding="async" />
           <div class="issue-card-content">
             <div class="issue-card-header">
               <span class="issue-number-badge">${item.issueNumber}</span>
@@ -477,7 +496,7 @@
       DOM.readerContainer.setAttribute('data-theme-page', 'dark');
       html = `
         <div class="magazine-full-cover">
-          <img class="cover-bg-image" src="${page.coverImg}" alt="${page.title}" loading="eager" />
+          <img class="cover-bg-image" src="${mythImg(page.coverImg, 'lg')}" alt="${page.title}" loading="eager" decoding="async" />
           <div class="cover-masthead-row">
             <div class="cover-brand-tag">
               <span class="cover-brand-seal">神</span>
@@ -548,7 +567,7 @@
       if (page.inlineImg) {
         artBannerHTML = `
           <div class="editorial-art-frame">
-            <img class="editorial-art-img" src="${page.inlineImg}" alt="${page.title}" />
+            <img class="editorial-art-img" src="${mythImg(page.inlineImg, 'lg')}" alt="${page.title}" loading="lazy" decoding="async" />
             <div class="editorial-art-caption">${page.imgCaption || '神话场景原画'}</div>
           </div>
         `;

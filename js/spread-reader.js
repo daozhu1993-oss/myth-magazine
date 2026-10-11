@@ -11,6 +11,17 @@
   /* ------------------------------------------------------------------ *
    * HELPERS
    * ------------------------------------------------------------------ */
+  /* 配图分档：原图 2500x1400 PNG 单张 3~6MB，直接引用会拖垮首屏。
+     统一走 optimize_images.py 生成的压缩版（th=480px / lg=1280px）。
+     与 app.js 中的实现保持一致，这里自带一份以免加载顺序产生依赖。 */
+  function mythImg(src, variant) {
+    if (!src || typeof src !== 'string') return src;
+    if (src.indexOf('illustrations/') === -1) return src;
+    return src
+      .replace(/illustrations\/([^/]+)$/, 'illustrations/' + variant + '/$1')
+      .replace(/\.(png|jpe?g|webp)$/i, '.jpg');
+  }
+
   const CN = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
 
   function cnNum(n) {
@@ -232,7 +243,7 @@
     const d = el('div', 'sheet sheet-cover');
     d.dataset.density = 'hard';
     d.innerHTML = `
-      <img class="cover-art" src="${article.coverImg}" alt="${esc(article.cleanTitle)}" />
+      <img class="cover-art" src="${mythImg(article.coverImg, 'lg')}" alt="${esc(article.cleanTitle)}" decoding="async" />
       <div class="cover-scrim"></div>
       <div class="cover-vertical">中華神話重構</div>
       <div class="cover-inner">
@@ -365,7 +376,7 @@
         const imgH = Math.round(Math.min(g.bodyH * 0.44, 300));
         headHTML += `<div class="blk-image is-bleed">
             <div class="blk-image-frame" style="height:${imgH}px">
-              <img src="${ch.inlineImg}" alt="${esc(ch.imgCaption || ch.chapterTitle || '')}" />
+              <img src="${mythImg(ch.inlineImg, 'lg')}" alt="${esc(ch.imgCaption || ch.chapterTitle || '')}" loading="lazy" decoding="async" />
             </div>
             <div class="blk-image-caption">${esc(ch.imgCaption || '神话场景原画')}</div>
             <div class="blk-image-source">— 委托原画 · 中华神话重构系列</div>
