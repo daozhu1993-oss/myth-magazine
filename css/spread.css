@@ -1,0 +1,915 @@
+/* ==========================================================================
+   MYTHOS SPREAD READER — 双页跨页杂志引擎
+   骨架致敬 aifa.one（跨页 / running head / 页码 / 模块化块）
+   皮肤自成一格（宣纸 / 竖排刊名 / 朱砂印 / 汉字页码 / 水墨出血）
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   READER SHELL（全屏外壳）
+   -------------------------------------------------------------------------- */
+.spread-reader {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: none;
+  flex-direction: column;
+  background: var(--spread-desk, #e8e4d9);
+  user-select: text;
+}
+.spread-reader.active { display: flex; }
+
+.spread-progress-bar {
+  position: absolute;
+  top: 0; left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--zhu);
+  z-index: 950;
+  transition: width .3s var(--ease);
+}
+
+.spread-top-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  z-index: 960;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  background: var(--reader-glass-fill);
+  border: 1px solid var(--reader-glass-edge);
+  box-shadow: var(--reader-glass-shadow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  cursor: pointer;
+  transition: all .2s var(--ease);
+}
+.spread-top-close:hover {
+  background: var(--reader-glass-fill-hover);
+  transform: scale(1.08);
+  color: var(--zhu);
+}
+
+/* 左右边缘翻页钮 */
+.spread-edge {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 930;
+  width: 42px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--reader-glass-fill);
+  border: 1px solid var(--reader-glass-edge);
+  box-shadow: var(--reader-glass-shadow);
+  border-radius: 8px;
+  color: var(--ink);
+  cursor: pointer;
+  opacity: .32;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all .25s var(--ease);
+}
+.spread-edge:hover {
+  opacity: .95;
+  color: var(--gold-ink);
+  transform: translateY(-50%) scale(1.06);
+}
+.spread-edge:disabled { opacity: .08; pointer-events: none; }
+.spread-edge.prev { left: 16px; }
+.spread-edge.next { right: 16px; }
+
+/* --------------------------------------------------------------------------
+   STAGE & BOOK GEOMETRY
+   -------------------------------------------------------------------------- */
+.spread-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--spread-desk, #e8e4d9);
+  transition: background-color .35s var(--ease);
+}
+[data-aifa-night="on"] .spread-stage {
+  --spread-desk: #0e0d0c;
+}
+
+/* 桌面木纹/毡面微妙径向光，模拟"摊在桌上的书" */
+.spread-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 45%,
+    rgba(255, 255, 255, .55) 0%,
+    rgba(255, 255, 255, 0) 60%),
+    radial-gradient(ellipse 90% 70% at 50% 120%,
+    rgba(0, 0, 0, .12) 0%,
+    rgba(0, 0, 0, 0) 65%);
+  pointer-events: none;
+}
+[data-aifa-night="on"] .spread-stage::before {
+  background: radial-gradient(ellipse 70% 60% at 50% 45%,
+    rgba(255, 240, 210, .05) 0%,
+    rgba(0, 0, 0, 0) 60%);
+}
+
+/* 书本外投影：整本摊开杂志落在桌面上的阴影 */
+.book-bed {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(var(--page-w) * 2 + 6px);
+  height: calc(var(--page-h) + 6px);
+  border-radius: 4px;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, .18),
+    0 18px 44px rgba(0, 0, 0, .28),
+    0 44px 90px rgba(0, 0, 0, .18);
+  pointer-events: none;
+  z-index: 0;
+}
+[data-aifa-night="on"] .book-bed {
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, .5),
+    0 20px 50px rgba(0, 0, 0, .65),
+    0 50px 100px rgba(0, 0, 0, .5);
+}
+
+/* StPageFlip 挂载容器 */
+.myth-book {
+  position: relative;
+  z-index: 1;
+}
+.myth-book .stf__parent {
+  /* page-flip 内部容器去默认边框 */
+  box-shadow: none !important;
+}
+
+.spine-gutter {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   SHEET — 单页版心
+   -------------------------------------------------------------------------- */
+.sheet {
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  background: var(--paper);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--serif);
+  color: var(--ink);
+  box-sizing: border-box;
+  padding: var(--page-pad-y) var(--page-pad-x);
+}
+/* 宣纸肌理：极淡，只在内页 */
+.sheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .5;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(0, 0, 0, .012) 0 1px, transparent 1px),
+    radial-gradient(circle at 72% 68%, rgba(0, 0, 0, .010) 0 1px, transparent 1px),
+    radial-gradient(circle at 44% 86%, rgba(0, 0, 0, .009) 0 1px, transparent 1px);
+  background-size: 7px 7px, 11px 11px, 13px 13px;
+}
+
+/* StPageFlip 会给页加 data-density，硬页（封面/扉页）不加纸纹 */
+.sheet[data-density="hard"]::before { display: none; }
+
+/* --------------------------------------------------------------------------
+   FOLIO — 版心页眉页脚（aifa 骨架 + 中式汉字页码）
+   -------------------------------------------------------------------------- */
+.folio-head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  color: var(--quiet);
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+.folio-running {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 中式"鱼尾"版心符号 □ — 右页页眉末端的小标记 */
+.folio-fishtail {
+  color: var(--zhu);
+  font-family: var(--serif);
+  letter-spacing: 0;
+  opacity: .55;
+}
+
+.folio-foot {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  min-height: 18px;
+  padding-top: 8px;
+  margin-top: auto;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  color: var(--quiet);
+  flex: 0 0 auto;
+}
+.folio-num {
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: var(--ink-secondary);
+}
+.folio-num .arab {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--quiet);
+  margin-left: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   SHEET BODY — 块容器
+   -------------------------------------------------------------------------- */
+.sheet-body {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+/* 分页测量用的隐藏副本 */
+.sheet-body.is-measure {
+  position: absolute;
+  left: -99999px;
+  top: 0;
+  visibility: hidden;
+  overflow: visible;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   BLOCK: CHAPTER HEAD（幕次题头）
+   -------------------------------------------------------------------------- */
+.blk-chapter {
+  flex: 0 0 auto;
+  margin-bottom: 16px;
+}
+.blk-chapter-no {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  color: var(--zhu);
+  margin-bottom: 5px;
+}
+.blk-chapter-title {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: .04em;
+  color: var(--ink);
+}
+/* 幕次下的细双线（中式版口） */
+.blk-chapter-rule {
+  margin-top: 9px;
+  height: 3px;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
+}
+
+/* 章首引语（deck） */
+.blk-deck {
+  flex: 0 0 auto;
+  margin-bottom: 18px;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+  font-family: var(--serif);
+  font-size: 14.5px;
+  line-height: 1.72;
+  font-style: italic;
+  color: var(--ink-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   BLOCK: IMAGE（水墨插画 · 出血 + 图注 + 源注）
+   -------------------------------------------------------------------------- */
+.blk-image {
+  flex: 0 0 auto;
+  margin-bottom: 18px;
+}
+/* 出血：左右各吃掉版心内边距 */
+.blk-image.is-bleed {
+  margin-left: calc(var(--page-pad-x) * -1);
+  margin-right: calc(var(--page-pad-x) * -1);
+}
+.blk-image-frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-sunken);
+  line-height: 0;
+}
+.blk-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.blk-image-caption {
+  margin-top: 8px;
+  padding: 0 var(--page-pad-x);
+  font-family: var(--serif);
+  font-size: 12px;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--quiet-strong);
+}
+.blk-image.is-bleed .blk-image-caption { padding: 0 var(--page-pad-x); }
+.blk-image-source {
+  margin-top: 3px;
+  padding: 0 var(--page-pad-x);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: .08em;
+  color: var(--quiet);
+}
+
+/* --------------------------------------------------------------------------
+   BLOCK: BODY（正文）— 典范中文排版
+   -------------------------------------------------------------------------- */
+.blk-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+.blk-para {
+  font-family: var(--serif);
+  font-size: var(--reader-font-size, 18px);
+  line-height: 1.72;
+  color: var(--ink);
+  margin: 0 0 .72em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  text-indent: 2em;
+  letter-spacing: .02em;
+}
+.blk-para.is-lead {
+  font-size: calc(var(--reader-font-size, 18px) * 1.04);
+  line-height: 1.68;
+}
+.blk-para.is-lead::first-letter {
+  font-size: 1.9em;
+  font-weight: 700;
+  float: left;
+  line-height: 1;
+  margin: .06em .12em 0 0;
+  color: var(--zhu);
+}
+
+/* --------------------------------------------------------------------------
+   BLOCK: PULL QUOTE（金句引文）
+   -------------------------------------------------------------------------- */
+.blk-quote {
+  flex: 0 0 auto;
+  margin: 4px 0 18px;
+  padding: 14px 0 12px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.blk-quote-text {
+  font-family: var(--serif);
+  font-size: 15.5px;
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: .03em;
+}
+
+/* --------------------------------------------------------------------------
+   BLOCK: CHAPTER END ARROW（章末续页导引）
+   -------------------------------------------------------------------------- */
+.blk-continue {
+  /* 浮在版心底部，不占文档流 —— 让正文能吃满整个版心 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  color: var(--quiet);
+}
+.blk-continue .arrow { color: var(--zhu); font-size: 13px; }
+
+/* --------------------------------------------------------------------------
+   PAGE: COVER（全画幅水墨封面）
+   -------------------------------------------------------------------------- */
+.sheet-cover {
+  padding: 0;
+  position: relative;
+  background: var(--paper);
+  color: #fff;
+}
+/* 封面正面的视觉内容在背面隐藏 → 翻面后只露宣纸底色 */
+.sheet-cover .cover-art,
+.sheet-cover .cover-scrim,
+.sheet-cover .cover-inner,
+.sheet-cover .cover-vertical {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.sheet-cover .cover-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  animation: coverSettle 2.4s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+@keyframes coverSettle {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1); }
+}
+.sheet-cover .cover-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom,
+    rgba(10, 11, 14, .52) 0%,
+    rgba(10, 11, 14, .18) 32%,
+    rgba(10, 11, 14, .58) 62%,
+    rgba(8, 9, 11, .95) 100%);
+}
+.cover-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 34px 30px;
+  box-sizing: border-box;
+}
+
+/* 封面页眉：刊名 + 期号 */
+.cover-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, .28);
+  padding-bottom: 12px;
+}
+.cover-mast {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.cover-mast-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--zhu);
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(180, 50, 40, .45);
+}
+.cover-mast-name {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.cover-issue {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: #f0d7a8;
+  padding: 3px 10px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .1);
+}
+
+/* 竖排刊名（中式气质核心） */
+.cover-vertical {
+  position: absolute;
+  top: 96px;
+  right: 30px;
+  z-index: 3;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .34em;
+  color: rgba(255, 255, 255, .9);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .7);
+}
+
+.cover-stack {
+  margin-top: auto;
+}
+.cover-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  color: #f0d7a8;
+  margin-bottom: 12px;
+}
+.cover-headline {
+  font-family: var(--serif);
+  font-size: clamp(30px, 4.4vw, 52px);
+  font-weight: 900;
+  line-height: 1.14;
+  letter-spacing: -.01em;
+  margin-bottom: 12px;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, .6);
+}
+.cover-deck {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.66;
+  font-style: italic;
+  color: rgba(255, 255, 255, .86);
+  max-width: 92%;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .55);
+}
+.cover-byline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, .22);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  color: rgba(255, 255, 255, .74);
+}
+.cover-byline strong {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: .04em;
+}
+
+/* --------------------------------------------------------------------------
+   PAGE: INSCRIPTION（原典题记 · 竖排古文）
+   -------------------------------------------------------------------------- */
+.sheet-inscription {
+  background: var(--paper-raised);
+  align-items: center;
+  justify-content: center;
+}
+.inscr-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.inscr-mark {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: .3em;
+  color: var(--gold-ink);
+  margin-bottom: 20px;
+}
+[data-aifa-night="on"] .inscr-mark { color: var(--gold-night); }
+
+/* 竖排原典引文 —— aifa 没有的中式超越点 */
+.inscr-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--serif);
+  font-size: clamp(17px, 2vw, 23px);
+  font-weight: 700;
+  line-height: 2.05;
+  letter-spacing: .16em;
+  color: var(--ink);
+  max-height: 62%;
+  margin-bottom: 22px;
+  padding: 0 4px;
+  border-right: 1px solid var(--line-soft);
+  padding-right: 16px;
+}
+.inscr-source {
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: var(--ink-secondary);
+  max-width: 78%;
+}
+.inscr-seal {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid var(--zhu);
+  border-radius: 3px;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--zhu);
+  transform: rotate(-3deg);
+  opacity: .9;
+}
+
+/* --------------------------------------------------------------------------
+   PAGE: COLOPHON（卷终刊记）
+   -------------------------------------------------------------------------- */
+.sheet-colophon {
+  background: var(--paper);
+  align-items: center;
+  justify-content: center;
+}
+.colophon-wrap {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+.colophon-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: var(--zhu);
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 700;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 14px rgba(178, 58, 43, .32);
+}
+.colophon-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  margin-bottom: 6px;
+}
+.colophon-sub {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .16em;
+  color: var(--quiet);
+  margin-bottom: 20px;
+}
+.colophon-meta {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 76%;
+  padding: 14px 18px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.95;
+  color: var(--ink-secondary);
+}
+.colophon-meta div { display: flex; gap: 10px; }
+.colophon-meta b {
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 62px;
+  flex: 0 0 auto;
+}
+.colophon-next {
+  margin-top: 20px;
+  font-family: var(--serif);
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.colophon-next .next-title {
+  font-weight: 700;
+  color: var(--gold-ink);
+}
+[data-aifa-night="on"] .colophon-next .next-title { color: var(--gold-night); }
+
+/* --------------------------------------------------------------------------
+   FLIP HINT — 右下角可拖拽提示
+   -------------------------------------------------------------------------- */
+.flip-hint {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 6px;
+  pointer-events: none;
+  z-index: 70;
+  opacity: 0;
+  transition: opacity .3s var(--ease);
+}
+.flip-hint.show { opacity: .55; }
+.flip-hint::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-right: 2px solid var(--ink-secondary);
+  border-bottom: 2px solid var(--ink-secondary);
+  border-bottom-right-radius: 3px;
+  transform: rotate(-14deg);
+  animation: peelNudge 2.6s ease-in-out infinite;
+}
+@keyframes peelNudge {
+  0%, 62%, 100% { transform: rotate(-14deg) translate(0, 0); opacity: .5; }
+  78% { transform: rotate(-26deg) translate(3px, -3px); opacity: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE — 移动端降级为单页
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .spine-gutter { width: 40px; }
+  .blk-para { letter-spacing: .015em; }
+}
+@media (max-width: 640px) {
+  .sheet { padding: 26px 22px; }
+  .blk-para { font-size: 16.5px; line-height: 1.78; }
+  .cover-inner { padding: 24px 22px 22px; }
+  .cover-vertical { top: 78px; right: 18px; font-size: 13px; }
+}
+
+/* --------------------------------------------------------------------------
+   SHEET SPREAD — 双页跨页容器（两栏网格 + 中线书脊）
+   每个 StPageFlip "页" 就是一个 .sheet-spread
+   -------------------------------------------------------------------------- */
+.sheet-spread {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  width: var(--spread-w);
+  height: var(--spread-h);
+  position: relative;
+  background: var(--paper);
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.sheet-spread > .sheet {
+  width: 100%;
+  height: 100%;
+  /* 在跨页容器内：去掉外边距阴影外溢的视觉割裂 */
+}
+.sheet-spread .spread-spine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  transform: translateX(-50%);
+  background: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .08) 28%,
+    rgba(0, 0, 0, .20) 46%,
+    rgba(0, 0, 0, .26) 50%,
+    rgba(0, 0, 0, .20) 54%,
+    rgba(0, 0, 0, .08) 72%,
+    rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  z-index: 50;
+}
+[data-aifa-night="on"] .sheet-spread .spread-spine {
+  background: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .28) 30%,
+    rgba(0, 0, 0, .50) 50%,
+    rgba(0, 0, 0, .28) 70%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 栏外批注 — 章节末页未满时填补垂直余韵                                    */
+/* -------------------------------------------------------------------------- */
+.sheet-body { position: relative; }
+
+.blk-margin {
+  position: absolute;
+  right: 6px;
+  bottom: 22px;
+  width: 78px;
+  padding: 14px 4px;
+  border-top: 1px solid rgba(0, 0, 0, .14);
+  border-bottom: 1px solid rgba(0, 0, 0, .14);
+  text-align: center;
+  opacity: .68;
+}
+.blk-margin .m-glyph {
+  display: block;
+  width: 26px; height: 26px;
+  line-height: 24px;
+  margin: 0 auto 8px;
+  font-family: var(--font-serif-zh);
+  font-size: 16px;
+  color: var(--ink);
+  border: 1px solid rgba(170, 39, 47, .42);
+  border-radius: 2px;
+}
+.blk-margin blockquote {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.62;
+  font-style: normal;
+  color: var(--ink);
+  font-family: var(--font-serif-zh);
+  letter-spacing: .02em;
+  text-align: left;
+}
+.blk-margin cite {
+  display: block;
+  margin-top: 6px;
+  font-size: 10px;
+  font-style: normal;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  text-align: left;
+  letter-spacing: .03em;
+}
+[data-aifa-night="on"] .blk-margin {
+  border-color: rgba(255, 255, 255, .18);
+}
+[data-aifa-night="on"] .blk-margin .m-glyph {
+  border-color: rgba(232, 168, 124, .42);
+  color: var(--paper);
+}
+[data-aifa-night="on"] .blk-margin blockquote { color: var(--paper); }
+
+/* 跨页续排段落的「后半截」：不再首行缩进，表示是上页接过来的 */
+.blk-para.is-split-tail {
+  text-indent: 0;
+}
+
+/* 竖屏（手机）：跨页容器退化为单页单栏，不画书脊 */
+.sheet-spread.is-portrait {
+  grid-template-columns: 1fr !important;
+}
+.sheet-spread.is-portrait .spread-spine {
+  display: none;
+}
+
+/* 竖屏（手机）：跨页容器退化为单页单栏，不画书脊 */
+.sheet-spread.is-portrait {
+  grid-template-columns: 1fr !important;
+}
+.sheet-spread.is-portrait .spread-spine {
+  display: none;
+}

@@ -385,7 +385,7 @@ for idx in range(30):
         'category': cfg['category'],
         'issueNumber': issue_str,
         'originalMyth': cfg['originalMyth'],
-        'author': 'GX',
+        'author': '岛主王仙客',
         'authorTitle': '神话重构作家 · 独立小说家',
         'wordCount': total_words,
         'readMinutes': max(3, round(total_words / 350)),
@@ -504,7 +504,7 @@ for idx in range(30):
         'category': cfg['category'],
         'wordCount': total_words,
         'nextIssueNumber': next_issue_no,
-        'author': 'GX'
+        'author': '岛主王仙客'
     })
     
     # Consolidate all paragraphs
@@ -520,7 +520,7 @@ for idx in range(30):
         'category': cfg['category'],
         'originalMyth': cfg['originalMyth'],
         'classicQuote': cfg['classicQuote'],
-        'author': 'GX',
+        'author': '岛主王仙客',
         'authorTitle': '神话重构作家 · 独立小说家',
         'wordCount': total_words,
         'readMinutes': max(3, round(total_words / 350)),

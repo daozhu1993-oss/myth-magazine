@@ -469,7 +469,7 @@ for f in files:
         'category': matched_meta['category'],
         'originalMyth': matched_meta['originalMyth'],
         'classicQuote': matched_meta['classicQuote'],
-        'author': 'GX',
+        'author': '岛主王仙客',
         'authorTitle': '神话重构作家 · 独立小说家',
         'wordCount': total_words,
         'readMinutes': max(3, round(total_words / 350)),

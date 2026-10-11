@@ -433,44 +433,23 @@
     }
   }
 
-  // --- FULL-BLEED MAGAZINE READER ENGINE ---
+  // --- SPREAD READER DELEGATION（双页跨页杂志引擎） ---
   function openReader(articleId, pageIdx = null) {
     const article = state.articles.find(a => a.id === articleId);
     if (!article) return;
-
     state.currentArticle = article;
-    state.readerActive = true;
-    
-    // Resume progress only if pageIdx was not explicitly requested
-    if (pageIdx === null || pageIdx === undefined) {
-      if (state.readProgress[articleId]) {
-        state.currentPageIdx = state.readProgress[articleId].pageIdx || 0;
-      } else {
-        state.currentPageIdx = 0;
-      }
-    } else {
-      state.currentPageIdx = Math.max(0, Math.min(article.totalPages - 1, pageIdx));
+
+    if (window.MythSpread) {
+      window.MythSpread.openReader(articleId, pageIdx || 0);
+      return;
     }
-
-    applyFontSize();
-    updateReaderBookmarkBtn();
-    renderPage(state.currentPageIdx, 0);
-    renderTOC();
-
-    DOM.readerContainer.classList.add('active');
-    document.body.style.overflow = 'hidden';
-
-    // Update location hash
-    history.pushState(null, '', `#reader=${article.id}&page=${state.currentPageIdx + 1}`);
   }
 
   function closeReader() {
-    if (!state.readerActive) return;
-    state.readerActive = false;
-    DOM.readerContainer.classList.remove('active');
-    closeToc();
-    document.body.style.overflow = '';
-    history.pushState(null, '', window.location.pathname);
+    if (window.MythSpread) {
+      window.MythSpread.closeReader();
+      return;
+    }
   }
 
   function renderPage(pageIdx, direction = 0) {
@@ -646,7 +625,7 @@
 
           <div class="editorial-footer-bar">
             <span>第 ${page.pageNumber} 页 · 共 ${article.totalPages} 页</span>
-            <span>中华神话重构系列 · GX 著</span>
+            <span>中华神话重构系列 · 岛主王仙客 著</span>
           </div>
         </div>
       `;
@@ -771,6 +750,9 @@
     window.addEventListener('keydown', (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
+      // 跨页阅读器开启时，键盘交由 spread-reader.js 处理
+      if (window.MythSpread && window.MythSpread.isOpen()) return;
+
       if (state.readerActive) {
         if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
           e.preventDefault();
@@ -832,76 +814,7 @@
       });
     }
 
-    // Click on empty margin gutters to turn page (点击左右外侧空白留白区翻页)
-    DOM.readerPageSlide.addEventListener('click', (e) => {
-      if (e.target.closest('button') || e.target.closest('a') || e.target.closest('.reader-floating-bar') ||
-          e.target.closest('.chapter-nav-guide') || e.target.closest('.editorial-inner-wrap') ||
-          e.target.closest('.inscription-card-inner') || e.target.closest('.colophon-card') ||
-          e.target.closest('.cover-hero-stack')) {
-        return;
-      }
-      if (window.getSelection() && window.getSelection().toString().length > 0) return;
-      const x = e.clientX;
-      const w = window.innerWidth;
-      if (x > w * 0.85) {
-        turnPage(1);
-      } else if (x < w * 0.15) {
-        turnPage(-1);
-      }
-    });
-
-    // Touch swipe gesture support
-    let touchStartX = 0;
-    DOM.readerPageSlide.addEventListener('touchstart', (e) => {
-      touchStartX = e.touches[0].clientX;
-    }, { passive: true });
-    DOM.readerPageSlide.addEventListener('touchend', (e) => {
-      const touchEndX = e.changedTouches[0].clientX;
-      const diff = touchEndX - touchStartX;
-      if (Math.abs(diff) > 50) {
-        if (diff < 0) turnPage(1); // Swipe left -> next page
-        else turnPage(-1);        // Swipe right -> prev page
-      }
-    }, { passive: true });
-
-    // Reader controls
-    DOM.readerCloseBtn.onclick = closeReader;
-    DOM.btnPagePrev.onclick = () => turnPage(-1);
-    DOM.btnPageNext.onclick = () => turnPage(1);
-    if (DOM.readerEdgePrev) DOM.readerEdgePrev.onclick = () => turnPage(-1);
-    if (DOM.readerEdgeNext) DOM.readerEdgeNext.onclick = () => turnPage(1);
-    DOM.btnFontDec.onclick = () => adjustFontSize(-1);
-    DOM.btnFontInc.onclick = () => adjustFontSize(1);
-    DOM.btnTocToggle.onclick = toggleToc;
-    DOM.tocCloseBtn.onclick = closeToc;
-    DOM.tocOverlay.onclick = closeToc;
-    DOM.btnReaderBookmark.onclick = () => {
-      if (state.currentArticle) toggleBookmark(state.currentArticle.id);
-    };
-
-    // Sound toggle
-    DOM.btnSoundToggle.onclick = () => {
-      state.soundEnabled = !state.soundEnabled;
-      localStorage.setItem('myth_sound', state.soundEnabled);
-      updateSoundBtn();
-    };
-
-    // Share URL
-    DOM.btnReaderShare.onclick = () => {
-      navigator.clipboard.writeText(window.location.href);
-      const originalText = DOM.btnReaderShare.innerHTML;
-      DOM.btnReaderShare.innerHTML = `✓`;
-      setTimeout(() => DOM.btnReaderShare.innerHTML = originalText, 1500);
-    };
-
-    // Fullscreen toggle
-    DOM.btnFullscreenToggle.onclick = () => {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen().catch(() => {});
-      } else {
-        document.exitFullscreen().catch(() => {});
-      }
-    };
+    // 阅读器内部控制交由 spread-reader.js 接管（双页跨页引擎）
 
     // Popstate (Back / Forward button)
     window.addEventListener('popstate', handleHashRouting);

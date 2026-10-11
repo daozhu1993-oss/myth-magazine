@@ -8,7 +8,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《山海经·大荒西经》·《淮南子·天文训》",
     "classicQuote": "天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 8764,
     "readMinutes": 25,
@@ -25,7 +25,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 001",
         "originalMyth": "《山海经·大荒西经》·《淮南子·天文训》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 8764,
         "readMinutes": 25,
@@ -482,7 +482,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 8764,
         "nextIssueNumber": "No. 002",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 15,
@@ -777,7 +777,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《山海经·北山经》",
     "classicQuote": "炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 8278,
     "readMinutes": 24,
@@ -794,7 +794,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 002",
         "originalMyth": "《山海经·北山经》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 8278,
         "readMinutes": 24,
@@ -1264,7 +1264,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 8278,
         "nextIssueNumber": "No. 003",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 16,
@@ -1559,7 +1559,7 @@ window.MYTH_ARTICLES = [
     "category": "卷一 · 创世与洪荒",
     "originalMyth": "《淮南子·本经训》·《说文解字序》",
     "classicQuote": "颉首四目，通于神明，仰观奎星圜曲之势，俯察龟文鸟迹之象，博采众美，合而为字。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5158,
     "readMinutes": 15,
@@ -1576,7 +1576,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "issueNumber": "No. 003",
         "originalMyth": "《淮南子·本经训》·《说文解字序》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5158,
         "readMinutes": 15,
@@ -1869,7 +1869,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "wordCount": 5158,
         "nextIssueNumber": "No. 004",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 15,
@@ -2000,7 +2000,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《列子·汤问》·《吕氏春秋·本味》",
     "classicQuote": "伯牙善鼓琴，钟子期善听。伯牙鼓琴，志在高山，钟子期曰：“善哉，峨峨兮若泰山！”",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 6096,
     "readMinutes": 17,
@@ -2017,7 +2017,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 004",
         "originalMyth": "《列子·汤问》·《吕氏春秋·本味》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 6096,
         "readMinutes": 17,
@@ -2280,7 +2280,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 6096,
         "nextIssueNumber": "No. 005",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -2459,7 +2459,7 @@ window.MYTH_ARTICLES = [
     "category": "卷四 · 志怪与幽冥",
     "originalMyth": "《东游记》· 民间八仙传说",
     "classicQuote": "八仙过海，各显神通。沧海横流，不借天风，但凭手中一物，踏破万顷狂澜。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 6159,
     "readMinutes": 18,
@@ -2476,7 +2476,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "issueNumber": "No. 005",
         "originalMyth": "《东游记》· 民间八仙传说",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 6159,
         "readMinutes": 18,
@@ -2740,7 +2740,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "wordCount": 6159,
         "nextIssueNumber": "No. 006",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -2920,7 +2920,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《山海经·海外西经》· 陶渊明《读山海经》",
     "classicQuote": "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5806,
     "readMinutes": 17,
@@ -2937,7 +2937,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 006",
         "originalMyth": "《山海经·海外西经》· 陶渊明《读山海经》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5806,
         "readMinutes": 17,
@@ -3193,7 +3193,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 5806,
         "nextIssueNumber": "No. 007",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -3352,7 +3352,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "民间四大传说 · 梁山伯与祝英台",
     "classicQuote": "生不能同衾，死当同穴。冢忽自开，祝跃入其中，合之，化为双蝶，翩翩而舞。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 1396,
     "readMinutes": 4,
@@ -3369,7 +3369,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 007",
         "originalMyth": "民间四大传说 · 梁山伯与祝英台",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 1396,
         "readMinutes": 4,
@@ -3476,7 +3476,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 1396,
         "nextIssueNumber": "No. 008",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 6,
@@ -3538,7 +3538,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《淮南子·本经训》·《楚辞·天问》",
     "classicQuote": "逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食。尧乃使羿上射十日，中其九日。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 6720,
     "readMinutes": 19,
@@ -3555,7 +3555,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 008",
         "originalMyth": "《淮南子·本经训》·《楚辞·天问》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 6720,
         "readMinutes": 19,
@@ -3876,7 +3876,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 6720,
         "nextIssueNumber": "No. 009",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 12,
@@ -4074,7 +4074,7 @@ window.MYTH_ARTICLES = [
     "category": "卷一 · 创世与洪荒",
     "originalMyth": "《史记·夏本纪》·《左传》",
     "classicQuote": "禹会诸侯于涂山，执玉帛者万国。防风氏后至，禹杀而戮之。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3932,
     "readMinutes": 11,
@@ -4091,7 +4091,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "issueNumber": "No. 009",
         "originalMyth": "《史记·夏本纪》·《左传》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3932,
         "readMinutes": 11,
@@ -4276,7 +4276,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "wordCount": 3932,
         "nextIssueNumber": "No. 010",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 7,
@@ -4403,7 +4403,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《山海经·海外北经》",
     "classicQuote": "夸父与日逐走，入日；渴，欲得饮，饮于河、渭；未至，道渴而死。弃其杖，化为邓林。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 4850,
     "readMinutes": 14,
@@ -4420,7 +4420,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 010",
         "originalMyth": "《山海经·海外北经》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 4850,
         "readMinutes": 14,
@@ -4636,7 +4636,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 4850,
         "nextIssueNumber": "No. 011",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 11,
@@ -4741,7 +4741,7 @@ window.MYTH_ARTICLES = [
     "category": "卷一 · 创世与洪荒",
     "originalMyth": "《风俗通义》·《淮南子·览冥训》",
     "classicQuote": "女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3850,
     "readMinutes": 11,
@@ -4758,7 +4758,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "issueNumber": "No. 011",
         "originalMyth": "《风俗通义》·《淮南子·览冥训》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3850,
         "readMinutes": 11,
@@ -4980,7 +4980,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "wordCount": 3850,
         "nextIssueNumber": "No. 012",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -5118,7 +5118,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《史记·殷本纪》·《列女传》",
     "classicQuote": "纣得妲己，爱幸百计，妲己之言听计从。天下谓之倾国，而史家独归罪于红颜。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 4378,
     "readMinutes": 13,
@@ -5135,7 +5135,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 012",
         "originalMyth": "《史记·殷本纪》·《列女传》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 4378,
         "readMinutes": 13,
@@ -5426,7 +5426,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 4378,
         "nextIssueNumber": "No. 013",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 12,
@@ -5594,7 +5594,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《左传》杞梁妻 · 民间传说",
     "classicQuote": "杞梁死，其妻迎其柩于路，抚柩而哭，哀声动天，十里长城为之崩塌。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5316,
     "readMinutes": 15,
@@ -5611,7 +5611,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 013",
         "originalMyth": "《左传》杞梁妻 · 民间传说",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5316,
         "readMinutes": 15,
@@ -5955,7 +5955,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 5316,
         "nextIssueNumber": "No. 014",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 13,
@@ -6163,7 +6163,7 @@ window.MYTH_ARTICLES = [
     "category": "卷四 · 志怪与幽冥",
     "originalMyth": "幽冥神话 · 忘川之畔",
     "classicQuote": "过奈何桥，饮孟婆汤，前世爱恨、冤亲债孽，入腹化水，尽皆忘却，始得轮回报应。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3904,
     "readMinutes": 11,
@@ -6180,7 +6180,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "issueNumber": "No. 014",
         "originalMyth": "幽冥神话 · 忘川之畔",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3904,
         "readMinutes": 11,
@@ -6408,7 +6408,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "wordCount": 3904,
         "nextIssueNumber": "No. 015",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 8,
@@ -6565,7 +6565,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《庄子·盗跖》·《战国策·燕策一》",
     "classicQuote": "尾生与女子期于梁下，女子不来，水至不去，抱梁柱而死。信之至也，亦痴之至也。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5004,
     "readMinutes": 14,
@@ -6582,7 +6582,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 015",
         "originalMyth": "《庄子·盗跖》·《战国策·燕策一》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5004,
         "readMinutes": 14,
@@ -6811,7 +6811,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 5004,
         "nextIssueNumber": "No. 016",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -6956,7 +6956,7 @@ window.MYTH_ARTICLES = [
     "category": "卷二 · 反叛与神罚",
     "originalMyth": "《列子·汤问》",
     "classicQuote": "虽我之死，有子存焉；子又生孙，孙又生子；子子孙孙无穷匮也，而山不加增，何苦而不平？",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5154,
     "readMinutes": 15,
@@ -6973,7 +6973,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "issueNumber": "No. 016",
         "originalMyth": "《列子·汤问》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5154,
         "readMinutes": 15,
@@ -7296,7 +7296,7 @@ window.MYTH_ARTICLES = [
         "category": "卷二 · 反叛与神罚",
         "wordCount": 5154,
         "nextIssueNumber": "No. 017",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 12,
@@ -7496,7 +7496,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《庄子·齐物论》",
     "classicQuote": "昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与！不知周也。俄然觉，则蘧蘧然周也。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5186,
     "readMinutes": 15,
@@ -7513,7 +7513,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 017",
         "originalMyth": "《庄子·齐物论》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5186,
         "readMinutes": 15,
@@ -7729,7 +7729,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 5186,
         "nextIssueNumber": "No. 018",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 11,
@@ -7835,7 +7835,7 @@ window.MYTH_ARTICLES = [
     "category": "卷一 · 创世与洪荒",
     "originalMyth": "《庄子·应帝王》",
     "classicQuote": "南海之帝为儵，北海之帝为忽，中央之帝为浑沌。日凿一窍，七日而浑沌死。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 2751,
     "readMinutes": 8,
@@ -7852,7 +7852,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "issueNumber": "No. 018",
         "originalMyth": "《庄子·应帝王》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 2751,
         "readMinutes": 8,
@@ -8070,7 +8070,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "wordCount": 2751,
         "nextIssueNumber": "No. 019",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -8191,7 +8191,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《历代名画记》",
     "classicQuote": "张僧繇于金陵安乐寺画四白龙，不点眼睛。点其一，雷电破壁，一龙乘云上天。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3291,
     "readMinutes": 9,
@@ -8208,7 +8208,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 019",
         "originalMyth": "《历代名画记》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3291,
         "readMinutes": 9,
@@ -8422,7 +8422,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 3291,
         "nextIssueNumber": "No. 020",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -8552,7 +8552,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《述异记》",
     "classicQuote": "信安郡石室山，晋时王质伐木至，见童子数人棋而歌，质因听之。童子与一物如枣核，食之不饥。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 2029,
     "readMinutes": 6,
@@ -8569,7 +8569,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 020",
         "originalMyth": "《述异记》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 2029,
         "readMinutes": 6,
@@ -8732,7 +8732,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 2029,
         "nextIssueNumber": "No. 021",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 8,
@@ -8824,7 +8824,7 @@ window.MYTH_ARTICLES = [
     "category": "卷四 · 志怪与幽冥",
     "originalMyth": "《聊斋志异·画皮》",
     "classicQuote": "世人愚惑，明是妖魔，而以为美。迷而不悟，乃至碎裂胸膛，何其哀哉！",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3639,
     "readMinutes": 10,
@@ -8841,7 +8841,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "issueNumber": "No. 021",
         "originalMyth": "《聊斋志异·画皮》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3639,
         "readMinutes": 10,
@@ -9069,7 +9069,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "wordCount": 3639,
         "nextIssueNumber": "No. 022",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -9200,7 +9200,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《搜神后记》",
     "classicQuote": "侯官谢端，少孤，无妇。得大螺，养于瓮中。每日归，见有饭饮汤火，乃白水素女所为也。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 4018,
     "readMinutes": 11,
@@ -9217,7 +9217,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 022",
         "originalMyth": "《搜神后记》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 4018,
         "readMinutes": 11,
@@ -9453,7 +9453,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 4018,
         "nextIssueNumber": "No. 023",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -9592,7 +9592,7 @@ window.MYTH_ARTICLES = [
     "category": "卷一 · 创世与洪荒",
     "originalMyth": "《淮南子·修务训》",
     "classicQuote": "神农尝百草之滋味，水泉之甘苦，令民知所避就。当此之时，一日而遇七十毒。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3203,
     "readMinutes": 9,
@@ -9609,7 +9609,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "issueNumber": "No. 023",
         "originalMyth": "《淮南子·修务训》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3203,
         "readMinutes": 9,
@@ -9815,7 +9815,7 @@ window.MYTH_ARTICLES = [
         "category": "卷一 · 创世与洪荒",
         "wordCount": 3203,
         "nextIssueNumber": "No. 024",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 8,
@@ -9950,7 +9950,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《古诗十九首》· 汉魏乐府",
     "classicQuote": "迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。盈盈一水间，脉脉不得语。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 4577,
     "readMinutes": 13,
@@ -9967,7 +9967,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 024",
         "originalMyth": "《古诗十九首》· 汉魏乐府",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 4577,
         "readMinutes": 13,
@@ -10220,7 +10220,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 4577,
         "nextIssueNumber": "No. 025",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -10376,7 +10376,7 @@ window.MYTH_ARTICLES = [
     "category": "卷四 · 志怪与幽冥",
     "originalMyth": "《聊斋志异·聂小倩》",
     "classicQuote": "宁生笑曰：“我生平无妄想，此物非我所有，何敢受之？”小倩叹曰：“君真丈夫也！”",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5824,
     "readMinutes": 17,
@@ -10393,7 +10393,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "issueNumber": "No. 025",
         "originalMyth": "《聊斋志异·聂小倩》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5824,
         "readMinutes": 17,
@@ -10639,7 +10639,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "wordCount": 5824,
         "nextIssueNumber": "No. 026",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 9,
@@ -10801,7 +10801,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《吴越春秋》·《搜神记》",
     "classicQuote": "干将作剑，采五山之铁精，六合之金英。候天伺地，金铁不销，铁汁不下。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 2477,
     "readMinutes": 7,
@@ -10818,7 +10818,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 026",
         "originalMyth": "《吴越春秋》·《搜神记》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 2477,
         "readMinutes": 7,
@@ -10976,7 +10976,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 2477,
         "nextIssueNumber": "No. 027",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 7,
@@ -11076,7 +11076,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《搜神记·三王墓》",
     "classicQuote": "客持头往见楚王，王大喜。客曰：“此勇士头也，当于汤镬煮之。”王从之，煮三日三夜不烂。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 2119,
     "readMinutes": 6,
@@ -11093,7 +11093,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 027",
         "originalMyth": "《搜神记·三王墓》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 2119,
         "readMinutes": 6,
@@ -11230,7 +11230,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 2119,
         "nextIssueNumber": "No. 028",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 7,
@@ -11309,7 +11309,7 @@ window.MYTH_ARTICLES = [
     "category": "卷四 · 志怪与幽冥",
     "originalMyth": "民间钟馗信仰 ·《唐逸史》",
     "classicQuote": "终南钟馗，虽为鬼王，心怀赤诚。挑灯夜引，百鬼肃穆，嫁妹于杜生，骨肉至情。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5489,
     "readMinutes": 16,
@@ -11326,7 +11326,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "issueNumber": "No. 028",
         "originalMyth": "民间钟馗信仰 ·《唐逸史》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5489,
         "readMinutes": 16,
@@ -11603,7 +11603,7 @@ window.MYTH_ARTICLES = [
         "category": "卷四 · 志怪与幽冥",
         "wordCount": 5489,
         "nextIssueNumber": "No. 029",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -11783,7 +11783,7 @@ window.MYTH_ARTICLES = [
     "category": "卷三 · 人间与执念",
     "originalMyth": "《白娘子永镇雷峰塔》",
     "classicQuote": "西湖水干，江潮不起，雷峰塔倒，白蛇出世。情之所钟，生死不悔。",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 5019,
     "readMinutes": 14,
@@ -11800,7 +11800,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "issueNumber": "No. 029",
         "originalMyth": "《白娘子永镇雷峰塔》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 5019,
         "readMinutes": 14,
@@ -12067,7 +12067,7 @@ window.MYTH_ARTICLES = [
         "category": "卷三 · 人间与执念",
         "wordCount": 5019,
         "nextIssueNumber": "No. 030",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 10,
@@ -12237,7 +12237,7 @@ window.MYTH_ARTICLES = [
     "category": "卷五 · 幻化与器物",
     "originalMyth": "《枕中记》",
     "classicQuote": "卢生欠伸而寤，见方卧于邸中，吕翁坐其旁，主人蒸黍尚未熟。生抚案惊曰：“岂其梦寐耶？”",
-    "author": "GX",
+    "author": "岛主王仙客",
     "authorTitle": "神话重构作家 · 独立小说家",
     "wordCount": 3106,
     "readMinutes": 9,
@@ -12254,7 +12254,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "issueNumber": "No. 030",
         "originalMyth": "《枕中记》",
-        "author": "GX",
+        "author": "岛主王仙客",
         "authorTitle": "神话重构作家 · 独立小说家",
         "wordCount": 3106,
         "readMinutes": 9,
@@ -12423,7 +12423,7 @@ window.MYTH_ARTICLES = [
         "category": "卷五 · 幻化与器物",
         "wordCount": 3106,
         "nextIssueNumber": "No. 001",
-        "author": "GX"
+        "author": "岛主王仙客"
       }
     ],
     "totalPages": 7,

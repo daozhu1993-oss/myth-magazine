@@ -131,7 +131,7 @@ for f in files:
         'issueNumber': f'No. {issue_no:03d}',
         'title': display_title,
         'category': category,
-        'author': 'GX',
+        'author': '岛主王仙客',
         'authorTitle': '神话重构作者 · 独立作家',
         'wordCount': total_words,
         'readMinutes': max(3, round(total_words / 350)),
