@@ -955,3 +955,57 @@
   transform: translateY(-1px);
 }
 .load-more-btn:active { transform: translateY(0); }
+
+/* 配图加载失败时的降级占位（CDN 断连时保证版面不塌、不出现破图）*/
+.img-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: linear-gradient(160deg, #efe8dc 0%, #e4dbc9 100%);
+  color: #8a7a63;
+  font-family: var(--serif);
+  overflow: hidden;
+  position: relative;
+}
+.img-fallback::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(170, 39, 39, .05) 0 2px, transparent 2px),
+    radial-gradient(circle at 70% 65%, rgba(60, 48, 32, .05) 0 2px, transparent 2px);
+  background-size: 14px 14px, 19px 19px;
+  pointer-events: none;
+}
+.img-fallback-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid #aa2727;
+  color: #aa2727;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 2px;
+  opacity: .8;
+  position: relative;
+  z-index: 1;
+}
+.img-fallback-title {
+  font-size: 12px;
+  letter-spacing: .08em;
+  opacity: .75;
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.5;
+}
+/* 网格卡片内保持 186px 高度，与 .issue-card-cover-thumb 一致 */
+.issue-card-cover-thumb.img-fallback { height: 186px; }
+/* hero 封面卡内撑满 */
+.hero-cover-img.img-fallback { height: 100%; min-height: 320px; }

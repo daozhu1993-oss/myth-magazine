@@ -24,6 +24,50 @@
   // 暴露给 spread-reader.js 复用
   window.mythImg = mythImg;
 
+  /* ------------------------------------------------------------------------
+     配图容错：CDN（Cloudflare）回源不稳定时会直接 ERR_CONNECTION_CLOSED，
+     图片加载失败时不要留破图，按 重试 → 换档 → 占位 的顺序降级：
+       第 1 次失败  等 0.8s  换另一个尺寸档重试（th <-> lg）
+       第 2 次失败  等 1.8s  原路径 + 时间戳绕过缓存重试
+       第 3 次失败  渲染朱砂「神」印占位卡（宣纸底 + 篇名），版面不塌
+     ------------------------------------------------------------------------ */
+  const IMG_MAX_RETRY = 2;
+  function markImgFailed(img) {
+    const alt = img.getAttribute('alt') || '';
+    const box = document.createElement('div');
+    box.className = 'img-fallback';
+    box.setAttribute('aria-label', alt);
+    box.innerHTML = '<span class="img-fallback-seal">神</span>' +
+      (alt ? '<span class="img-fallback-title">' + alt.replace(/</g, '&lt;') + '</span>' : '');
+    const cls = img.className;
+    if (cls) box.className += ' ' + cls;
+    if (img.parentNode) img.parentNode.replaceChild(box, img);
+  }
+  function installImgFallback() {
+    // error 事件不冒泡，必须用捕获阶段监听 document
+    document.addEventListener('error', function (e) {
+      const img = e.target;
+      if (!img || img.tagName !== 'IMG') return;
+      if (img.dataset.imgRetry === undefined) img.dataset.imgRetry = '0';
+      const stage = parseInt(img.dataset.imgRetry, 10);
+      if (stage >= IMG_MAX_RETRY) { markImgFailed(img); return; }
+      img.dataset.imgRetry = String(stage + 1);
+      const delay = 800 * (stage + 1);
+      setTimeout(function () {
+        let src = img.src.split('?')[0];
+        if (stage === 0) {
+          // 换档：th 失败试 lg，lg 失败试 th
+          if (src.indexOf('/illustrations/th/') !== -1) src = src.replace('/illustrations/th/', '/illustrations/lg/');
+          else if (src.indexOf('/illustrations/lg/') !== -1) src = src.replace('/illustrations/lg/', '/illustrations/th/');
+        } else {
+          // 原路径 + 时间戳，绕过可能的坏缓存
+          src = src + '?r=' + Date.now();
+        }
+        img.src = src;
+      }, delay);
+    }, true);
+  }
+
   // --- STATE DEFINITION ---
   const state = {
     // 仅首页元数据（id/title/coverImg/...）。完整正文（chapters/fullParagraphs 等）
@@ -193,6 +237,7 @@
 
   // --- INITIALIZATION ---
   function init() {
+    installImgFallback();          // 配图加载失败自动重试 / 降级占位
     applyTheme(state.currentTheme);
     updateBookshelfBadge();
     updateSoundBtn();
