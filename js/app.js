@@ -26,7 +26,10 @@
 
   // --- STATE DEFINITION ---
   const state = {
-    articles: window.MYTH_ARTICLES || [],
+    // 仅首页元数据（id/title/coverImg/...）。完整正文（chapters/fullParagraphs 等）
+    // 通过 fetchFullArticle(id) 按需拉取，缓存到 state.fullArticles。
+    articles: window.MYTH_META || [],
+    fullArticles: {}, // id -> 完整文章对象
     currentTheme: localStorage.getItem('myth_theme') || 'light',
     currentHeroIdx: 0,
     selectedCategory: 'all',
@@ -336,7 +339,15 @@
       return;
     }
 
-    DOM.issuesGrid.innerHTML = filtered.map(item => {
+    /* 首屏只渲染 12 张卡，其余懒加载。
+       - 30 张图同时拉取时（即使已压缩到 ~30KB），经 Cloudflare 回源到 GitHub Pages
+         浏览器 6 条并发仍要等 60s+；分批让用户更快看到内容
+       - 已使用 loading="lazy"，即使先渲染 30 个 <img>，浏览器也只会拉视口内的图，
+         但初始 DOM 数量 / IntersectionObserver 数量 / 首页 HTML 体积仍然可观 */
+    const PAGE_SIZE = 12;
+    const visible = filtered.slice(0, state.gridVisible || PAGE_SIZE);
+
+    DOM.issuesGrid.innerHTML = visible.map(item => {
       const saved = isBookmarked(item.id);
       return `
         <article class="issue-card" onclick="window.MythApp.openReader('${item.id}')">
@@ -354,8 +365,8 @@
             <div class="issue-card-footer" onclick="event.stopPropagation()">
               <span>${item.readMinutes} 分钟 · ${item.wordCount.toLocaleString()} 字</span>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <button class="card-bookmark-btn ${saved ? 'saved' : ''}" 
-                        title="${saved ? '移出书架' : '收藏到书架'}" 
+                <button class="card-bookmark-btn ${saved ? 'saved' : ''}"
+                        title="${saved ? '移出书架' : '收藏到书架'}"
                         onclick="window.MythApp.toggleBookmark('${item.id}')">
                   <svg viewBox="0 0 24 24" width="16" height="16" fill="${saved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
                     <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
@@ -370,6 +381,33 @@
         </article>
       `;
     }).join('');
+
+    // "载入更多" 按钮
+    const remaining = filtered.length - visible.length;
+    if (remaining > 0) {
+      DOM.issuesGrid.insertAdjacentHTML('beforeend', `
+        <div style="grid-column:1/-1;display:flex;justify-content:center;padding:32px 0;">
+          <button class="load-more-btn" onclick="window.MythApp.loadMoreIssues()">
+            载入更多篇目 · 还剩 ${remaining} 期
+            <span style="margin-left:8px;opacity:.7;">↓</span>
+          </button>
+        </div>
+      `);
+    }
+  }
+
+  function loadMoreIssues() {
+    state.gridVisible = (state.gridVisible || 12) + 12;
+    renderGrid();
+    // 滚动到刚加载的内容
+    requestAnimationFrame(() => {
+      const grid = document.getElementById('issues-grid');
+      if (grid) {
+        const lastVisible = grid.querySelectorAll('.issue-card');
+        const target = lastVisible[state.gridVisible - 12];
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
   }
 
   // --- BOOKSHELF MODAL ---
@@ -452,16 +490,64 @@
     }
   }
 
-  // --- SPREAD READER DELEGATION（双页跨页杂志引擎） ---
-  function openReader(articleId, pageIdx = null) {
-    const article = state.articles.find(a => a.id === articleId);
-    if (!article) return;
-    state.currentArticle = article;
+  /* ------------------------------------------------------------------------
+     按需加载阅读器正文（首页只用元数据列表，正文只在打开某篇时才 fetch）
+     ------------------------------------------------------------------------ */
+  const _inflight = {}; // articleId -> Promise（去重并发）
+  async function fetchFullArticle(articleId) {
+    if (state.fullArticles[articleId]) return state.fullArticles[articleId];
+    if (_inflight[articleId]) return _inflight[articleId];
+    _inflight[articleId] = (async () => {
+      // 优先用浏览器缓存：直接 fetch，由 Service Worker/浏览器 HTTP 缓存复用
+      const url = 'data/content/' + articleId + '.json';
+      const res = await fetch(url, { credentials: 'same-origin' });
+      if (!res.ok) throw new Error('fetch ' + articleId + ' failed: HTTP ' + res.status);
+      const full = await res.json();
+      // 合并到 meta 上，确保阅读器里 author/coverImg 等元字段也齐全
+      const meta = state.articles.find(a => a.id === articleId) || {};
+      state.fullArticles[articleId] = Object.assign({}, meta, full);
+      return state.fullArticles[articleId];
+    })().finally(() => { delete _inflight[articleId]; });
+    return _inflight[articleId];
+  }
 
-    if (window.MythSpread) {
-      window.MythSpread.openReader(articleId, pageIdx || 0);
-      return;
+  // 顶部状态条：轻量提示
+  function showReaderLoading(message) {
+    let el = document.getElementById('myth-reader-loading');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'myth-reader-loading';
+      el.style.cssText = 'position:fixed;inset:0;background:rgba(247,245,241,.94);backdrop-filter:blur(6px);z-index:9999;display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:#3a3127;font-size:18px;letter-spacing:.04em;';
+      document.body.appendChild(el);
     }
+    el.textContent = message || '正在载入正文…';
+    el.style.display = 'flex';
+  }
+  function hideReaderLoading() {
+    const el = document.getElementById('myth-reader-loading');
+    if (el) el.style.display = 'none';
+  }
+
+  // --- SPREAD READER DELEGATION（双页跨页杂志引擎） ---
+  async function openReader(articleId, pageIdx = null) {
+    const meta = state.articles.find(a => a.id === articleId);
+    if (!meta) return;
+    try {
+      const article = await fetchFullArticle(articleId);
+      state.currentArticle = article;
+      if (window.MythSpread) {
+        window.MythSpread.openReader(article, pageIdx || 0);
+      }
+    } catch (e) {
+      console.error('载入正文失败：', e);
+      hideReaderLoading();
+      alert('正文载入失败：' + e.message + '\n请检查网络后重试。');
+    }
+  }
+
+  /* 关闭后清理：保留缓存 state.fullArticles 避免重新读 */
+  function closeReader() {
+    if (window.MythSpread) window.MythSpread.closeReader();
   }
 
   function closeReader() {
@@ -876,7 +962,8 @@
     toggleBookmark,
     toggleTheme,
     openBookshelf,
-    closeBookshelf
+    closeBookshelf,
+    loadMoreIssues
   };
 
   // Launch app when DOM is ready

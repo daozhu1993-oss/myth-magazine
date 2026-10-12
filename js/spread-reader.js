@@ -550,8 +550,8 @@
     const geo = state.geo;
     state.chapterMap = [];
 
-    const idx = (window.MYTH_ARTICLES || []).findIndex(a => a.id === article.id);
-    const next = (window.MYTH_ARTICLES || [])[(idx + 1) % (window.MYTH_ARTICLES || []).length] || article;
+    const idx = (window.MYTH_ARTICLES || window.MYTH_META || []).findIndex(a => a.id === article.id);
+    const next = (window.MYTH_ARTICLES || window.MYTH_META || [])[(idx + 1) % (window.MYTH_ARTICLES || window.MYTH_META || []).length] || article;
 
     const front = buildFrontispiecePage(article);      // index 0 (left)
     const cover = buildCoverPage(article);            // index 1 (right)
@@ -808,8 +808,15 @@
     }
   }
 
-  function openReader(articleId, page) {
-    const article = (window.MYTH_ARTICLES || []).find(a => a.id === articleId);
+  /* 接收两种调用：
+     1) openReader(articleId, page)            旧路径：自行查 MYTH_ARTICLES（兼容）
+     2) openReader(fullArticle, page)          新路径：app.js 已经按需 fetch 了正文，
+                                                直接传入完整对象，不再依赖 MYTH_ARTICLES。
+  */
+  function openReader(articleOrId, page) {
+    const article = (articleOrId && typeof articleOrId === 'object')
+      ? articleOrId
+      : (window.MYTH_ARTICLES || window.MYTH_META || []).find(a => a.id === articleOrId);
     if (!article) return;
 
     state.article = article;

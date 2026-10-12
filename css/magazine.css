@@ -934,3 +934,24 @@
     display: block;
   }
 }
+
+/* 网格分页：载入更多（首页 30 期一次性铺开会拖垮首屏，12 张 + 分批更稳）*/
+.load-more-btn {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink, #2a2018);
+  background: var(--paper-raised, #f4efe7);
+  border: 1px solid var(--line, #d6cdbf);
+  padding: 14px 36px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease, ease);
+}
+.load-more-btn:hover {
+  background: var(--ink, #2a2018);
+  color: var(--paper, #f7f5f1);
+  border-color: var(--ink, #2a2018);
+  transform: translateY(-1px);
+}
+.load-more-btn:active { transform: translateY(0); }
