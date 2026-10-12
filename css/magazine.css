@@ -1009,3 +1009,66 @@
 .issue-card-cover-thumb.img-fallback { height: 186px; }
 /* hero 封面卡内撑满 */
 .hero-cover-img.img-fallback { height: 100%; min-height: 320px; }
+
+/* 正文载入遮罩（替代 alert，带重试按钮）*/
+#myth-reader-loading {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 245, 241, .95);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+#myth-reader-loading.open { display: flex; }
+#myth-reader-loading .mrl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 48px;
+  background: #fdfcf9;
+  border: 1px solid #ddd3c2;
+  box-shadow: 0 18px 50px rgba(60, 48, 32, .12);
+  max-width: 82vw;
+}
+#myth-reader-loading .mrl-seal {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #aa2727;
+  color: #aa2727;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 2px;
+  animation: mrlPulse 1.6s ease-in-out infinite;
+}
+@keyframes mrlPulse {
+  0%, 100% { opacity: .45; transform: scale(.96); }
+  50%      { opacity: 1;   transform: scale(1); }
+}
+#myth-reader-loading .mrl-msg {
+  font-family: var(--serif);
+  font-size: 16px;
+  color: #3a3127;
+  letter-spacing: .04em;
+  text-align: center;
+  line-height: 1.6;
+}
+#myth-reader-loading .mrl-retry {
+  font-family: var(--serif);
+  font-size: 14px;
+  letter-spacing: .06em;
+  color: #f7f5f1;
+  background: #aa2727;
+  border: none;
+  padding: 11px 30px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+#myth-reader-loading .mrl-retry:hover { opacity: .85; }

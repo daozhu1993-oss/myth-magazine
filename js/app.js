@@ -236,6 +236,20 @@
   }
 
   // --- INITIALIZATION ---
+  // 悬停 / 按下即预取，把「等待」提前到用户还没点的时候
+  function initHoverPrefetch() {
+    const kick = (e) => {
+      const card = e.target && e.target.closest && e.target.closest('[data-aid]');
+      if (!card) return;
+      const id = card.getAttribute('data-aid');
+      if (!id || state.fullArticles[id] || readContentCache(id)) return;
+      fetchFullArticle(id).catch(() => { });
+    };
+    document.addEventListener('mouseover', kick, { passive: true });
+    document.addEventListener('touchstart', kick, { passive: true });
+    document.addEventListener('focusin', kick, { passive: true });
+  }
+
   function init() {
     installImgFallback();          // 配图加载失败自动重试 / 降级占位
     applyTheme(state.currentTheme);
@@ -246,7 +260,11 @@
     setupEventListeners();
     setupKeyboardNavigation();
     initMagneticCursor();
+    initHoverPrefetch();
     handleHashRouting();
+    // 首页渲染完、浏览器空闲时后台把 30 篇正文预热到本地缓存，
+    // 这样用户真正点开时基本已经就绪（CDN 再慢也不影响阅读）
+    prefetchAllArticles();
   }
 
   // --- THEME MANAGEMENT ---
@@ -395,7 +413,7 @@
     DOM.issuesGrid.innerHTML = visible.map(item => {
       const saved = isBookmarked(item.id);
       return `
-        <article class="issue-card" onclick="window.MythApp.openReader('${item.id}')">
+        <article class="issue-card" data-aid="${item.id}" onclick="window.MythApp.openReader('${item.id}')">
           <img class="issue-card-cover-thumb" src="${mythImg(item.coverImg, 'th')}" alt="${item.cleanTitle}" loading="lazy" decoding="async" />
           <div class="issue-card-content">
             <div>
@@ -479,7 +497,7 @@
       `;
     } else {
       DOM.bookshelfBookmarksGrid.innerHTML = bookmarkedArticles.map(item => `
-        <article class="issue-card" onclick="window.MythApp.openReader('${item.id}')">
+        <article class="issue-card" data-aid="${item.id}" onclick="window.MythApp.openReader('${item.id}')">
           <img class="issue-card-cover-thumb" src="${mythImg(item.coverImg, 'th')}" alt="${item.cleanTitle}" loading="lazy" decoding="async" />
           <div class="issue-card-content">
             <div class="issue-card-header">
@@ -536,70 +554,176 @@
   }
 
   /* ------------------------------------------------------------------------
-     按需加载阅读器正文（首页只用元数据列表，正文只在打开某篇时才 fetch）
+     正文加载（三级缓存 + 重试 + 空闲预取）
+
+     背景：把正文从 data.js 拆出去之后，「打开文章」变成了一次网络请求。
+     在 CDN 抽风的环境下（实测 Cloudflare 同一张 31KB 图 6~20s 且会断连），
+     这一步必须做得足够稳，否则就是「点不开文章」。
+
+     三级缓存：
+       1. 内存   state.fullArticles       —— 同一次会话内秒开
+       2. localStorage                    —— 关掉浏览器再回来也是秒开
+       3. 网络   data/content/<id>.json   —— 首次访问才需要，带重试
+     额外：
+       · 首页空闲时后台预取（requestIdleCallback），用户点的时候多半已经好了
+       · 鼠标悬停 / 手指按下即开始预取（把等待提前）
      ------------------------------------------------------------------------ */
+  const LS_CONTENT_PREFIX = 'myth_c_';
   const _inflight = {}; // articleId -> Promise（去重并发）
+
+  function readContentCache(id) {
+    try {
+      const raw = localStorage.getItem(LS_CONTENT_PREFIX + id);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { return null; }
+  }
+  function writeContentCache(id, obj) {
+    try {
+      localStorage.setItem(LS_CONTENT_PREFIX + id, JSON.stringify(obj));
+    } catch (e) {
+      // 配额满：清掉最旧的几个再试一次，仍失败就放弃（内存缓存仍在）
+      try {
+        Object.keys(localStorage)
+          .filter(k => k.indexOf(LS_CONTENT_PREFIX) === 0)
+          .slice(0, 5)
+          .forEach(k => localStorage.removeItem(k));
+        localStorage.setItem(LS_CONTENT_PREFIX + id, JSON.stringify(obj));
+      } catch (e2) { /* 忽略 */ }
+    }
+  }
+
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  async function fetchWithRetry(url, tries) {
+    let lastErr;
+    for (let i = 0; i < tries; i++) {
+      try {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 15000); // 单次 15s 超时
+        const res = await fetch(url, { credentials: 'same-origin', signal: ctrl.signal, cache: 'default' });
+        clearTimeout(timer);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const text = await res.text();
+        // CDN 出错时会返回 HTML 错误页，这里显式挡掉
+        const trimmed = text.trim();
+        if (trimmed.charAt(0) !== '{') throw new Error('返回的不是 JSON');
+        return JSON.parse(trimmed);
+      } catch (e) {
+        lastErr = e;
+        if (i < tries - 1) await sleep(500 * (i + 1));
+      }
+    }
+    throw lastErr;
+  }
+
   async function fetchFullArticle(articleId) {
     if (state.fullArticles[articleId]) return state.fullArticles[articleId];
     if (_inflight[articleId]) return _inflight[articleId];
+
     _inflight[articleId] = (async () => {
-      // 优先用浏览器缓存：直接 fetch，由 Service Worker/浏览器 HTTP 缓存复用
-      const url = 'data/content/' + articleId + '.json';
-      const res = await fetch(url, { credentials: 'same-origin' });
-      if (!res.ok) throw new Error('fetch ' + articleId + ' failed: HTTP ' + res.status);
-      const full = await res.json();
-      // 合并到 meta 上，确保阅读器里 author/coverImg 等元字段也齐全
       const meta = state.articles.find(a => a.id === articleId) || {};
-      state.fullArticles[articleId] = Object.assign({}, meta, full);
-      return state.fullArticles[articleId];
+      // 二级：localStorage
+      const cached = readContentCache(articleId);
+      if (cached) {
+        const merged = Object.assign({}, meta, cached);
+        state.fullArticles[articleId] = merged;
+        return merged;
+      }
+      // 三级：网络（两条路径 × 3 次重试）
+      const paths = [
+        'data/content/' + articleId + '.json',
+        './data/content/' + articleId + '.json'
+      ];
+      let lastErr;
+      for (const p of paths) {
+        try {
+          const full = await fetchWithRetry(p, 3);
+          const merged = Object.assign({}, meta, full);
+          state.fullArticles[articleId] = merged;
+          writeContentCache(articleId, full);
+          return merged;
+        } catch (e) { lastErr = e; }
+      }
+      throw lastErr || new Error('无法载入正文');
     })().finally(() => { delete _inflight[articleId]; });
+
     return _inflight[articleId];
   }
 
-  // 顶部状态条：轻量提示
-  function showReaderLoading(message) {
+  // 空闲时后台预取（不阻塞交互，失败静默）
+  // 只预热前 12 篇（首屏可见的那批），避免和首屏配图抢带宽；
+  // 其余篇目靠悬停/按下预取，点开时基本已就绪。
+  function prefetchAllArticles() {
+    const list = state.articles.slice(0, 12);
+    let i = 0;
+    const step = (deadline) => {
+      while (i < list.length && (!deadline || deadline.timeRemaining() > 4)) {
+        const id = list[i++].id;
+        if (!state.fullArticles[id] && !readContentCache(id)) {
+          fetchFullArticle(id).catch(() => { });
+        }
+      }
+      if (i < list.length) scheduleIdle(step);
+    };
+    // 延后 2.5s 起步，先把首屏配图的带宽让出来
+    setTimeout(() => scheduleIdle(step), 2500);
+  }
+  function scheduleIdle(fn) {
+    if (window.requestIdleCallback) requestIdleCallback(fn, { timeout: 4000 });
+    else setTimeout(() => fn({ timeRemaining: () => 8 }), 1500);
+  }
+
+  // 载入遮罩（带进度/重试按钮，不再用 alert）
+  function showReaderLoading(message, opts) {
     let el = document.getElementById('myth-reader-loading');
     if (!el) {
       el = document.createElement('div');
       el.id = 'myth-reader-loading';
-      el.style.cssText = 'position:fixed;inset:0;background:rgba(247,245,241,.94);backdrop-filter:blur(6px);z-index:9999;display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:#3a3127;font-size:18px;letter-spacing:.04em;';
       document.body.appendChild(el);
     }
-    el.textContent = message || '正在载入正文…';
-    el.style.display = 'flex';
+    opts = opts || {};
+    el.innerHTML = `
+      <div class="mrl-card">
+        <div class="mrl-seal">神</div>
+        <div class="mrl-msg">${message || '正在载入正文…'}</div>
+        ${opts.retry ? '<button class="mrl-retry" type="button">重新载入</button>' : ''}
+      </div>`;
+    el.classList.add('open');
+    if (opts.retry) {
+      el.querySelector('.mrl-retry').onclick = opts.retry;
+    }
+    return el;
   }
   function hideReaderLoading() {
     const el = document.getElementById('myth-reader-loading');
-    if (el) el.style.display = 'none';
+    if (el) el.classList.remove('open');
   }
 
   // --- SPREAD READER DELEGATION（双页跨页杂志引擎） ---
   async function openReader(articleId, pageIdx = null) {
     const meta = state.articles.find(a => a.id === articleId);
     if (!meta) return;
+
+    // 命中内存/localStorage 缓存 -> 不显示遮罩，直接开
+    const instant = state.fullArticles[articleId] || readContentCache(articleId);
+    if (!instant) showReaderLoading('正在载入《' + (meta.cleanTitle || '') + '》…');
+
     try {
       const article = await fetchFullArticle(articleId);
+      hideReaderLoading();
       state.currentArticle = article;
-      if (window.MythSpread) {
-        window.MythSpread.openReader(article, pageIdx || 0);
-      }
+      if (window.MythSpread) window.MythSpread.openReader(article, pageIdx || 0);
     } catch (e) {
       console.error('载入正文失败：', e);
-      hideReaderLoading();
-      alert('正文载入失败：' + e.message + '\n请检查网络后重试。');
+      showReaderLoading('正文载入失败，请检查网络后重试', {
+        retry: () => { hideReaderLoading(); openReader(articleId, pageIdx); }
+      });
     }
   }
 
   /* 关闭后清理：保留缓存 state.fullArticles 避免重新读 */
   function closeReader() {
     if (window.MythSpread) window.MythSpread.closeReader();
-  }
-
-  function closeReader() {
-    if (window.MythSpread) {
-      window.MythSpread.closeReader();
-      return;
-    }
   }
 
   function renderPage(pageIdx, direction = 0) {
