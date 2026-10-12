@@ -1072,3 +1072,77 @@
   transition: opacity .2s ease;
 }
 #myth-reader-loading .mrl-retry:hover { opacity: .85; }
+
+/* --------------------------------------------------------------------------
+   藏书阁：备份/迁移工具栏 + 本机存储状态条
+   （书架与阅读进度存于本机 localStorage，这里提供导出/导入让用户自己迁移）
+   -------------------------------------------------------------------------- */
+.bookshelf-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.bookshelf-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--ink, #2a2018);
+  background: transparent;
+  border: 1px solid var(--line, #d6cdbf);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all .22s ease;
+  white-space: nowrap;
+}
+.bookshelf-tool-btn:hover {
+  background: var(--ink, #2a2018);
+  color: var(--paper, #f7f5f1);
+  border-color: var(--ink, #2a2018);
+}
+.bookshelf-tool-btn svg { flex: none; }
+
+.bookshelf-storage-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  max-width: var(--content-max);
+  margin: 4px auto 0;
+  padding: 11px 18px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: .03em;
+  line-height: 1.6;
+  color: var(--quiet, #8a7a63);
+  background: rgba(170, 39, 39, .035);
+  border-left: 2px solid var(--line, #d6cdbf);
+}
+.bookshelf-storage-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .55;
+}
+.bookshelf-storage-note.is-ok {
+  color: #3f6b3f;
+  background: rgba(63, 107, 63, .07);
+  border-left-color: #3f6b3f;
+}
+.bookshelf-storage-note.is-ok .bookshelf-storage-dot { opacity: 1; }
+.bookshelf-storage-note.is-error {
+  color: #aa2727;
+  background: rgba(170, 39, 39, .08);
+  border-left-color: #aa2727;
+}
+.bookshelf-storage-note.is-error .bookshelf-storage-dot { opacity: 1; }
+
+@media (max-width: 720px) {
+  .bookshelf-header-actions { width: 100%; justify-content: flex-end; }
+  .bookshelf-tool-btn span { display: none; }
+  .bookshelf-tool-btn { padding: 9px 11px; }
+}

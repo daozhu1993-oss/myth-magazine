@@ -677,6 +677,7 @@
       playPageTurnSound();
       updatePageReadout();
       hideFlipHint();
+      emitProgress();
     });
     state.flip.on('changeOrientation', () => {
       updatePageReadout();
@@ -687,6 +688,19 @@
     if (gutter) gutter.style.display = state.geo.portrait ? 'none' : 'block';
 
     updatePageReadout();
+  }
+
+  /* 把「读到第几页」广播给外层（app.js 负责持久化到 localStorage）。
+     阅读器换成交互式跨页引擎后，老的 saveProgress 调用点失效了，
+     导致「最近阅读足迹」永远是空的 —— 这里补回来。 */
+  function emitProgress() {
+    if (!state.flip || !state.article) return;
+    try {
+      const pageIdx = state.flip.getCurrentPageIndex();
+      document.dispatchEvent(new CustomEvent('myth:progress', {
+        detail: { articleId: state.article.id, pageIdx: pageIdx }
+      }));
+    } catch (e) { /* 忽略 */ }
   }
 
   function updatePageReadout() {
@@ -842,6 +856,7 @@
 
   function closeReader() {
     if (!state.open) return;
+    emitProgress(); // 关掉前把当前页码落一次，避免「翻页后立刻退出」丢进度
     state.open = false;
     const wrap = document.getElementById('spread-reader');
     if (wrap) wrap.classList.remove('active');

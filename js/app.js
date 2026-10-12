@@ -100,6 +100,9 @@
     bookshelfCloseBtn: document.getElementById('bookshelf-close-btn'),
     bookshelfBookmarksGrid: document.getElementById('bookshelf-bookmarks-grid'),
     bookshelfRecentGrid: document.getElementById('bookshelf-recent-grid'),
+    bookshelfExportBtn: document.getElementById('bookshelf-export-btn'),
+    bookshelfImportBtn: document.getElementById('bookshelf-import-btn'),
+    bookshelfImportInput: document.getElementById('bookshelf-import-input'),
     
     // Hero Slider
     heroPrevBtn: document.getElementById('hero-prev-btn'),
@@ -334,6 +337,145 @@
     localStorage.setItem('myth_progress', JSON.stringify(state.readProgress));
   }
 
+  /* ------------------------------------------------------------------------
+     典藏数据备份 / 迁移（本地实现）
+     书架与阅读进度存在本机 localStorage 里，换设备或清缓存就会丢。
+     这里提供「导出备份 → 导入恢复」，让用户自己把数据带走。
+     ------------------------------------------------------------------------ */
+  const BACKUP_KIND = 'myth-magazine-backup';
+  const BACKUP_VERSION = 1;
+
+  function buildBackup() {
+    return {
+      kind: BACKUP_KIND,
+      version: BACKUP_VERSION,
+      exportedAt: new Date().toISOString(),
+      app: '神话 · 中华神话重构系列文学杂志',
+      bookmarks: state.bookmarks.slice(),
+      readProgress: Object.assign({}, state.readProgress),
+      theme: state.currentTheme
+    };
+  }
+
+  function exportBackup() {
+    try {
+      const data = buildBackup();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const d = new Date();
+      const pad = n => String(n).padStart(2, '0');
+      const stamp = `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}`;
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `神话书架备份-${stamp}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      setStorageNote(`已导出 ${data.bookmarks.length} 篇典藏 · ${Object.keys(data.readProgress).length} 条阅读进度`, 'ok');
+    } catch (e) {
+      console.error('导出失败：', e);
+      setStorageNote('导出失败：' + e.message, 'error');
+    }
+  }
+
+  // 校验并归一化备份文件；不合法时抛出可读错误
+  function parseBackup(text) {
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch (e) {
+      throw new Error('文件不是有效的 JSON');
+    }
+    if (!data || typeof data !== 'object') throw new Error('文件内容不是对象');
+    if (data.kind !== BACKUP_KIND) throw new Error('这不是本杂志的备份文件');
+
+    const validIds = new Set(state.articles.map(a => a.id));
+    const rawBookmarks = Array.isArray(data.bookmarks) ? data.bookmarks : [];
+    const bookmarks = rawBookmarks.filter(id => typeof id === 'string' && validIds.has(id));
+
+    const readProgress = {};
+    const rp = (data.readProgress && typeof data.readProgress === 'object') ? data.readProgress : {};
+    Object.keys(rp).forEach(id => {
+      if (!validIds.has(id)) return;
+      const v = rp[id];
+      if (!v || typeof v !== 'object') return;
+      const pageIdx = Number(v.pageIdx);
+      if (!Number.isFinite(pageIdx) || pageIdx < 0) return;
+      readProgress[id] = { pageIdx: Math.floor(pageIdx), updatedAt: Number(v.updatedAt) || Date.now() };
+    });
+
+    return {
+      bookmarks: bookmarks,
+      readProgress: readProgress,
+      skippedBookmarks: rawBookmarks.length - bookmarks.length,
+      skippedProgress: Object.keys(rp).length - Object.keys(readProgress).length
+    };
+  }
+
+  function importBackupFile(file) {
+    if (!file) return;
+    if (file.size > 1024 * 1024) {
+      setStorageNote('导入失败：备份文件超过 1MB，可能不是本杂志的备份', 'error');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onerror = () => setStorageNote('导入失败：无法读取该文件', 'error');
+    reader.onload = () => {
+      let parsed;
+      try {
+        parsed = parseBackup(String(reader.result));
+      } catch (e) {
+        setStorageNote('导入失败：' + e.message, 'error');
+        return;
+      }
+
+      const hasCurrent = state.bookmarks.length > 0 || Object.keys(state.readProgress).length > 0;
+      const apply = () => {
+        // 合并：保留本机已有，备份里的条目覆盖/补入
+        const merged = Array.from(new Set(state.bookmarks.concat(parsed.bookmarks)));
+        state.bookmarks = merged;
+        state.readProgress = Object.assign({}, state.readProgress, parsed.readProgress);
+        localStorage.setItem('myth_bookmarks', JSON.stringify(state.bookmarks));
+        localStorage.setItem('myth_progress', JSON.stringify(state.readProgress));
+        updateBookshelfBadge();
+        renderGrid();
+        renderBookshelf();
+
+        let msg = `已恢复：典藏 ${parsed.bookmarks.length} 篇 · 进度 ${Object.keys(parsed.readProgress).length} 条`;
+        if (parsed.skippedBookmarks || parsed.skippedProgress) {
+          msg += `（跳过 ${parsed.skippedBookmarks + parsed.skippedProgress} 条无效记录）`;
+        }
+        setStorageNote(msg, 'ok');
+      };
+
+      if (hasCurrent && !window.confirm(
+        '导入会与本机现有典藏合并：\n' +
+        `· 备份含 ${parsed.bookmarks.length} 篇典藏、${Object.keys(parsed.readProgress).length} 条进度\n` +
+        `· 本机现有 ${state.bookmarks.length} 篇典藏、${Object.keys(state.readProgress).length} 条进度\n\n` +
+        '合并后不会删除本机已有条目。继续？'
+      )) {
+        setStorageNote('已取消导入', '');
+        return;
+      }
+      apply();
+    };
+    reader.readAsText(file);
+  }
+
+  // 书架顶部的状态提示条
+  function setStorageNote(text, tone) {
+    const el = document.getElementById('bookshelf-storage-text');
+    const note = document.querySelector('.bookshelf-storage-note');
+    if (!el) return;
+    el.textContent = text;
+    if (note) {
+      note.classList.remove('is-ok', 'is-error');
+      if (tone === 'ok') note.classList.add('is-ok');
+      else if (tone === 'error') note.classList.add('is-error');
+    }
+  }
+
   // --- HERO SLIDER ---
   function renderHero(index) {
     if (!state.articles.length) return;
@@ -476,6 +618,12 @@
   // --- BOOKSHELF MODAL ---
   function openBookshelf() {
     renderBookshelf();
+    // 每次打开都把状态条复位成本机存储的说明
+    setStorageNote(
+      `典藏与进度保存在本机浏览器 · 换设备请用「导出备份 / 导入恢复」迁移` +
+      (state.bookmarks.length ? `（当前 ${state.bookmarks.length} 篇典藏）` : ''),
+      ''
+    );
     DOM.bookshelfModal.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -1063,6 +1211,26 @@
     // Bookshelf
     DOM.mastheadBookshelfBtn.onclick = openBookshelf;
     DOM.bookshelfCloseBtn.onclick = closeBookshelf;
+    if (DOM.bookshelfExportBtn) DOM.bookshelfExportBtn.onclick = exportBackup;
+    if (DOM.bookshelfImportBtn && DOM.bookshelfImportInput) {
+      DOM.bookshelfImportBtn.onclick = () => DOM.bookshelfImportInput.click();
+      DOM.bookshelfImportInput.onchange = (e) => {
+        const f = e.target.files && e.target.files[0];
+        importBackupFile(f);
+        e.target.value = ''; // 允许连续导入同一个文件
+      };
+    }
+
+    // 阅读器翻页 -> 记录阅读进度（跨页引擎通过自定义事件广播）
+    document.addEventListener('myth:progress', (e) => {
+      const d = e.detail || {};
+      if (!d.articleId || typeof d.pageIdx !== 'number') return;
+      saveProgress(d.articleId, d.pageIdx);
+      // 书架开着时实时刷新「最近阅读足迹」
+      if (DOM.bookshelfModal && DOM.bookshelfModal.classList.contains('open')) {
+        renderBookshelf();
+      }
+    });
 
     // Hero navigation
     DOM.heroPrevBtn.onclick = () => renderHero(state.currentHeroIdx - 1);
@@ -1132,7 +1300,9 @@
     toggleTheme,
     openBookshelf,
     closeBookshelf,
-    loadMoreIssues
+    loadMoreIssues,
+    exportBackup,
+    importBackupFile
   };
 
   // Launch app when DOM is ready
