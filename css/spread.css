@@ -913,3 +913,13 @@
 .sheet-spread.is-portrait .spread-spine {
   display: none;
 }
+
+#compare-classic { position:absolute;z-index:12;top:max(14px,env(safe-area-inset-top));left:16px;border:1px solid #ac9674;background:#fff6e3;color:#493c2b;border-radius:20px;padding:9px 16px;cursor:pointer }
+#classic-note {max-width: min(640px,90vw);max-height:85dvh;overflow:auto;padding:clamp(16px,4vw,30px);border:1px solid #a68d68;background:#fff7e7;color:#3a3126 }
+#classic-note::backdrop {background:#241a12b3}
+#classic-note .paired-lines {display:grid;grid-template-columns:1fr 1fr;gap:20px}
+#classic-note h2,#classic-note h3 {font-family:serif;line-height:1.45}
+#classic-note blockquote {margin:1em 0;font:1.14em/1.7 serif}
+#classic-note a {color:inherit;text-decoration:underline}
+#classic-note button {margin-top:1em;padding:8px 12px;background:#493b2a;color:#fff7e7;font:inherit;cursor:pointer}
+@media(max-width:520px){#classic-note .paired-lines{grid-template-columns:1fr;gap:8px}}

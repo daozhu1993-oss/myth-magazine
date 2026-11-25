@@ -835,6 +835,7 @@
 
     state.article = article;
     state.open = true;
+    document.getElementById('compare-classic').hidden = article.id !== 'issue-002';
 
     const wrap = document.getElementById('spread-reader');
     if (wrap) wrap.classList.add('active');
@@ -872,6 +873,7 @@
     const on = (id, fn) => { const b = document.getElementById(id); if (b) b.onclick = fn; };
 
     on('spread-close', closeReader);
+    on('compare-classic', () => document.getElementById('classic-note').showModal());
     on('spread-prev', () => state.flip && state.flip.flipPrev());
     on('spread-next', () => state.flip && state.flip.flipNext());
     on('spread-edge-prev', () => state.flip && state.flip.flipPrev());
@@ -913,6 +915,7 @@
 
     // 键盘
     window.addEventListener('keydown', (e) => {
+      if (document.getElementById('classic-note').open) return;
       if (!state.open) return;
       if (e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
       if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {

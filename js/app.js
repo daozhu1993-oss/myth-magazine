@@ -860,7 +860,8 @@
       const article = await fetchFullArticle(articleId);
       hideReaderLoading();
       state.currentArticle = article;
-      if (window.MythSpread) window.MythSpread.openReader(article, pageIdx || 0);
+      const page = pageIdx ?? state.readProgress[articleId]?.pageIdx ?? 0;
+      if (window.MythSpread) window.MythSpread.openReader(article, page);
     } catch (e) {
       console.error('载入正文失败：', e);
       showReaderLoading('正文载入失败，请检查网络后重试', {
